@@ -1,0 +1,16 @@
+footer.primary {
+  background-color: $light-grey;
+  color: $black;
+	width: 100%;
+	padding: 1rem 2rem;
+	text-align: center;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	flex-shrink: 0;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}

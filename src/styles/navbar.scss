@@ -1,0 +1,36 @@
+header.primary {
+  background-color: $white;
+  color: $black;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem 3rem;
+	position: fixed;
+  font-size: 1.5rem;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+  nav {
+    display: grid;
+    grid-template-areas: "heading nav-buttons";
+
+    span.heading {
+      grid-area: heading;
+      justify-self: start;
+    }
+
+    ul.nav-buttons {
+      margin: auto 0;
+      list-style: none;
+      grid-area: nav-buttons;
+      justify-self: end;
+    }
+      
+    li {
+      display: inline-block;
+      margin: 0 1rem;
+    }
+  }
+}
