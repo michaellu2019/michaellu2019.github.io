@@ -1,0 +1,43 @@
+.work-section-container {
+  div.content {
+    .work-container {
+      padding: 0 10%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+      align-items: start;
+
+      .work-card {
+        padding-bottom: 2rem;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+          height: 5rem;
+          margin-bottom: 1rem;
+        }
+
+        .work-description {
+          opacity: 0.0;
+          position: relative;
+          transform: translateY(-100%);
+          transition: 0.25s ease-in-out;
+
+          h2 {
+            margin: 0;
+          }
+          h3 {
+            margin: 0.5rem;
+          }
+        }
+
+        &:hover {
+          .work-description {
+            opacity: 1.0;
+            transform: translateY(0%);
+          }
+        }
+      }
+    }
+  }
+}

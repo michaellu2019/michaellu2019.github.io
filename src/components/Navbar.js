@@ -7,8 +7,8 @@ function Navbar() {
         <ul className="nav-buttons">
           <li>Home</li>
           <li>Projects</li>
-          <li>About</li>
           <li>Experience</li>
+          <li>About</li>
         </ul>
       </nav>
     </header>
