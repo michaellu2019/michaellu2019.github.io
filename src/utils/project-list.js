@@ -8,9 +8,9 @@ function Project(id, name, title, description, tags) {
 
 const hardwareProjects = [
   new Project(23, "competition", "MIT Competition Robot", "Robot MIT Competition Robot", ["hardware", "featured"]),
-  new Project(22, "lego", "6-DOF Lego Building Robot", "Robot Lego Building Robot", ["hardware", "featured"]),
+  new Project(22, "lego", "Lego Building Bot", "Robot Lego Building Robot", ["hardware", "featured"]),
   new Project(17, "donkey", "Donkey", "Robot Donkey", ["hardware", "featured"]),
-  new Project(15, "boxing", "Boxing", "Robot Boxing", ["hardware", "featured"]),
+  new Project(15, "boxing", "IoT Boxing", "Robot Boxing", ["hardware", "featured"]),
   new Project(14, "camera", "IR Camera Module", "Robot IR Camera Module", ["hardware", "featured"]),
   // new Project(13, "antenna", "Directional Antenna Optimizer", "Robot Antenna", ["hardware"]),
   new Project(11, "krabs", "Kombat Krabs", "Robot Kombat Krabs", ["hardware"]),

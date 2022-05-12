@@ -22,10 +22,12 @@
       }
 
       .project-cards-container {
-        width: 64rem;
+        width: 86rem;
         margin: 2rem auto;
+        // text-align: center;
+        // padding: 0 10%;
         display: grid;
-        grid-template-columns: 20rem 20rem 20rem;
+        grid-template-columns: repeat(4, 20rem);
         grid-auto-rows: 30rem;
         grid-gap: 2rem;
         justify-items: center;
@@ -67,8 +69,15 @@
             }
           }
 
+          &#competition { background-image: url("../assets/images/projects-competition-card.png"); }
+          &#lego { background-image: url("../assets/images/projects-lego-card.png"); }
+          &#car { background-image: url("../assets/images/projects-car-card.png"); }
           &#donkey { background-image: url("../assets/images/projects-donkey-card.jpg"); }
           &#boxing { background-image: url("../assets/images/projects-boxing-card.PNG"); }
+          &#camera { background-image: url("../assets/images/projects-camera-card.jpeg"); }
+          &#chatbot { background-image: url("../assets/images/projects-chatbot-card.png"); }
+          &#krabs { background-image: url("../assets/images/projects-krabs-card.png"); }
+          &#nutriscan { background-image: url("../assets/images/projects-nutriscan-card.png"); }
         }
       }
     }

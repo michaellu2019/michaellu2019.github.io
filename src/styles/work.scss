@@ -1,7 +1,8 @@
 .work-section-container {
   div.content {
+    padding: 0 10%;
+    
     .work-container {
-      padding: 0 10%;
       display: grid;
       grid-template-columns: 1fr 1fr;
       text-align: center;
