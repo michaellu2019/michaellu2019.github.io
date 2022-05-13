@@ -9,7 +9,7 @@ function Cover(props) {
         <button onClick={() => props.scrollTo("projects")}>My Projects <div className="animated-chevron">›</div></button>
       </div>
       <div id="cover-portrait">
-        {/* <img src={coverPortrait} /> */}
+        <img src={coverPortrait} />
       </div>
     </article>
   );

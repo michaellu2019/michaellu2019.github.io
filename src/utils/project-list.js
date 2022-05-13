@@ -14,7 +14,7 @@ const hardwareProjects = [
   new Project(14, "camera", "IR Camera Module", "Robot IR Camera Module", ["hardware", "featured"]),
   // new Project(13, "antenna", "Directional Antenna Optimizer", "Robot Antenna", ["hardware"]),
   new Project(11, "krabs", "Kombat Krabs", "Robot Kombat Krabs", ["hardware"]),
-  new Project(8, "beatbot", "BeatBot", "Robot BeatBot", ["hardware"]),
+  new Project(7, "beatbot", "BeatBot", "Robot BeatBot", ["hardware"]),
   new Project(6, "toby", "Toby", "Robot Toby", ["hardware"]),
   new Project(5, "horse", "Animatronic Horse Head", "Robot Horse", ["hardware"]),
   new Project(4, "tank", "RC Tank", "Robot Tank", ["hardware"]),
@@ -31,7 +31,7 @@ const softwareProjects = [
   new Project(12, "chatbot", "Facebook Chatbot", "Robot Facebook", ["software", "featured"]),
   new Project(10, "regret", "Regret", "Robot Regret", ["software"]),
   new Project(9, "friends", "Friends, Where You At?", "Robot Friends", ["software"]),
-  new Project(7, "nutriscan", "NutriScan", "Robot NutriScan", ["software", "featured"]),
+  new Project(8, "nutriscan", "NutriScan", "Robot NutriScan", ["software", "featured"]),
   new Project(1, "euclidean", "The Euclidean Project", "Robot Euclidean", ["software"]),
 ];
 
