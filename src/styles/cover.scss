@@ -1,98 +1,118 @@
 .cover-section-container {
-  height: 100vh;
-  align-items: center;
-  display: flex;
+  div.content {
+    width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 18rem 1fr;
+    grid-gap: 2rem;
+    font-size: 1.5rem;
 
-  #cover-title {
-    padding: 0 10%;
-    position: absolute;
+    div.cover-image {
+      text-align: right;
+      img {
+        width: 100%;
+      }
+    } 
 
-    .heading {
-      display: block;
-      font-size: 7rem;
-
-      @media (max-width: $large) {
-        font-size: 6rem;
-      }
-      @media (max-width: $medium-large) {
-        font-size: 4rem;
-      }
-      @media (max-width: $medium-small) {
-          font-size: 4rem;
-      }
-      @media (max-width: $small) {
-          font-size: 3rem;
-      }
+    div.cover-text {
+      text-align: left;
     }
-    .subheading {
-      display: block;
-      font-size: 3rem;
+  }
+  // height: 100vh;
+  // align-items: center;
+  // display: flex;
 
-      @media (max-width: $large) {
-        font-size: 3rem;
-      }
-      @media (max-width: $medium-large) {
-        font-size: 2.5rem;
-      }
-      @media (max-width: $medium) {
-          font-size: 2rem;
-      }
-      @media (max-width: $medium-small) {
-          font-size: 1rem;
-      }
-      @media (max-width: $small) {
-          font-size: 1rem;
-      }
-    }
+  // #cover-title {
+  //   padding: 0 10%;
+  //   position: absolute;
 
-    button {
-      border: 5px solid $black;
-      margin-top: 4rem;
-      font-size: 1.5rem;
+  //   .heading {
+  //     display: block;
+  //     font-size: 7rem;
+
+  //     @media (max-width: $large) {
+  //       font-size: 6rem;
+  //     }
+  //     @media (max-width: $medium-large) {
+  //       font-size: 4rem;
+  //     }
+  //     @media (max-width: $medium-small) {
+  //         font-size: 4rem;
+  //     }
+  //     @media (max-width: $small) {
+  //         font-size: 3rem;
+  //     }
+  //   }
+  //   .subheading {
+  //     display: block;
+  //     font-size: 3rem;
+
+  //     @media (max-width: $large) {
+  //       font-size: 3rem;
+  //     }
+  //     @media (max-width: $medium-large) {
+  //       font-size: 2.5rem;
+  //     }
+  //     @media (max-width: $medium) {
+  //         font-size: 2rem;
+  //     }
+  //     @media (max-width: $medium-small) {
+  //         font-size: 1rem;
+  //     }
+  //     @media (max-width: $small) {
+  //         font-size: 1rem;
+  //     }
+  //   }
+
+  //   button {
+  //     border: 5px solid $black;
+  //     margin-top: 4rem;
+  //     font-size: 1.5rem;
 	
-      @media (max-width: $medium-large) {
-        border: 3px solid $black;
-        font-size: 1.5rem;
-      }
-      @media (max-width: $medium) {
-        border: 2px solid $black;
-        margin-top: 3rem;
-        font-size: 1rem;
-      }
-      @media (max-width: $small) {
-        border: 2px solid $black;
-        margin-top: 3rem;
-        font-size: 1rem;
-      }
+  //     @media (max-width: $medium-large) {
+  //       border: 3px solid $black;
+  //       font-size: 1.5rem;
+  //     }
+  //     @media (max-width: $medium) {
+  //       border: 2px solid $black;
+  //       margin-top: 3rem;
+  //       font-size: 1rem;
+  //     }
+  //     @media (max-width: $small) {
+  //       border: 2px solid $black;
+  //       margin-top: 3rem;
+  //       font-size: 1rem;
+  //     }
 
-      .animated-chevron {
-        display: inline-block;
-        margin-left: 0.5rem;
-        font-size: 2rem;
-        transform: translateX(0);
-        animation: oscillate 1s ease-in-out infinite;
+  //     .animated-chevron {
+  //       display: inline-block;
+  //       margin-left: 0.5rem;
+  //       font-size: 2rem;
+  //       transform: translateX(0);
+  //       animation: oscillate 1s ease-in-out infinite;
 
-        @media (max-width: $medium-large) {
-          font-size: 1.5rem;
-        }
-        @media (max-width: $medium) {
-            font-size: 1rem;
-        }
-      }
-    }
-  }
+  //       @media (max-width: $medium-large) {
+  //         font-size: 1.5rem;
+  //       }
+  //       @media (max-width: $medium) {
+  //           font-size: 1rem;
+  //       }
+  //     }
+  //   }
+  // }
 
-  #cover-portrait {
-    height: 100%;
-    text-align: right;
-    padding-top: 3rem;
-    overflow-y: hidden;
-    grid-area: portrait;
+  // #cover-portrait {
+  //   height: 100%;
+  //   text-align: right;
+  //   padding-top: 3rem;
+  //   overflow-y: hidden;
+  //   grid-area: portrait;
     
-    img {
-      width: 70%;
-    }
-  }
+  //   img {
+  //     width: 70%;
+  //   }
+  // }
 }
 
 @keyframes oscillate {

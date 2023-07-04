@@ -7,9 +7,6 @@ function Projects(props) {
 
   return (
     <article className="projects-section-container">
-      <header>
-        <h1 className="heading">Projects</h1>
-      </header>
 
       <div className="content">
         <div className="projects-container">

@@ -16,7 +16,23 @@ function Work() {
         <div className="work-container">
           {/* <div><img id="amazon" className="work-logo" src={amazonLogo} /></div> */}
           <div className="work-card">
-            <img id="spaceX" src={spaceXLogo} />
+            <img id="spaceX2" src={spaceXLogo} />
+            <div className="work-description">
+              <h2>Jun. - Aug. 2023</h2>
+              <h2>Automation and Controls Engineering Intern</h2>
+              <h3>Developed satellite production machinery</h3>
+            </div>
+          </div>
+          <div className="work-card">
+            <img id="amazon" src={amazonLogo} />
+            <div className="work-description">
+              <h2>May. - Aug. 2022</h2>
+              <h2>Software Engineering Intern</h2>
+              <h3>Developed database cleaning tools.</h3>
+            </div>
+          </div>
+          <div className="work-card">
+            <img id="spaceX1" src={spaceXLogo} />
             <div className="work-description">
               <h2>Jun. - Aug. 2021</h2>
               <h2>Software Engineering Intern</h2>
@@ -50,7 +66,7 @@ function Work() {
         </div>
       </div>
 
-      <header>
+      {/* <header>
         <h1 className="heading">Places I've Studied</h1>
       </header>
 
@@ -62,10 +78,6 @@ function Work() {
               <h2>Sep. 2019 - May. 2023</h2>
               <h2>B.S. in Electrical Engineering and Computer Science</h2>
               <h2>Minor in Mechanical Engineering</h2>
-              <h3>GPA: idk</h3>
-              <h3>Coursework: Digital Systems Laboratory, Circuits and Electronics, Dynamics and Control, Mechanics and 
-                Materials, Electromagnetic Waves and Applications, Intro to Machine Learning, Intro to Algorithms, Intro to 
-                Game Design, Toy Product Design</h3>
             </div>
           </div>
           <div className="work-card">
@@ -73,12 +85,10 @@ function Work() {
             <div className="work-description">
               <h2>Sep 2015 - Jun. 2019</h2>
               <h2>High School Student</h2>
-              <h3>Valedictorian</h3>
-              <h3>Coursework: Physics Mechanics and Electromagnetism, Multivariable Calculus, Computer Science</h3>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </article>
   );
 }
