@@ -1,4 +1,5 @@
 import { React, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 import './styles/styles.scss';
 
@@ -11,9 +12,8 @@ import Work from './pages/Work.js';
 import About from './pages/About.js';
 
 function App() {
-  const [selectedProject, selectProject] = useState(null);
-
   function scrollTo(section) {
+    if (!document.querySelector(`.${section}-section-container`)) return;
     const offsetY = document.querySelector(`.${section}-section-container`).offsetTop - document.querySelector("header.primary").clientHeight;
     window.scroll({
       top: offsetY,
@@ -24,11 +24,17 @@ function App() {
   return (
     <div className="wrapper">
       <main className="primary">
-        <Cover scrollTo={scrollTo} />
-        <Projects selectProject={selectProject} />
-        <Project selectedProject={selectedProject} selectProject={selectProject}/>
-        <Work />
-        <About />
+        <Routes>
+          <Route path="/" Component={() => <div>
+            <Cover scrollTo={scrollTo} />
+            <Projects />
+            <Work />
+            {/* <About /> */}
+          </div>} />
+          <Route path="/:id" Component={() => <div>
+            <Project />
+          </div>} />
+        </Routes>
       </main>
       <Navbar scrollTo={scrollTo} />
       <Footer />

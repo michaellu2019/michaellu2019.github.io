@@ -1,20 +1,82 @@
 import { React, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
+import { projects } from '../utils/project-list';
 
 import { ReactComponent as BackArrow } from '../assets/icons/arrow.svg'
 
 function Project(props) {
+  const locationPathname = useLocation().pathname.substring(1);
+  const project = projects.filter(p => p.name == locationPathname)[0];
+  console.log(locationPathname, project);
   return (
-    <article className={props.selectedProject !== null ? "project-section-container active" : "project-section-container"}>
+    <article className={project !== null ? "project-section-container active" : "project-section-container"}>
       <div>
-        <BackArrow className="back-arrow" onClick={() => props.selectProject(null)} />
+        <Link to="/"><BackArrow className="back-arrow" /></Link>
         <header>
-          <h1 className="heading">An Project</h1>
-          <h2 className="subheading">Personal Project, Jan. - Jun. 2021</h2>
-          <h2 className="subheading">Tech Stack: Raspberry Pi</h2>
+          <h1 className="heading">{project.title}</h1>
+          <h2 className="subheading">{project.date}</h2>
+          <h2 className="subheading">Skills: {project.skills.join(", ")}</h2>
         </header>
 
         <div className="content">
-
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
+          i <br/>
         </div>
       </div>
     </article>

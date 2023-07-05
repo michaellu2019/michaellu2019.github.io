@@ -32,6 +32,11 @@ header.primary {
       display: inline-block;
       margin: 0 1rem;
       cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 }

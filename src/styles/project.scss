@@ -3,12 +3,12 @@
   opacity: 1.0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   position: fixed;
   top: 0;
   padding: 5% 10%;
   transform: translateX(-100%);
   transition: 0.5s ease-in-out;
+  overflow-y: scroll;
 
   &.active {
     transform: translateX(0%);
@@ -42,9 +42,11 @@
       font-size: 1.5rem;
       margin: 0;
     }
+
+    margin-bottom: 2rem;
   }
 
   div.content {
-    
+
   }
 }
