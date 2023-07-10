@@ -1,10 +1,10 @@
-import amazonLogo from '../assets/images/work-amazon-logo.PNG'
-import spaceXLogo from '../assets/images/work-spacex-logo.PNG'
-import milwaukeeLogo from '../assets/images/work-milwaukee-logo.png'
-import mitLogo from '../assets/images/work-mit-logo.PNG'
-import abbLogo from '../assets/images/work-abb-logo.PNG'
-import ibmLogo from '../assets/images/work-ibm-logo.PNG'
-import gnsLogo from '../assets/images/work-gns-logo.png'
+import amazonLogo from '../assets/images/work-logos/work-amazon-logo.PNG'
+import spaceXLogo from '../assets/images/work-logos/work-spacex-logo.PNG'
+import milwaukeeLogo from '../assets/images/work-logos/work-milwaukee-logo.png'
+import mitLogo from '../assets/images/work-logos/work-mit-logo.PNG'
+import abbLogo from '../assets/images/work-logos/work-abb-logo.PNG'
+import ibmLogo from '../assets/images/work-logos/work-ibm-logo.PNG'
+import gnsLogo from '../assets/images/work-logos/work-gns-logo.png'
 
 function Work() {
   return (
@@ -30,16 +30,16 @@ function Work() {
             </div>
           </div>
           <div className="work-card">
-            <img id="amazon" src={amazonLogo} />
+            <img id="amazon" src={milwaukeeLogo} />
             <div className="work-description">
-              <h2>May. - Aug. 2022: Software Engineering Intern</h2>
+              <h2>Jan. 2023: Electrical Engineering Intern</h2>
               <h2><br /></h2>
             </div>
           </div>
           <div className="work-card">
-            <img id="amazon" src={milwaukeeLogo} />
+            <img id="amazon" src={amazonLogo} />
             <div className="work-description">
-              <h2>Jan. 2023: Electrical Engineering Intern</h2>
+              <h2>May. - Aug. 2022: Software Engineering Intern</h2>
               <h2><br /></h2>
             </div>
           </div>

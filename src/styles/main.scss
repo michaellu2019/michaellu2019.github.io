@@ -2,6 +2,10 @@ main.primary {
 	height: 100%;
 	flex: 1 0 auto;
 	margin-top: 3rem;
+
+	article:not(.project-section-container) {
+		padding: 1rem 0rem;
+	}
 }
 
 button {
@@ -26,6 +30,7 @@ button {
 
 header:not(.primary) {
 	text-align: center;
+	padding-bottom: 1rem;
 	
 	h1.heading {
 		font-size: 3rem;

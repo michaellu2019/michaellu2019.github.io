@@ -1,5 +1,5 @@
-import coverPortrait from '../assets/images/cover-portrait.png';
-import dummy from '../assets/images/dummy.png'
+import coverPortrait from '../assets/images/cover-photos/cover-portrait.png';
+import dummy from '../assets/images/cover-photos/dummy.png'
 
 function Cover(props) {
   return (

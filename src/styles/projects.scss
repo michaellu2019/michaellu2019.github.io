@@ -9,7 +9,7 @@
         font-size: 1.5rem;
 
         li {
-          opacity: 0.5;
+          opacity: 0.3;
           display: inline-block;
           margin: 0rem 1rem;
           transition: 0.1s ease-in-out;
@@ -70,32 +70,32 @@
             }
           }
 
-          &#ball { background-image: url("../assets/images/projects-ball-card.gif"); }
-          &#omni { background-image: url("../assets/images/projects-omni-card.gif"); }
-          &#bus { background-image: url("../assets/images/projects-bus-card.png"); }
-          &#yoyo { background-image: url("../assets/images/projects-yoyo-card.png"); }
-          &#laptop { background-image: url("../assets/images/projects-laptop-card.gif"); }
-          &#david { background-image: url("../assets/images/projects-david-card.gif"); }
-          &#competition { background-image: url("../assets/images/projects-competition-card.gif"); }
-          &#lego { background-image: url("../assets/images/projects-lego-card.png"); }
-          &#car { background-image: url("../assets/images/projects-car-card.png"); }
-          &#vocoder { background-image: url("../assets/images/projects-vocoder-card.png"); }
-          &#donkey { background-image: url("../assets/images/projects-donkey-card.gif"); }
-          &#ghostwriters { background-image: url("../assets/images/projects-ghostwriters-card.png"); }
-          &#boxing { background-image: url("../assets/images/projects-boxing-card.gif"); }
-          &#camera { background-image: url("../assets/images/projects-camera-card.png"); }
-          &#chatbot { background-image: url("../assets/images/projects-chatbot-card.png"); }
-          &#krabs { background-image: url("../assets/images/projects-krabs-card.gif"); }
-          &#regret { background-image: url("../assets/images/projects-regret-card.png"); }
-          &#friends { background-image: url("../assets/images/projects-friends-card.png"); }
-          &#nutriscan { background-image: url("../assets/images/projects-nutriscan-card.png"); }
-          &#beatbot { background-image: url("../assets/images/projects-beatbot-card.png"); }
-          &#toby { background-image: url("../assets/images/projects-toby-card.gif"); }
-          &#horse { background-image: url("../assets/images/projects-horse-card.png"); }
-          &#tank { background-image: url("../assets/images/projects-tank-card.gif"); }
-          &#trash { background-image: url("../assets/images/projects-trash-card.gif"); }
-          &#capacitive { background-image: url("../assets/images/projects-capacitive-card.gif"); }
-          &#euclidean { background-image: url("../assets/images/projects-euclidean-card.png"); }
+          &#ball { background-image: url("../assets/images/project-cards/projects-ball-card.gif"); }
+          &#omni { background-image: url("../assets/images/project-cards/projects-omni-card.gif"); }
+          &#bus { background-image: url("../assets/images/project-cards/projects-bus-card.png"); }
+          &#yoyo { background-image: url("../assets/images/project-cards/projects-yoyo-card.png"); }
+          &#laptop { background-image: url("../assets/images/project-cards/projects-laptop-card.gif"); }
+          &#david { background-image: url("../assets/images/project-cards/projects-david-card.gif"); }
+          &#competition { background-image: url("../assets/images/project-cards/projects-competition-card.gif"); }
+          &#lego { background-image: url("../assets/images/project-cards/projects-lego-card.png"); }
+          &#car { background-image: url("../assets/images/project-cards/projects-car-card.png"); }
+          &#vocoder { background-image: url("../assets/images/project-cards/projects-vocoder-card.png"); }
+          &#donkey { background-image: url("../assets/images/project-cards/projects-donkey-card.gif"); }
+          &#ghostwriters { background-image: url("../assets/images/project-cards/projects-ghostwriters-card.png"); }
+          &#boxing { background-image: url("../assets/images/project-cards/projects-boxing-card.gif"); }
+          &#camera { background-image: url("../assets/images/project-cards/projects-camera-card.png"); }
+          &#chatbot { background-image: url("../assets/images/project-cards/projects-chatbot-card.png"); }
+          &#krabs { background-image: url("../assets/images/project-cards/projects-krabs-card.gif"); }
+          &#regret { background-image: url("../assets/images/project-cards/projects-regret-card.png"); }
+          &#friends { background-image: url("../assets/images/project-cards/projects-friends-card.png"); }
+          &#nutriscan { background-image: url("../assets/images/project-cards/projects-nutriscan-card.png"); }
+          &#beatbot { background-image: url("../assets/images/project-cards/projects-beatbot-card.png"); }
+          &#toby { background-image: url("../assets/images/project-cards/projects-toby-card.gif"); }
+          &#horse { background-image: url("../assets/images/project-cards/projects-horse-card.png"); }
+          &#tank { background-image: url("../assets/images/project-cards/projects-tank-card.gif"); }
+          &#trash { background-image: url("../assets/images/project-cards/projects-trash-card.gif"); }
+          &#capacitive { background-image: url("../assets/images/project-cards/projects-capacitive-card.gif"); }
+          &#euclidean { background-image: url("../assets/images/project-cards/projects-euclidean-card.png"); }
         }
       }
     }

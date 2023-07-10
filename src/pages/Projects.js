@@ -1,10 +1,10 @@
 import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { ProjectTags, projects } from '../utils/project-list.js';
+import { PROJECT_TAGS, projects } from '../utils/project-list.js';
 
 function Projects(props) {
-  const [selectedCategory, selectCategory] = useState(ProjectTags.FEATURED);
+  const [selectedCategory, selectCategory] = useState(PROJECT_TAGS.FEATURED);
 
   return (
     <article className="projects-section-container">
@@ -15,9 +15,9 @@ function Projects(props) {
       <div className="content">
         <div className="projects-container">
           <ul className="projects-container-heading">
-            <li className={selectedCategory === ProjectTags.FEATURED ? `active ${ProjectTags.FEATURED}` : ProjectTags.FEATURED} onClick={() => selectCategory(ProjectTags.FEATURED)}>Featured</li>
-            <li className={selectedCategory === ProjectTags.HARDWARE ? `active ${ProjectTags.HARDWARE}` : ProjectTags.HARDWARE} onClick={() => selectCategory(ProjectTags.HARDWARE)}>Hardware</li>
-            <li className={selectedCategory === ProjectTags.SOFTWARE ? `active ${ProjectTags.SOFTWARE}` : ProjectTags.SOFTWARE} onClick={() => selectCategory(ProjectTags.SOFTWARE)}>Software</li>
+            <li className={selectedCategory === PROJECT_TAGS.FEATURED ? `active ${PROJECT_TAGS.FEATURED}` : PROJECT_TAGS.FEATURED} onClick={() => selectCategory(PROJECT_TAGS.FEATURED)}>Featured</li>
+            <li className={selectedCategory === PROJECT_TAGS.HARDWARE ? `active ${PROJECT_TAGS.HARDWARE}` : PROJECT_TAGS.HARDWARE} onClick={() => selectCategory(PROJECT_TAGS.HARDWARE)}>Hardware</li>
+            <li className={selectedCategory === PROJECT_TAGS.SOFTWARE ? `active ${PROJECT_TAGS.SOFTWARE}` : PROJECT_TAGS.SOFTWARE} onClick={() => selectCategory(PROJECT_TAGS.SOFTWARE)}>Software</li>
             <li className={selectedCategory === "all" ? "active all" : "all"} onClick={() => selectCategory("all")}>All</li>
           </ul>
 

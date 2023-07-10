@@ -1,4 +1,4 @@
-import sqwardface from '../assets/images/about-sqwardface.jpeg'
+import sqwardface from '../assets/images/cover-photos/about-sqwardface.jpeg'
 
 function About() {
   return (
