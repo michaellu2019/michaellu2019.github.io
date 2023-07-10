@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.92ce83f1.css",
-    "main.js": "/portfolio/static/js/main.937fe591.js",
+    "main.css": "/portfolio/static/css/main.7e676ade.css",
+    "main.js": "/portfolio/static/js/main.0961769d.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/projects-competition-card.gif": "/portfolio/static/media/projects-competition-card.66deb061e30d0816557e.gif",
     "static/media/projects-laptop-card.gif": "/portfolio/static/media/projects-laptop-card.fa2324e99fca08531d0f.gif",
@@ -21,6 +21,9 @@
     "static/media/dummy.png": "/portfolio/static/media/dummy.a0bf60f33f92269314ab.png",
     "static/media/cover-portrait.png": "/portfolio/static/media/cover-portrait.650f3fbc5796da493095.png",
     "static/media/projects-yoyo-card.png": "/portfolio/static/media/projects-yoyo-card.0b706ddf20b875d30a67.png",
+    "static/media/donkey-sketch.png": "/portfolio/static/media/donkey-sketch.4f6b47f7449e873f66a9.png",
+    "static/media/donkey-cover.jpg": "/portfolio/static/media/donkey-cover.8a548d22d6e7231a5097.jpg",
+    "static/media/donkey-top-view.jpg": "/portfolio/static/media/donkey-top-view.1d9d6e34988496cf6a30.jpg",
     "static/media/projects-car-card.png": "/portfolio/static/media/projects-car-card.4d93c5e37c085f8a62fc.png",
     "static/media/projects-nutriscan-card.png": "/portfolio/static/media/projects-nutriscan-card.8b44158e95b0395811c4.png",
     "static/media/projects-friends-card.png": "/portfolio/static/media/projects-friends-card.e6f883d6168b1ab39f4a.png",
@@ -28,6 +31,7 @@
     "static/media/projects-regret-card.png": "/portfolio/static/media/projects-regret-card.4d07baf978428f23dda5.png",
     "static/media/projects-vocoder-card.png": "/portfolio/static/media/projects-vocoder-card.2d5bf58a960c8b4fd11d.png",
     "static/media/projects-horse-card.png": "/portfolio/static/media/projects-horse-card.e1be7c4252ef8aeaad1e.png",
+    "static/media/donkey-cad.png": "/portfolio/static/media/donkey-cad.4325811ae502211e6dfb.png",
     "static/media/projects-euclidean-card.png": "/portfolio/static/media/projects-euclidean-card.bac39813ceccb115f0c3.png",
     "static/media/NunitoSans-Regular.ttf": "/portfolio/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
     "static/media/projects-ghostwriters-card.png": "/portfolio/static/media/projects-ghostwriters-card.31c6c7af7d7b0a4aaebb.png",
@@ -36,18 +40,19 @@
     "static/media/about-sqwardface.jpeg": "/portfolio/static/media/about-sqwardface.4f074e99c856f3e54a44.jpeg",
     "static/media/work-gns-logo.png": "/portfolio/static/media/work-gns-logo.69b551500b323e452102.png",
     "static/media/work-milwaukee-logo.png": "/portfolio/static/media/work-milwaukee-logo.8c593f0828c8b38c7580.png",
+    "static/media/donkey-kinematics.jpg": "/portfolio/static/media/donkey-kinematics.86fc26a7d061559e78a6.jpg",
     "static/media/work-abb-logo.PNG": "/portfolio/static/media/work-abb-logo.c7ddd495462c25b263f0.PNG",
     "static/media/work-mit-logo.PNG": "/portfolio/static/media/work-mit-logo.a89b63789230a7cb8760.PNG",
     "static/media/work-ibm-logo.PNG": "/portfolio/static/media/work-ibm-logo.b13565a2654553da7926.PNG",
     "static/media/work-spacex-logo.PNG": "/portfolio/static/media/work-spacex-logo.ed8e14daf1d144d9dae8.PNG",
     "index.html": "/portfolio/index.html",
     "static/media/arrow.svg": "/portfolio/static/media/arrow.848e0f18c28a360fd30017cbdde52520.svg",
-    "main.92ce83f1.css.map": "/portfolio/static/css/main.92ce83f1.css.map",
-    "main.937fe591.js.map": "/portfolio/static/js/main.937fe591.js.map",
+    "main.7e676ade.css.map": "/portfolio/static/css/main.7e676ade.css.map",
+    "main.0961769d.js.map": "/portfolio/static/js/main.0961769d.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92ce83f1.css",
-    "static/js/main.937fe591.js"
+    "static/css/main.7e676ade.css",
+    "static/js/main.0961769d.js"
   ]
 }
