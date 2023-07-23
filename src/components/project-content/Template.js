@@ -57,6 +57,10 @@ function Template(props) {
         <h1>Results</h1>
         <p>Results text.</p>
         {/* <iframe src="#" title="#" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
+      </div>
+
+      <div className="project-content-container-section project-improvements">
+        <h1>Improvements</h1>
         <p>Be better
           <ul>
             <li>Improvement</li>

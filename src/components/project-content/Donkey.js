@@ -76,6 +76,10 @@ function Donkey(props) {
         <h1>Results</h1>
         <p>Eventually, I was able to program a teleoperated quadruped donkey that could walk in all directions. I also programmed the Raspberry Pi to play audio clips through the robot's mini speakers.</p>
         <iframe src="https://www.youtube.com/embed/A4OMXvGx_4I" title="Ogres Have Layers" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      </div>
+
+      <div className="project-content-container-section project-improvements">
+        <h1>Improvements</h1>
         <p>If I were to improve upon this project, I'd be sure to tacke a couple of big design flaws:
           <ul>
             <li>The mechanical design of the robot made it easy to fabricate and assemble, but also placed a lot of weight in the legs as mass was distributed throughout the leg. This made the legs super slow, resulting in a lot of drift and tipping as the robot walked. This is why a lot of legged robots keep actuators closer to the hip and shoulder area and use belt-drives to rotate far-away joints, reducing the amount of mass swinging around.</li>

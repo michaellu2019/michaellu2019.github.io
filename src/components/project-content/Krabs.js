@@ -51,8 +51,6 @@ function Krabs(props) {
         <h1>Fabrication</h1>
         <p>Based on the dimensions planned in CAD, I carved out parts for eight legs from the foam core sheets given to us from the class. Rigid parts of the linkage were created with foam core glued together to make solid blocks. Linkages would be joined with folded paper to create hinge-joints between components.</p>
         <p>The drive shaft and leg carriage shafts would be made out of paperclip wire, and the legs would have paper bushings glued to them, which would slide onto the paper clip wire shafts.</p>
-        <p></p>
-        <p></p>
         <div className="image-next-to-container">
           <div className="image-container"><img src={krabsLegs} /></div>
           <div className="image-container"><img src={krabsElectronics} /></div>
@@ -88,6 +86,10 @@ function Krabs(props) {
         <h1>Results</h1>
         <p>I was able to build two Krabs by the end of two months while meeting the class's budget requirement.</p>
         <iframe src="https://www.youtube.com/embed/xg4couBU9fM" title="Kombat Krabs" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      </div>
+
+      <div className="project-content-container-section project-improvements">
+        <h1>Improvements</h1>
         <p>While the class's budget limit provided a difficult constraint to building a high-fidelity toy product, there were still some process optimizations (especially for the fabrication of leg parts) that could have been implemented to improve the project outcome.
           <ul>
             <li>Since most of the Krab parts were hand-made, there was undoubtably a lot of variance in the parts produced. Having a method to measure and reject parts that were out of spec (by mass or dimensions) would likely improve the machine's overall quality.</li>

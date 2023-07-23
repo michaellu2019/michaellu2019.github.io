@@ -53,16 +53,16 @@ function Lego(props) {
             <p>
               Hardware:
               <ul>
-                <li>goBilda 25-2 Torque Servo Motor</li>
-                <li>5052 Aluminum 1/16" Sheet Metal and 6061 Aluminum 1/2" Plates</li>
+                <li>1 × goBilda 25-2 Torque Servo Motor</li>
+                <li>5052-H32 Aluminum 1/16" Sheet Metal and 6061-T6 Aluminum 1/2" Plates</li>
                 <li>1.75mm PETG 3D-Printer Filament</li>
                 <li>Lots of Fasteners</li>
               </ul>  
 
               Electronics:
               <ul>
-                <li>Arduino Uno R3</li>
-                <li>USB Webcam</li>
+                <li>1 × Arduino Uno R3</li>
+                <li>1 × USB Webcam</li>
               </ul>  
             </p>
           </div>
@@ -91,7 +91,11 @@ function Lego(props) {
         <h1>Results</h1>
         <p>Combining the two software components, we were able to build a robot arm where a human could teleoperate the robot arm with visual assistance from the output of the comptuer vision system. The robot arm could be indexed to the desired approximate position of a Lego® brick, and the compliance in the gripper would remove the need to be perfectly aligned to grab the brick.</p>
         <iframe src="https://www.youtube.com/embed/oTqwCtPKNQM" title="MIT 2.12 Final Project: Lego-Building UR5 Robot Arm" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        <p>Some improvements that include:
+      </div>
+
+      <div className="project-content-container-section project-improvements">
+        <h1>Improvements</h1>
+        <p>Some improvements include:
           <ul>
             <li>Fine-tuning the 3D-printed filament compliance mechanism would make the end effector more reliable, since we often found the strands would plastically deform if slammed into the block. Experimenting with different strand materials, configurations, dimensions, and quantities could help with this.</li>
             <li>Integrating the computer vision and control software to make the robot fully autonomous would improve the robot performance, since human-controlled indexing made the robot extremely slow.</li>

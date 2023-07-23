@@ -9,7 +9,7 @@ export const PROJECT_TAGS = {
   FEATURED: "featured",
 }
 
-export const MECHATRONICS_PROJECT_SECTIONS = ["overview", "ideation", "design", "fabrication", "programming", "results"];
+export const MECHATRONICS_PROJECT_SECTIONS = ["overview", "ideation", "design", "fabrication", "programming", "results", "improvements"];
 
 
 function Project(id, name, title, description, tags, date, 
@@ -39,7 +39,7 @@ const hardwareProjects = [
   new Project(24, "laptop", "ROS Laptop", "A 6DOF robot arm that takes commands from a laptop running ROS, enabling it to move around and press keyboard keys.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "July - August 2022", "", "", ["ROS", "CAD", "3D Printing", "C++", "Arduino"]),
   new Project(23, "competition", "MIT Competition Robot", "An aluminum robot, featuring a belt-driven cascade lift, detachable winch, and tank chassis, designed to lift and pull heavy items in the final compoetition of 2.007, MIT's design and manufacturing class.", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "February - May 2022", "", "", ["Feedback Control", "CAD", "Machining", "C++", "Arduino"], MECHATRONICS_PROJECT_SECTIONS, Competition),
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "February - May 2022", "https://github.com/michaellu2019/big-daddy", "https://youtu.be/f2lEhvnP2P4", ["Feedback Control", "CAD", "Machining", "C++", "Arduino"], MECHATRONICS_PROJECT_SECTIONS, Competition),
   new Project(22, "lego", "Lego Building Bot", "A ROS-controlled 6DOF UR5 robot arm that leverages OpenCV computer vision and a compliant gripper to assemble giant Lego bricks.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "April - May 2022", "https://github.com/michaellu2019/2.12-final-project", "https://youtu.be/oTqwCtPKNQM", ["ROS", "OpenCV", "3D Printing", "Python", "C++"], MECHATRONICS_PROJECT_SECTIONS, Lego),
   new Project(17, "donkey", "Robot Donkey", "A WiFi-controlled robotic donkey that walks and moves its head using inverse kinematics.", 

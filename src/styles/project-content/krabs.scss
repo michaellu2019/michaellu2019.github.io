@@ -24,7 +24,6 @@ div#krabs-project-content-container {
 
     div.project-design {
         div.image-next-to-container {
-            grid-gap: 1rem;
             grid-template-columns: 1fr 1fr;
             
             video:nth-of-type(1) {
@@ -44,7 +43,6 @@ div#krabs-project-content-container {
 
     div.project-fabrication {
         div.image-next-to-container {
-            grid-gap: 1rem;
             div.image-container {
                 img {
                     height: 100%;

@@ -77,6 +77,10 @@
         max-width: 100%;
       }
 
+      video {
+        max-width: 100%;
+      }
+
       iframe {
         min-width: 50%;
         aspect-ratio: 1080 / 720;
@@ -89,7 +93,12 @@
 
       div.image-next-to-container {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: fit-content(40vw) fit-content(40vw);
+        grid-gap: 1rem;
+
+        div.image-container {
+          display: inline-block;
+        }
       }
     }
   }
