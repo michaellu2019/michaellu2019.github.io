@@ -22,7 +22,7 @@ function Competition(props) {
     <div className="project-content-container" id="competition-project-content-container">
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
-        <p>This robot was for the final competition of 2.007, MIT’s design and manufacturing class. The aluminum robot featured a belt-driven cascade lift, detachable winch, and tank chassis to lift and pull heavy items on the competition field.</p>
+        <p>This robot was built for the final competition of 2.007, MIT’s design and manufacturing class. The aluminum robot featured a belt-driven cascade lift, detachable winch, and tank chassis to lift and pull heavy items on the competition field. Many of the components of the robot were designed and fabricated from stock from scratch.</p>
         <img src={competitionCover} />
       </div>
 
@@ -37,7 +37,7 @@ function Competition(props) {
          <p>Based on these requirements, I identified the key mechanisms for my robot were going to be a grippy tank chassis for climbing up the game board hill, a powerful cascade lift to lift up the 17N weight and pull down the 20N pendulum, and high torque winch that could pull the 12N weight on the pulley.</p>
         <div className="image-next-to-container">
           <div className="image-container"><img src={competitionHandCalcs} /></div>
-          <div>
+          <div className="text-container">
             <p>A lot of analysis was done early on to see what torques, speeds, and power outputs were needed to achieve these game objectives. This was especially crucial since robots were only allowed a certain number and type of actuators and batteries from the specified kit of materials.</p>
           </div>
         </div>
@@ -79,31 +79,29 @@ function Competition(props) {
         </div>
         <p>The winch was made from pieces aluminum stock fastened together and two LDO 217:1 DC motors that spun a laser-cut acrylic winch and hook. The winch would be carried along by the robot, resting on two Delrin rails. When it was to be deployed, the winch hook would spin backwards to push itself off the robot, and the folded legs would come down. These legs spaced the winch from the wall and the pulley weight handle so the hook could spin and grab it consistently.</p>
         <img src={competitionWinch} />
-        <p>
-          Hardware:
-          <ul>
-            <li>2 × goBilda 25-3 Speed Servo Motors</li>
-            <li>1 × goBilda 25-2 Torque Servo Motors</li>
-            <li>2 × LDO 217:1 Gearhead DC Motors</li>
-            <li>A Bunch of McMaster-Carr Bearings, Plastic Pulleys, Nylon Bushings, Nylon Gears, etc.</li>
-            <li>Lots of 6mm Timing Belt</li>
-            <li>Lots Delrin, 1/8" Thick Acrylic 5052-H32 Aluminum 1/16" Sheet Metal, 6063-T6 Aluminum 1/16" Box Extrusion and 1/8" Box Extrusion, 6061-T6 Angle Extrusion, and 6061-T6 Rods</li>
-            <li>Too Many Fasteners (the Majority of Which Are Probably #8 Screws)</li>
-          </ul>  
+        <p>Hardware:</p>
+        <ul>
+          <li>2 × goBilda 25-3 Speed Servo Motors</li>
+          <li>1 × goBilda 25-2 Torque Servo Motors</li>
+          <li>2 × LDO 217:1 Gearhead DC Motors</li>
+          <li>A Bunch of McMaster-Carr Bearings, Plastic Pulleys, Nylon Bushings, Nylon Gears, etc.</li>
+          <li>Lots of 6mm Timing Belt</li>
+          <li>Lots Delrin, 1/8" Thick Acrylic 5052-H32 Aluminum 1/16" Sheet Metal, 6063-T6 Aluminum 1/16" Box Extrusion and 1/8" Box Extrusion, 6061-T6 Angle Extrusion, and 6061-T6 Rods</li>
+          <li>Too Many Fasteners (the Majority of Which Are Probably #8 Screws)</li>
+        </ul>  
 
-          Electronics:
-          <ul>
-            <li>1 × Arduino Nano</li>
-            <li>1 × MPU6050 Accelerometer</li>
-            <li>2 × goBilda Micro Limit Switches</li>
-            <li>2 × QTR-1A Reflectance Sensors</li>
-            <li>1 × Photoresistor</li>
-            <li>1 × goBilda RC Receiver and Remote</li>
-            <li>1 × Sony PS2 Receiver and Controller</li>
-            <li>4 × AA Batteries</li>
-            <li>1 × 7.4V LiPo Battery</li>
-          </ul>  
-        </p>
+        <p>Electronics:</p>
+        <ul>
+          <li>1 × Arduino Nano</li>
+          <li>1 × MPU6050 Accelerometer</li>
+          <li>2 × goBilda Micro Limit Switches</li>
+          <li>2 × QTR-1A Reflectance Sensors</li>
+          <li>1 × Photoresistor</li>
+          <li>1 × goBilda RC Receiver and Remote</li>
+          <li>1 × Sony PS2 Receiver and Controller</li>
+          <li>4 × AA Batteries</li>
+          <li>1 × 7.4V LiPo Battery</li>
+        </ul>  
       </div>
       
       <div className="project-content-container-section project-programming">
@@ -120,14 +118,14 @@ function Competition(props) {
       </div>
 
       <div className="project-content-container-section project-improvements">
-        <h1>Improvements</h1><p>While the robot was able to complete all the high-scoring game objectives, it was definitely overengineered and would have benefited from a few adjustments:
-          <ul>
-            <li>The robot was designed in an iterative process (partly due to the nature of the class's weekly deliverables), i.e. design a mechanism, fabricate it, then design and fabricate the next mechanism, etc. However, this meant that a lot of early decisions negatively impacted, especially in terms of leaving space and mounting points for future mechanisms. For instance, the elevator was designed and built early on with little consideration for how much space it would take up, making it more difficult to design the winch within the robot dimension limits.</li>
-            <li>The robot suffered from overengineering, especially with the tank chassis, which contributed to most of the robot's unecessary weight while making it slower. More analysis should have been done early on to see if using the provided wheels in the kit of parts would provide enough tracion.</li>
-            <li>Too many mechanisms on the robot required manual machining rather than the available computer-aided manufacturing methods e.g. water jetting, laser cutting, 3D printing. This lead to bulky, heavy mechanisms that required a lot of fasteners (fasteners ended up adding a significant amount of weight!) and took a lot of time to make. In addition, over reliance on manual machining still led to a lot of fabrication errors, and parts being out of spec, leading to poor manufacturing quality that had to be patched in software.</li>
-            <li>The software did minimal processing to sensor data (e.g. the accelerometer data and the line-following sensor data), which led to control functions making decisions on noisy data, leading to unreliable autonomous behavior, coupled with the unreliability caused by poor manufacturing.</li>
-          </ul>
-        </p>
+        <h1>Improvements</h1>
+        <p>While the robot was able to complete all the high-scoring game objectives, it was definitely overengineered and would have benefited from a few adjustments:</p>
+        <ul>
+          <li>The robot was designed in an iterative process (partly due to the nature of the class's weekly deliverables), i.e. design a mechanism, fabricate it, then design and fabricate the next mechanism, etc. However, this meant that a lot of early decisions negatively impacted, especially in terms of leaving space and mounting points for future mechanisms. For instance, the elevator was designed and built early on with little consideration for how much space it would take up, making it more difficult to design the winch within the robot dimension limits.</li>
+          <li>The robot suffered from overengineering, especially with the tank chassis, which contributed to most of the robot's unecessary weight while making it slower. More analysis should have been done early on to see if using the provided wheels in the kit of parts would provide enough tracion.</li>
+          <li>Too many mechanisms on the robot required manual machining rather than the available computer-aided manufacturing methods e.g. water jetting, laser cutting, 3D printing. This lead to bulky, heavy mechanisms that required a lot of fasteners (fasteners ended up adding a significant amount of weight!) and took a lot of time to make. In addition, over reliance on manual machining still led to a lot of fabrication errors, and parts being out of spec, leading to poor manufacturing quality that had to be patched in software.</li>
+          <li>The software did minimal processing to sensor data (e.g. the accelerometer data and the line-following sensor data), which led to control functions making decisions on noisy data, leading to unreliable autonomous behavior, coupled with the unreliability caused by poor manufacturing.</li>
+        </ul>
       </div>
     </div>
   );

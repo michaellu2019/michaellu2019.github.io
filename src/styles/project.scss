@@ -91,6 +91,14 @@
         font-size: 1.5rem;
       }
 
+      ul {
+        font-size: 1.5rem;
+      }
+
+      span.code-text {
+        font-family: "Courier New"
+      }
+
       div.image-next-to-container {
         display: grid;
         grid-template-columns: fit-content(40vw) fit-content(40vw);
@@ -98,6 +106,12 @@
 
         div.image-container {
           display: inline-block;
+        }
+
+        div.text-container {
+          p:nth-of-type(1) {
+            margin-top: 0;
+          }
         }
       }
     }

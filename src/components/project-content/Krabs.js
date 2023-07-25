@@ -24,7 +24,7 @@ function Krabs(props) {
         
         <div className="image-next-to-container">
           <div className="image-container"><img src={jansensLinkage} /></div>
-          <div>
+          <div className="text-container">
             <p>By attaching several linkages of particular lengths together and driving the leg with a rotational actuator, such as a motor, the linkage would generate a smooth walking motion. Jansen's Linkage was also quite scalable because multiple sets of linkages could be attached to one rotor to create <a href="https://youtu.be/MYGJ9jrbpvg" target="_blank">bipeds, quadrupeds, octopeds, etc.</a></p>
           </div>
         </div>
@@ -44,7 +44,7 @@ function Krabs(props) {
           <div className="image-container"><img src={krabsCAD} /></div>
         </div>
         <p>The entire Krab was modeled in Autodesk Fusion360 to work out how I would be able to fit eight legs inside a foam core frame along with all the necessary electronics.</p>
-        <iframe src="https://mymit709.autodesk360.com/g/shares/SH56a43QTfd62c1cd968c5e3fd890a4bc8e1" frameBorder="0" webkitallowFullScreen mozallowFullScreen allowFullScreen></iframe>
+        <iframe src="https://mymit709.autodesk360.com/g/shares/SH56a43QTfd62c1cd968c5e3fd890a4bc8e1" frameBorder="0" allowFullScreen></iframe>
       </div>
       
       <div className="project-content-container-section project-fabrication">
@@ -56,23 +56,21 @@ function Krabs(props) {
           <div className="image-container"><img src={krabsElectronics} /></div>
         </div>
         <p>The biggest challenge of prototyping was optimizing the Krab's walking curve by tweaking the dimensions of Jansen’s linkage for the Krab legs. The initial linkage lengths made the Krab's walk too unstable, so some linkage segments were shortened to reduce the size of the Krab's walking curve. This allowed the Krab could maintain its balance, especially with a high center of gravity.</p>
-        <p>
-          Hardware:
-          <ul>
-            <li>1 × SG90 Micro Servo Motor</li>
-            <li>2 × Antrader Dual-shaft Gear Motors</li>
-            <li>Foam Core and Paper</li>
-            <li>Paper Clips</li>
-          </ul>  
+        <p>Hardware:</p>
+        <ul>
+          <li>1 × SG90 Micro Servo Motor</li>
+          <li>2 × Antrader Dual-shaft Gear Motors</li>
+          <li>Foam Core and Paper</li>
+          <li>Paper Clips</li>
+        </ul>  
 
-          Electronics:
-          <ul>
-            <li>1 × Arduino Uno R3</li>
-            <li>1 × L298N Motor Driver</li>
-            <li>2 × 9V Batteries</li>
-            <li>5 × Chanzon Tactile Push Button Switches</li>
-          </ul>
-        </p>
+        <p>Electronics:</p>
+        <ul>
+          <li>1 × Arduino Uno R3</li>
+          <li>1 × L298N Motor Driver</li>
+          <li>2 × 9V Batteries</li>
+          <li>5 × Chanzon Tactile Push Button Switches</li>
+        </ul>
       </div>
       
       <div className="project-content-container-section project-programming">
@@ -90,12 +88,11 @@ function Krabs(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>While the class's budget limit provided a difficult constraint to building a high-fidelity toy product, there were still some process optimizations (especially for the fabrication of leg parts) that could have been implemented to improve the project outcome.
-          <ul>
-            <li>Since most of the Krab parts were hand-made, there was undoubtably a lot of variance in the parts produced. Having a method to measure and reject parts that were out of spec (by mass or dimensions) would likely improve the machine's overall quality.</li>
-            <li>Optimizing the fabrication process to be more consistent with the use of jigs, guides, and part templates rather would likely lead to more consistent part output.</li>
-          </ul>
-        </p>
+        <p>While the class's budget limit provided a difficult constraint to building a high-fidelity toy product, there were still some process optimizations (especially for the fabrication of leg parts) that could have been implemented to improve the project outcome.</p>
+        <ul>
+          <li>Since most of the Krab parts were hand-made, there was undoubtably a lot of variance in the parts produced. Having a method to measure and reject parts that were out of spec (by mass or dimensions) would likely improve the machine's overall quality.</li>
+          <li>Optimizing the fabrication process to be more consistent with the use of jigs, guides, and part templates rather would likely lead to more consistent part output.</li>
+        </ul>
       </div>
     </div>
   );

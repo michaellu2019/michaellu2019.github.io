@@ -22,7 +22,7 @@ function Donkey(props) {
         <p>Each robot leg had a "shoulder" joint that connected it to the body and allowed the leg to swing to the side, an "upper leg joint" that allowed the entire leg to swing forward and backword, and an "elbow joint" that connected the upper and lower leg.</p>
         <div className="image-next-to-container">
           <div className="image-container"><img src={donkeyKinematics} /></div>
-          <div>
+          <div className="text-container">
             <p>I tackled the problem by isolating one leg, and modeling it as a two-linkage system attached to the body with a pivot joint. I then viewed this system as an isoceles triangle and used the law of cosines and triangle geometric properties to solve for the two unique angle values that would give a particular distance between the shoulder joint and ground.</p>
             <p>This process was repeated for all the legs and different joints on the robot. A lot of trigonometry occurred... Like... a lot...</p>
           </div>
@@ -41,27 +41,25 @@ function Donkey(props) {
         <h1>Fabrication</h1>
         <p>Because the robot donkey was designed to be easily assembled, most of the fabrication and assembly process involved fastening together different off-the-shelf components or 3D-printed parts.</p>
         <img src={donkeyTopView} />
-        <p>
-          Hardware:
-          <ul>
-            <li>12 × Hobbypark HDR315M 15kg Digital High Torque Servos with Aluminum Mounting Brackets</li>  
-            <li>2 × SG90 Micro Servos</li>
-            <li>Lots of × M3 Bolts and Nuts</li>
-            <li>Several × 3D-Printed Hoofs and Micro Servo Brackets and a Donkey Neck or Something...</li>
-            <li>A Block of Wood and Some Foam Core</li>
-            <li>A Pair of Googly Eyes 👀</li>
-          </ul>  
+        <p>Hardware:</p>
+        <ul>
+          <li>12 × Hobbypark HDR315M 15kg Digital High Torque Servos with Aluminum Mounting Brackets</li>  
+          <li>2 × SG90 Micro Servos</li>
+          <li>Lots of M3 Bolts and Nuts</li>
+          <li>Several 3D-Printed Hoofs and Micro Servo Brackets and a Donkey Neck or Something...</li>
+          <li>A Block of Wood and Some Foam Core</li>
+          <li>A Pair of Googly Eyes 👀</li>
+        </ul>  
 
-          Electronics:
-          <ul>
-            <li>1 × Raspberry Pi</li>  
-            <li>1 × PCA9695 16-Channel Servo Driver</li>
-            <li>1 × Super Mini PAM8403 Audio Amplifier </li>
-            <li>2 × MakerHawk 3W 8Ω Mini Speakers</li>
-            <li>1 × 7.4V LiPo Battery</li>
-            <li>1 × Small USB Power Bank</li>
-          </ul>  
-        </p>
+        <p>Electronics:</p>
+        <ul>
+          <li>1 × Raspberry Pi</li>  
+          <li>1 × PCA9695 16-Channel Servo Driver</li>
+          <li>1 × Super Mini PAM8403 Audio Amplifier </li>
+          <li>2 × MakerHawk 3W 8Ω Mini Speakers</li>
+          <li>1 × 7.4V LiPo Battery</li>
+          <li>1 × Small USB Power Bank</li>
+        </ul>  
       </div>
       
       <div className="project-content-container-section project-programming">
@@ -80,13 +78,12 @@ function Donkey(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>If I were to improve upon this project, I'd be sure to tacke a couple of big design flaws:
-          <ul>
-            <li>The mechanical design of the robot made it easy to fabricate and assemble, but also placed a lot of weight in the legs as mass was distributed throughout the leg. This made the legs super slow, resulting in a lot of drift and tipping as the robot walked. This is why a lot of legged robots keep actuators closer to the hip and shoulder area and use belt-drives to rotate far-away joints, reducing the amount of mass swinging around.</li>
-            <li>The electrical system of the robot was simple and rudimentary but also meant that the high-power LiPo battery would often cause the servo driver board to ignite if too much current was drawn. This was patched up in software by setting joint limits to reduce the chance of servo motors stalling, but a fuse, breaker, or current-sensing component would make the robot less flammably-inclined.</li>
-            <li>The software of the robot was written in Python, which made programming convenient, but could have negatively affected the robot's speed, being a slower language. This would matter more, as the robot donkey required joint angles to be written quickly to the servo motor to ensure it wouldn't start tipping over.</li>
-          </ul>
-        </p>
+        <p>If I were to improve upon this project, I'd be sure to tacke a couple of big design flaws:</p>
+        <ul>
+          <li>The mechanical design of the robot made it easy to fabricate and assemble, but also placed a lot of weight in the legs as mass was distributed throughout the leg. This made the legs super slow, resulting in a lot of drift and tipping as the robot walked. This is why a lot of legged robots keep actuators closer to the hip and shoulder area and use belt-drives to rotate far-away joints, reducing the amount of mass swinging around.</li>
+          <li>The electrical system of the robot was simple and rudimentary but also meant that the high-power LiPo battery would often cause the servo driver board to ignite if too much current was drawn. This was patched up in software by setting joint limits to reduce the chance of servo motors stalling, but a fuse, breaker, or current-sensing component would make the robot less flammably-inclined.</li>
+          <li>The software of the robot was written in Python, which made programming convenient, but could have negatively affected the robot's speed, being a slower language. This would matter more, as the robot donkey required joint angles to be written quickly to the servo motor to ensure it wouldn't start tipping over.</li>
+        </ul>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ function Work() {
           <div className="work-card">
             <img id="spaceX2" src={spaceXLogo} />
             <div className="work-description">
-              <h2>Jun. - Aug. 2023: Automation and Controls Engineering Intern</h2>
+              <h2>Jun. - Aug. 2023: Mechatronics Intern</h2>
               <h2>Jun. - Aug. 2021: Software Engineering Intern</h2>
             </div>
           </div>

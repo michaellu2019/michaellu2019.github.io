@@ -2,6 +2,7 @@ import Donkey from '../components/project-content/Donkey.js'
 import Krabs from '../components/project-content/Krabs.js'
 import Lego from '../components/project-content/Lego.js'
 import Competition from '../components/project-content/Competition.js'
+import Laptop from '../components/project-content/Laptop.js'
 
 export const PROJECT_TAGS = {
   HARDWARE: "hardware",
@@ -36,8 +37,8 @@ const hardwareProjects = [
               [PROJECT_TAGS.HARDWARE], "February - May 2023", "", "", ["CAD", "3D Printing", "PCB Design", "Soldering", "C", "Python", "ESP32"]),
   new Project(26, "yoyo", "Snow Globe Yo-Yos", "A snow-globe themed yo-yo designed for mass manufacturing, comprising of several injection-molded and thermoformed parts.", 
               [PROJECT_TAGS.HARDWARE], "February - April 2023", "", "", ["Design for Manufacturing", "CAD", "CAM", "Injection Molding", "Thermoforming"]),
-  new Project(24, "laptop", "ROS Laptop", "A 6DOF robot arm that takes commands from a laptop running ROS, enabling it to move around and press keyboard keys.", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "July - August 2022", "", "", ["ROS", "CAD", "3D Printing", "C++", "Arduino"]),
+  new Project(24, "laptop", "Laptop Bot", "A 6DOF robot arm that takes commands from a laptop running ROS, enabling it to move around and press keyboard keys.", 
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "July - August 2022", "https://youtu.be/Iixz6tXIA5E", "https://github.com/michaellu2019/laptop", ["ROS", "CAD", "3D Printing", "C++", "Arduino"], MECHATRONICS_PROJECT_SECTIONS, Laptop),
   new Project(23, "competition", "MIT Competition Robot", "An aluminum robot, featuring a belt-driven cascade lift, detachable winch, and tank chassis, designed to lift and pull heavy items in the final compoetition of 2.007, MIT's design and manufacturing class.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "February - May 2022", "https://github.com/michaellu2019/big-daddy", "https://youtu.be/f2lEhvnP2P4", ["Feedback Control", "CAD", "Machining", "C++", "Arduino"], MECHATRONICS_PROJECT_SECTIONS, Competition),
   new Project(22, "lego", "Lego Building Bot", "A ROS-controlled 6DOF UR5 robot arm that leverages OpenCV computer vision and a compliant gripper to assemble giant Lego bricks.", 

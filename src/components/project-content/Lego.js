@@ -17,7 +17,7 @@ function Lego(props) {
     <div className="project-content-container" id="lego-project-content-container">
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
-        <p>The Lego Building Bot was a ROS-controlled 6DOF UR5 robot arm that leveraged OpenCV computer vision and a compliant gripper to retrieve and assemble giant Lego® bricks for the final competition of 2.12 - Introduction to Robotics.</p>
+        <p>The Lego Building Bot was a ROS-controlled 6 degrees-of-freedom (DOF) UR5 robot arm that leveraged OpenCV computer vision and a compliant gripper to retrieve and assemble giant Lego® bricks for the final competition of 2.12 - Introduction to Robotics.</p>
         <img src={legoCover} />
       </div>
 
@@ -48,23 +48,21 @@ function Lego(props) {
         <p>The end effector frame was built out of two aluminum 5052 bent sheet metal brackets and two plates of machined aluminum 6061. The gripper and UR5 robot arm parts of the end effector were connected with six 1.75mm PETG 3D-printer filament strands, which were attached to the machined plates via 3D-printed brackets. The servo fingers were 3D-printed, and one of them was attached to a goBilda servo motor.</p>
         <div className="image-next-to-container">
           <div className="image-container"><img src={legoUR5} /></div>
-          <div>
+          <div className="text-container">
             <p>The end effector was fastened to a UR5 mounting plate that attached to the final link of a UR5 robot.</p>
-            <p>
-              Hardware:
-              <ul>
-                <li>1 × goBilda 25-2 Torque Servo Motor</li>
-                <li>5052-H32 Aluminum 1/16" Sheet Metal and 6061-T6 Aluminum 1/2" Plates</li>
-                <li>1.75mm PETG 3D-Printer Filament</li>
-                <li>Lots of Fasteners</li>
-              </ul>  
+            <p>Hardware:</p>
+            <ul>
+              <li>1 × goBilda 25-2 Torque Servo Motor</li>
+              <li>5052-H32 Aluminum 1/16" Sheet Metal and 6061-T6 Aluminum 1/2" Plates</li>
+              <li>1.75mm PETG 3D-Printer Filament</li>
+              <li>Lots of Fasteners</li>
+            </ul>  
 
-              Electronics:
-              <ul>
-                <li>1 × Arduino Uno R3</li>
-                <li>1 × USB Webcam</li>
-              </ul>  
-            </p>
+            <p>Electronics:</p>
+            <ul>
+              <li>1 × Arduino Uno R3</li>
+              <li>1 × USB Webcam</li>
+            </ul>  
           </div>
         </div>
       </div>
@@ -95,12 +93,11 @@ function Lego(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>Some improvements include:
-          <ul>
-            <li>Fine-tuning the 3D-printed filament compliance mechanism would make the end effector more reliable, since we often found the strands would plastically deform if slammed into the block. Experimenting with different strand materials, configurations, dimensions, and quantities could help with this.</li>
-            <li>Integrating the computer vision and control software to make the robot fully autonomous would improve the robot performance, since human-controlled indexing made the robot extremely slow.</li>
-          </ul>
-        </p>
+        <p>Some improvements include:</p>
+        <ul>
+          <li>Fine-tuning the 3D-printed filament compliance mechanism would make the end effector more reliable, since we often found the strands would plastically deform if slammed into the block. Experimenting with different strand materials, configurations, dimensions, and quantities could help with this.</li>
+          <li>Integrating the computer vision and control software to make the robot fully autonomous would improve the robot performance, since human-controlled indexing made the robot extremely slow.</li>
+        </ul>
       </div>
     </div>
   );

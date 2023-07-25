@@ -22,10 +22,10 @@ function Cover(props) {
           <img src={dummy} />
         </div>
         <div className="cover-text">
-          I make hardware ⚙️ go beep boop bop 🤖 for a living (and for fun). I studied electrical engineering and computer science and mechanical engineering at MIT.
+          I make hardware ⚙️ go beep boop bop 🤖 for a living (and for fun). I studied electrical engineering and computer science along with mechanical engineering at MIT.
           <br /> 
           <br />
-          I've worked as an software engineering intern at Amazon, an undergraduate robotics researcher at MIT, and most recently, a mechatronics intern at SpaceX.
+          I've worked as a software engineering intern at Amazon, electrical engineering intern at Milwaukee Tool, undergraduate researcher at MIT, and most recently, a mechatronics intern at SpaceX.
           Zoo wee mama!
         </div>
       </div>

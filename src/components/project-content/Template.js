@@ -61,13 +61,12 @@ function Template(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>Be better
-          <ul>
-            <li>Improvement</li>
-            <li>Improvement</li>
-            <li>Improvement</li>
-          </ul>
-        </p>
+        <p>Be better:</p>
+        <ul>
+          <li>Improvement</li>
+          <li>Improvement</li>
+          <li>Improvement</li>
+        </ul>
       </div>
     </div>
   );
