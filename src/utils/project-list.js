@@ -3,6 +3,7 @@ import Krabs from '../components/project-content/Krabs.js'
 import Lego from '../components/project-content/Lego.js'
 import Competition from '../components/project-content/Competition.js'
 import Laptop from '../components/project-content/Laptop.js'
+import Chatbot from '../components/project-content/Chatbot.js'
 
 export const PROJECT_TAGS = {
   HARDWARE: "hardware",
@@ -11,6 +12,7 @@ export const PROJECT_TAGS = {
 }
 
 export const MECHATRONICS_PROJECT_SECTIONS = ["overview", "ideation", "design", "fabrication", "programming", "results", "improvements"];
+export const SOFTWARE_PROJECT_SECTIONS = ["overview", "ideation", "design", "programming", "results", "improvements"];
 
 
 function Project(id, name, title, description, tags, date, 
@@ -83,7 +85,7 @@ const softwareProjects = [
   new Project(16, "ghostwriters", "Ghostwriters", "A ReactJS and Golang-based CRUD web-app that allows users to collaboratively create stories.", 
               [PROJECT_TAGS.SOFTWARE], "May 2021", "", "", ["Golang", "ReactJS"]),
   new Project(12, "chatbot", "Facebook Chatbot", "A Tensorflow-based Transformer deep learning model trained on my text messages to create an online chatbot.", 
-              [PROJECT_TAGS.SOFTWARE, PROJECT_TAGS.FEATURED], "June 2020", "", "", ["Deep Learning", "TensorFlow", "Python"]),
+              [PROJECT_TAGS.SOFTWARE, PROJECT_TAGS.FEATURED], "June 2020", "https://github.com/michaellu2019/Sadmanda-Chatbot", "https://youtu.be/KBvbvm9B2dA", ["Deep Learning", "TensorFlow", "Python"], SOFTWARE_PROJECT_SECTIONS, Chatbot),
   new Project(10, "regret", "Regret", "A ReactJS and Flask-based CRUD web-app that allows users to collaboratively decorate my bedroom wall.", 
               [PROJECT_TAGS.SOFTWARE], "March 2020", "", "", []),
   new Project(9, "friends", "Friends, Where You At?", "A Google Maps-based visualizer of the hometowns of my friends, obtained through Python web-scraping public Facebook data.", 

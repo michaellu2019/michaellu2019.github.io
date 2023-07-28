@@ -1,0 +1,43 @@
+div#chatbot-project-content-container {
+    div.project-overview {
+        img {
+            width: 70%;
+        }
+    }
+
+    div.project-ideation {
+        img:nth-of-type(1) {
+            width: 80%;
+        }
+        
+        div.image-container {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    div.project-design {
+        img:nth-of-type(1) {
+            width: 100%;
+        }
+    }
+
+    div.project-fabrication {
+        img {
+            width: 70%;
+        }
+    }
+
+    div.project-programming {
+        iframe {
+            width: 70%;
+        }
+    }
+
+    div.project-results {
+        iframe {
+            width: 70%;
+        }
+    }
+}
