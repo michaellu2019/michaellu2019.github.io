@@ -16,7 +16,7 @@ export const SOFTWARE_PROJECT_SECTIONS = ["overview", "ideation", "design", "pro
 
 
 function Project(id, name, title, description, tags, date, 
-                 codeLink="", demoLink="", skills=[], sections=[], component=(() => "Project info not found...")) {
+                 codeLink="", demoLink="", skills=[], sections=[], component=(() => "Project coming soon!")) {
   this.id = id;
   this.name = name;
   this.title = title;
