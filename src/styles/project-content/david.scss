@@ -1,0 +1,47 @@
+div#david-project-content-container {
+    div.project-overview {
+        img {
+            width: 70%;
+        }
+    }
+
+    div.project-ideation {
+        div.image-next-to-container {
+            width: 40%;
+            grid-gap: 4rem;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    div.project-design {
+        img:nth-of-type(1) {
+            width: 60%;
+        }
+    }
+
+    div.project-fabrication {
+        img {
+            width: 70%;
+        }
+    }
+
+    div.project-programming {
+        img:nth-of-type(1) {
+            width: 70%;
+        }
+
+        div.image-container {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    div.project-results {
+        iframe {
+            width: 70%;
+        }
+    }
+}

@@ -4,6 +4,8 @@ import Lego from '../components/project-content/Lego.js'
 import Competition from '../components/project-content/Competition.js'
 import Laptop from '../components/project-content/Laptop.js'
 import Chatbot from '../components/project-content/Chatbot.js'
+import David from '../components/project-content/David.js'
+import Omni from '../components/project-content/Omni.js'
 
 export const PROJECT_TAGS = {
   HARDWARE: "hardware",
@@ -16,7 +18,7 @@ export const SOFTWARE_PROJECT_SECTIONS = ["overview", "ideation", "design", "pro
 
 
 function Project(id, name, title, description, tags, date, 
-                 codeLink="", demoLink="", skills=[], sections=[], component=(() => "Project coming soon!")) {
+                 codeLink="", demoLink="", skills=[], sections=[], component=(() => "Project info coming soon!")) {
   this.id = id;
   this.name = name;
   this.title = title;
@@ -34,7 +36,7 @@ const hardwareProjects = [
   new Project(30, "ball", "BB-8 Robot", "A 20-inch ball robot that uses a pendulum mechanism and feedback control to stabilize itself.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "April - May 2023", "https://github.com/michaellu2019/ball", "https://youtu.be/xmnu_rDfkFk", ["Feedback Control", "CAD", "3D Printing", "Machining", "Soldering", "C", "PSoC"]),
   new Project(29, "omni", "Omni-Directional Robot", "An STM32-based robot that uses four omni-directional wheels to move in any direction. ", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "January - April 2023", "", "", ["Feedback Control", "CAD", "3D Printing", "Machining", "Soldering", "C++", "STM32"]),
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "January - April 2023", "https://github.com/michaellu2019/laptop_v2", "https://youtu.be/sVWTkhwmhlI", ["Feedback Control", "CAD", "3D Printing", "Machining", "Soldering", "C++", "STM32"], MECHATRONICS_PROJECT_SECTIONS, Omni),
   new Project(27, "bus", "IoT Occupancy Sensor", "An ESP32-based IOT device designed to be deployed at bus stops to monitor ambient temperature, humidity, and to count the number of people waiting at the bus stop via WiFi sniffing.", 
               [PROJECT_TAGS.HARDWARE], "February - May 2023", "", "", ["CAD", "3D Printing", "PCB Design", "Soldering", "C", "Python", "ESP32"]),
   new Project(26, "yoyo", "Snow Globe Yo-Yos", "A snow-globe themed yo-yo designed for mass manufacturing, comprising of several injection-molded and thermoformed parts.", 
@@ -73,7 +75,7 @@ const softwareProjects = [
   // new Project(28, "falcon", "Falcon 9 Rocket Landing", "Rocket", 
   //             [PROJECT_TAGS.SOFTWARE, PROJECT_TAGS.FEATURED], "April - May 2023", "", "", []),
   new Project(25, "david", "AI Turtles", "A simulation of a turtle population that evolves through a genetic algorithm to swim towards a target more efficiently.", 
-              [PROJECT_TAGS.SOFTWARE, PROJECT_TAGS.FEATURED], "January 2023", "", "", ["Genetic Algorithms", "C"]),
+              [PROJECT_TAGS.SOFTWARE, PROJECT_TAGS.FEATURED], "January 2023", "https://github.com/michaellu2019/life-of-david", "https://youtu.be/_sfkeGzkRUs", ["Genetic Algorithms", "C", "SDL"], SOFTWARE_PROJECT_SECTIONS, David),
   // new Project(21, "car", "Self-Driving RC Car", "6.141 Vibes", 
   //             [PROJECT_TAGS.SOFTWARE], "February - May 2022", "", "", []),
   // new Project(20, "split", "Split Fighters", "Robot Split Fighters", 

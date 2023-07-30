@@ -1,0 +1,43 @@
+div#omni-project-content-container {
+    div.project-overview {
+        img {
+            width: 50%;
+        }
+    }
+
+    div.project-ideation {
+        iframe {
+            width: 70%;
+        }
+    }
+
+    div.project-design {
+        img:nth-of-type(1) {
+            width: 60%;
+        }
+    }
+
+    div.project-fabrication {
+        img:nth-of-type(1) {
+            width: 40%;
+        }
+
+        div.image-container {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    div.project-programming {
+        iframe {
+            width: 70%;
+        }
+    }
+
+    div.project-results {
+        iframe {
+            width: 70%;
+        }
+    }
+}

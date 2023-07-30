@@ -5,6 +5,7 @@ footer.primary {
 	padding: 1rem 2rem;
 	text-align: center;
 	position: relative;
+	align-items: baseline;
 	left: 0;
 	bottom: 0;
 	flex-shrink: 0;
@@ -13,4 +14,27 @@ footer.primary {
 	-moz-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+
+	div.links {
+		margin-bottom: 1rem;
+	}
+
+	a.footer-icon-link {
+		margin: 0 1.5rem;
+		display: inline-block;
+
+		svg.footer-icon {
+			fill: rgba(0, 0, 0, 0.55);
+			height: 2rem;
+			transition: 0.25s ease-in-out;
+
+			&#footer-email-icon {
+				height: 2.25rem;
+			}
+
+			&:hover {
+				fill: rgba(0, 0, 0, 1.0);
+			}
+		}
+	}
 }
