@@ -64,7 +64,6 @@ function David(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>There were some improvements that I could have made to increase the number of turtles that got to the jellyfish as well as the speed at which they reached it:</p>
         <ul>
           <li>While turtles would eventually tend towards the jellyfish as the generations went on, many turtles got stuck on the ceiling, left wall, or first obstacle, possibly since all move sets were randomly mutated, and if a turtle randomly chose to move in a certain way and never slowed down, they'd force themselves into an obstacle. This could have been mitigated by reducing the mutation of the initial moves in the move set so that good moves from parent turtles would be preserved. This of course would risk getting stuck in local "optima" move sets.</li>
           <li>Tuning the scoring function so that fewer moves were rewarded more—either by changing the weight multiplier or by making the term exponential or polynomial—could improve convergence speed by rewarding turtles that moved faster.</li>

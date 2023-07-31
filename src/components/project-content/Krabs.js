@@ -88,7 +88,6 @@ function Krabs(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>While the class's budget limit provided a difficult constraint to building a high-fidelity toy product, there were still some process optimizations (especially for the fabrication of leg parts) that could have been implemented to improve the project outcome.</p>
         <ul>
           <li>Since most of the Krab parts were hand-made, there was undoubtably a lot of variance in the parts produced. Having a method to measure and reject parts that were out of spec (by mass or dimensions) would likely improve the machine's overall quality.</li>
           <li>Optimizing the fabrication process to be more consistent with the use of jigs, guides, and part templates rather would likely lead to more consistent part output.</li>

@@ -32,19 +32,17 @@ function Template(props) {
         <h1>Fabrication</h1>
         <p>Fabrication text.</p>
         <img src={null} />
-        <p>
-          Hardware:
-          <ul>
-            <li>Clonk</li>
-            <li>Clunk</li>
-          </ul>  
+        <p>Hardware:</p>
+        <ul>
+          <li>Clonk</li>
+          <li>Clunk</li>
+        </ul>  
 
-          Electronics:
-          <ul>
-            <li>Beep</li>
-            <li>Boop</li>
-          </ul>  
-        </p>
+        <p>Electronics:</p>
+        <ul>
+          <li>Beep</li>
+          <li>Boop</li>
+        </ul>  
       </div>
       
       <div className="project-content-container-section project-programming">
@@ -61,7 +59,6 @@ function Template(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>Be better:</p>
         <ul>
           <li>Improvement</li>
           <li>Improvement</li>

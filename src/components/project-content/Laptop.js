@@ -82,7 +82,6 @@ function Laptop(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>While the robot made good use of ROS MoveIt and was easy to assemble, it could have benefited from the following improvements:</p>
         <ul>
           <li>Even though the mechanical design of the robot made it easy to fabricate and assemble, it placed a lot of weight in the upper linkages of the arm. All that mass concentrated far away from the shoulder made the arm slow and difficult to manipulate. The cantilevered mass likely contributed to the harmonic-ish motion of the end effector as it traveled across the keyboard, which you can observe in the video. Moving the actuators closer to the shoulder and using belts to drive farther off joints would mitigate this. </li>
           <li>Poor quality servos with a lot of backlash meant that the robot arm was not the most rigid. That's why when the solenoid was triggered, the servo backlash would occasionally allow the arm to get pushed away from the keyboard, rather than having all the force being directed into the key to depress it all the way.</li>

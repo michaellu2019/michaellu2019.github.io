@@ -63,7 +63,6 @@ function Chatbot(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>Since the Transformer model has been proven to be pretty good at natural language processing tasks, I think the project would have benefited the most from an improved dataset and training method. The results are a good demonstration of "garbage in, garbage out."</p>
         <ul>
           <li>Pretraining the model on a larger, better dataset would improve the models ability to learn normal conversations before learning my speech patterns. The deployed model's biggest issue was lack of semantic understanding of prompts it was given.</li>
           <li>Doing more diligence on data preprocessing would iron out some of the undesirable conversation habits the bot picked up. Filtering out emojis, typos, and nonsensical messages would have reduced the appearance of weird responses the bot gave.</li>

@@ -78,7 +78,6 @@ function Donkey(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>If I were to improve upon this project, I'd be sure to tacke a couple of big design flaws:</p>
         <ul>
           <li>The mechanical design of the robot made it easy to fabricate and assemble, but also placed a lot of weight in the legs as mass was distributed throughout the leg. This made the legs super slow, resulting in a lot of drift and tipping as the robot walked. This is why a lot of legged robots keep actuators closer to the hip and shoulder area and use belt-drives to rotate far-away joints, reducing the amount of mass swinging around.</li>
           <li>The electrical system of the robot was simple and rudimentary but also meant that the high-power LiPo battery would often cause the servo driver board to ignite if too much current was drawn. This was patched up in software by setting joint limits to reduce the chance of servo motors stalling, but a fuse, breaker, or current-sensing component would make the robot less flammably-inclined.</li>

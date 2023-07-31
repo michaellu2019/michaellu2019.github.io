@@ -93,7 +93,6 @@ function Lego(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>Some improvements include:</p>
         <ul>
           <li>Fine-tuning the 3D-printed filament compliance mechanism would make the end effector more reliable, since we often found the strands would plastically deform if slammed into the block. Experimenting with different strand materials, configurations, dimensions, and quantities could help with this.</li>
           <li>Integrating the computer vision and control software to make the robot fully autonomous would improve the robot performance, since human-controlled indexing made the robot extremely slow.</li>

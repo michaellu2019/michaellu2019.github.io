@@ -119,7 +119,6 @@ function Competition(props) {
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
-        <p>While the robot was able to complete all the high-scoring game objectives, it was definitely overengineered and would have benefited from a few adjustments:</p>
         <ul>
           <li>The robot was designed in an iterative process (partly due to the nature of the class's weekly deliverables), i.e. design a mechanism, fabricate it, then design and fabricate the next mechanism, etc. However, this meant that a lot of early decisions negatively impacted, especially in terms of leaving space and mounting points for future mechanisms. For instance, the elevator was designed and built early on with little consideration for how much space it would take up, making it more difficult to design the winch within the robot dimension limits.</li>
           <li>The robot suffered from overengineering, especially with the tank chassis, which contributed to most of the robot's unecessary weight while making it slower. More analysis should have been done early on to see if using the provided wheels in the kit of parts would provide enough tracion.</li>
