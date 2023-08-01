@@ -11,6 +11,11 @@ header.primary {
 	-moz-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   nav {
     display: grid;
@@ -32,11 +37,6 @@ header.primary {
       display: inline-block;
       margin: 0 1rem;
       cursor: pointer;
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
     }
   }
 }

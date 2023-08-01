@@ -1,0 +1,59 @@
+div#ball-project-content-container {
+    div.project-overview {
+        img {
+            width: 50%;
+        }
+    }
+
+    div.project-ideation {
+        img {
+            width: 70%;
+        }
+        
+        div.image-container {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    div.project-design {
+        img {
+            width: 70%;
+        }
+    }
+
+    div.project-fabrication {
+        img {
+            width: 70%;
+        }
+        
+        div.image-container {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    div.project-programming {
+        img {
+            width: 70%;
+        }
+        
+        div.image-container {
+            img {
+                width: 100%;
+            }
+        }
+        
+        iframe {
+            width: 70%;
+        }
+    }
+
+    div.project-results {
+        iframe {
+            width: 70%;
+        }
+    }
+}

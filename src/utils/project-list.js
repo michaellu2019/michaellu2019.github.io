@@ -6,6 +6,7 @@ import Laptop from '../components/project-content/Laptop.js'
 import Chatbot from '../components/project-content/Chatbot.js'
 import David from '../components/project-content/David.js'
 import Omni from '../components/project-content/Omni.js'
+import Ball from '../components/project-content/Ball.js'
 
 export const PROJECT_TAGS = {
   HARDWARE: "hardware",
@@ -34,21 +35,21 @@ function Project(id, name, title, description, tags, date,
 
 const hardwareProjects = [
   new Project(30, "ball", "BB-8 Robot", "A 20-inch ball robot that uses a pendulum mechanism and feedback control to stabilize itself.", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "April - May 2023", "https://github.com/michaellu2019/ball", "https://youtu.be/xmnu_rDfkFk", ["Feedback Control", "CAD", "3D Printing", "Machining", "Soldering", "C", "PSoC"]),
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "April - May 2023", "https://github.com/michaellu2019/ball", "https://youtu.be/xmnu_rDfkFk", ["Feedback Control", "CAD", "PSoC", "C"], MECHATRONICS_PROJECT_SECTIONS, Ball),
   new Project(29, "omni", "Omni-Directional Robot", "An STM32-based robot that uses four omni-directional wheels to move in any direction. ", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "January - April 2023", "https://github.com/michaellu2019/laptop_v2", "https://youtu.be/sVWTkhwmhlI", ["Feedback Control", "CAD", "3D Printing", "Machining", "Soldering", "C++", "STM32"], MECHATRONICS_PROJECT_SECTIONS, Omni),
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "January - April 2023", "https://github.com/michaellu2019/laptop_v2", "https://youtu.be/sVWTkhwmhlI", ["Feedback Control", "CAD", "C++", "STM32"], MECHATRONICS_PROJECT_SECTIONS, Omni),
   new Project(27, "bus", "IoT Occupancy Sensor", "An ESP32-based IOT device designed to be deployed at bus stops to monitor ambient temperature, humidity, and to count the number of people waiting at the bus stop via WiFi sniffing.", 
-              [PROJECT_TAGS.HARDWARE], "February - May 2023", "", "", ["CAD", "3D Printing", "PCB Design", "Soldering", "C", "Python", "ESP32"]),
+              [PROJECT_TAGS.HARDWARE], "February - May 2023", "", "", ["CAD", "PCB Design", "C", "Python", "ESP32"]),
   new Project(26, "yoyo", "Snow Globe Yo-Yos", "A snow-globe themed yo-yo designed for mass manufacturing, comprising of several injection-molded and thermoformed parts.", 
               [PROJECT_TAGS.HARDWARE], "February - April 2023", "", "", ["Design for Manufacturing", "CAD", "CAM", "Injection Molding", "Thermoforming"]),
   new Project(24, "laptop", "Laptop Bot", "A 6DOF robot arm that takes commands from a laptop running ROS, enabling it to move around and press keyboard keys.", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "July - August 2022", "https://youtu.be/Iixz6tXIA5E", "https://github.com/michaellu2019/laptop", ["ROS", "CAD", "3D Printing", "C++", "Arduino"], MECHATRONICS_PROJECT_SECTIONS, Laptop),
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "July - August 2022", "https://youtu.be/Iixz6tXIA5E", "https://github.com/michaellu2019/laptop", ["ROS", "CAD", "C++", "Arduino"], MECHATRONICS_PROJECT_SECTIONS, Laptop),
   new Project(23, "competition", "MIT Competition Robot", "An aluminum robot, featuring a belt-driven cascade lift, detachable winch, and tank chassis, designed to lift and pull heavy items in the final compoetition of 2.007, MIT's design and manufacturing class.", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "February - May 2022", "https://github.com/michaellu2019/big-daddy", "https://youtu.be/f2lEhvnP2P4", ["Feedback Control", "CAD", "Machining", "C++", "Arduino"], MECHATRONICS_PROJECT_SECTIONS, Competition),
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "February - May 2022", "https://github.com/michaellu2019/big-daddy", "https://youtu.be/f2lEhvnP2P4", ["Feedback Control", "CAD", "C++", "Arduino"], MECHATRONICS_PROJECT_SECTIONS, Competition),
   new Project(22, "lego", "Lego Building Bot", "A ROS-controlled 6DOF UR5 robot arm that leverages OpenCV computer vision and a compliant gripper to assemble giant Lego bricks.", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "April - May 2022", "https://github.com/michaellu2019/2.12-final-project", "https://youtu.be/oTqwCtPKNQM", ["ROS", "OpenCV", "3D Printing", "Python", "C++"], MECHATRONICS_PROJECT_SECTIONS, Lego),
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "April - May 2022", "https://github.com/michaellu2019/2.12-final-project", "https://youtu.be/oTqwCtPKNQM", ["ROS", "OpenCV", "Python", "C++"], MECHATRONICS_PROJECT_SECTIONS, Lego),
   new Project(17, "donkey", "Robot Donkey", "A WiFi-controlled robotic donkey that walks and moves its head using inverse kinematics.", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "January - June 2021", "https://github.com/michaellu2019/dog", "https://youtu.be/A4OMXvGx_4I", ["Inverse Kinematics", "CAD", "3D Printing", "Python", "Raspberry Pi"], MECHATRONICS_PROJECT_SECTIONS, Donkey),
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "January - June 2021", "https://github.com/michaellu2019/dog", "https://youtu.be/A4OMXvGx_4I", ["Inverse Kinematics", "CAD", "Python", "Raspberry Pi"], MECHATRONICS_PROJECT_SECTIONS, Donkey),
   new Project(15, "boxing", "IoT Boxing", "An IoT boxing game that uses an ESP32 WiFI MCU and accelerometer real-time motion data over WebSockets to an online 3D boxing game.", 
               [PROJECT_TAGS.HARDWARE], "April - May 2021", "", "", []),
   new Project(14, "camera", "IR Camera Module", "A Raspberry Pi-based infrared camera module that uses OpenCV to read QR codes hidden behind infrared-transparent plastic.", 

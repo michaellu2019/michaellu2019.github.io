@@ -4,7 +4,7 @@ function Navbar(props) {
   return (
     <header className="primary">
       <nav>
-        <span className="heading">ML</span>
+        <span className="heading"><Link to="/">ML</Link></span>
 
         <ul className="nav-buttons">
           <li onClick={() => props.scrollTo("cover")}><Link to="/">Home</Link></li>
