@@ -82,9 +82,9 @@ function Competition(props) {
         <p>Hardware:</p>
         <ul>
           <li>2 × goBilda 25-3 Speed Servo Motors</li>
-          <li>1 × goBilda 25-2 Torque Servo Motors</li>
+          <li>1 × goBilda 25-2 Torque Servo Motor</li>
           <li>2 × LDO 217:1 Gearhead DC Motors</li>
-          <li>A Bunch of McMaster-Carr Bearings, Plastic Pulleys, Nylon Bushings, Nylon Gears, etc.</li>
+          <li>A Bunch of McMaster-Carr Bearings, Plastic Pulleys, Nylon Bushings, Nylon Gears, Couplings, etc.</li>
           <li>Lots of 6mm Timing Belt</li>
           <li>Lots Delrin, 1/8" Thick Acrylic 5052-H32 Aluminum 1/16" Sheet Metal, 6063-T6 Aluminum 1/16" Box Extrusion and 1/8" Box Extrusion, 6061-T6 Angle Extrusion, and 6061-T6 Rods</li>
           <li>Too Many Fasteners (the Majority of Which Are Probably #8 Screws)</li>
