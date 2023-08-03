@@ -2,6 +2,7 @@ import { React } from 'react';
 
 import ballCover from '../../assets/images/project-assets/ball/ball-cover.JPG'
 import ballPhysics from '../../assets/images/project-assets/ball/ball-physics.png'
+import ballSketch from '../../assets/images/project-assets/ball/ball-sketch.png'
 import ballCad from '../../assets/images/project-assets/ball/ball-cad.png'
 import ballCadSection from '../../assets/images/project-assets/ball/ball-cad-section.png'
 import ballBlockDiagram from '../../assets/images/project-assets/ball/ball-block-diagram.png'
@@ -37,18 +38,13 @@ function Ball(props) {
         <p>In addition to having an excuse to bring an iconic Star Wars character to life, I saw this project as an opportunity to solve an interesting controls problem: Stabilizing a ball so that it wouldn't rock back and forth.</p>
         <img src={ballPhysics} />
         <p>Balls can be viewed as marginally stable systems, meaning that if perturbed lightly/gently, a ball will rock back and forth and oscillate. Imagine a ball is on flat ground and perturbed such that the ball tips but does not roll, and a small angle θ is formed between the gravity vector and the radius from the center of the ball to the contact point P as shown above. One can imagine that if there were no damping in the system, θ would oscillate as time t goes on as shown in the graph of the dynamics. If damping were added to the system through some control loop, the graph of the dynamics would be seen converging to zero.</p>
-        
-        {/* <div className="image-next-to-container">
-          <div className="image-container"><img src={null} /></div>
-          <div>
-            <p>INSERT SKETCH</p>
-          </div>
-        </div> */}
+        <img src={ballSketch} />
+        <p>To stabilize a large ball, I brainstormed some mechanisms to put inside the ball as a means of controlling it. I considered putting a gaint wheel inside the ball that would drive inside the ball as if it were a giant hamster wheel. I also considered building a platform with four actuated omni-wheels so that ball movement could be omni-directional. I eventually ran with the idea of placing a suspended pendulum inside the ball, with a heavy mass at the bottom that could be swung around to counter the tilt of the ball.</p>
       </div>
       
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
-        <p>To develop a concrete build plan and design with such a short time frame, BB-8 was modeled in Solidworks as throughly as possible. This would help design 3D-printed parts with the necessary dimensions and ensure no collisions would occur between parts. The BB-8 ball would be comprised of three main mechanisms: a drive system to move forward and backward, a pendulum to steer, and a flywheel to turn on the spot.</p>
+        <p>To develop a concrete build plan and design with such a short time frame, BB-8 was modeled in Solidworks as throughly as possible. This would help design 3D-printed parts with the necessary dimensions and ensure no collisions would occur between parts. Settling on the pendulum design, the BB-8 ball would be contain three main control mechanisms: a drive system to move forward and backward, a pendulum to steer, and a flywheel to turn on the spot. This design was chosen because other designs would require a perfectly round closed 20"-diameter sphere, which I had no way of obtaining or fabricating in four weeks. All available 20"-diameter balls had some sort of opening.</p>
         <img src={ballCad} />
         <p>The system would contain three motors. Motor A would control the tilt of the pendulum by driving a pinion gear that would mesh with a giant gear on the main drive body, thus allowing the heavy pendulum to swing left and right to shift the robot's center of mass in each direction, steering the robot around the x-axis. The central axis of the ball would be connected to the robot's drive system with a free-spinning axle and Motor B. Motor B would be coupled to a hub that would spin the entire ball around the y-axis, allowing it to drive forward and backwards like a giant wheel. The flywheel, driven by Motor C, would be a heavy spinning disk that would allow the robot to rotate around the z-axis. If the heavy disk was spinning quickly in one direction, the entire ball would spin in the opposite direction to conserve angular momentum.</p>
         <p>The head structure would then be placed on a platform of caster wheels that would roll on top of the ball and would have a set of strong magnets underneath. The neck structure of the robot would also have a pair of magnets to pull the head into the ball, keeping it in place to prevent it from slipping off.</p>
@@ -114,29 +110,35 @@ function Ball(props) {
       
       <div className="project-content-container-section project-programming">
         <h1>Programming</h1>
+        <p>The software for BB-8 was written in C for the PSoC 5LP system (which was the microcontroller family we were forced to use for the class) with Cypress's PSoC Creator. The main program loop involved reading data from the robot's accelerometer, motor encoders, and RC receiver then controlling/stabilizing the ball based on those inputs.</p>
         <img src={ballSoftwareDiagram} />
-        <img src={ballPID} />
-        <div className="image-next-to-container">
-          <div className="image-container"><img src={ballPsocBlocks} /></div>
-          <div className="image-container"><img src={ballPsocConfig} /></div>
-        </div>
+        <p>To learn how to actually pull data from the RC receiver and motor encoders, I first hooked up the respective modules to an oscilloscope to observe the signal and how it changed as data came in.</p>
         <div className="image-next-to-container">
           <div className="image-container">
             <img src={ballRadioScope} />
             <img src={ballMotorScope} />
           </div>
           <div className="text-container">
-            <p>Scope so kewl...</p>
+            <p>The top set of captures shows two channels of the RC receiver, which were 54Hz square waves. The duty cycle of a particular channel's square wave would change based on the position of the remote's joystick for that channel (as shown by the yellow square wave changing from 10.365% duty cycle to 5.448%).</p>
+            <p>The bottom pair of scope captures shows an quadrature encoder signal for one motor, where two square waves can be observed. The frequency of the square waves was indicative of the speed, i.e. a faster frequency indicated the motor was spinning faster. The phase offset of the two square waves would indicate the direction in which the motor was spinning.</p>
           </div>
         </div>
+        <p>Cypress PSoC Creator schematic blocks were configured to capture this data. RC channel square wave duty cycle was counted with a timer block to deduce how far the remote joystick was being pushed. The quadrature encoder block was used to pull in motor encoder data. Finally, MPU6050 accelerometer data was received over I2C using the I2C block.</p>
+        <div className="image-next-to-container">
+          <div className="image-container"><img src={ballPsocBlocks} /></div>
+          <div className="image-container"><img src={ballPsocConfig} /></div>
+        </div>
+        <p>With data received from the accelerometer, I then moved on to implement a PD controller to prevent the ball from rocking back and forth when it was supposed to be stationary. The controller would calculate the tilt angle measured by the MPU6050 (either the pitch or roll of the robot) and then apply a proportional and derivative gain to the signal to output a motor PWM signal to control the drive system to oppose a rocking forward and backward or to control the pendulum to oppose rocking side-to-side.</p>    
+        <img src={ballPID} />
+        <p>If the robot was leaning forward/backward when it was supposed to be upright, the robot would drive forward/backward in the same direction to compensate (similar to a segway/hoverboard driving in the direction of tilt). If it was leaning to the side, the pendulum would swing out then back in the opposite direction to bring the center of mass back in to have the ball stand straight up.</p>
+        <img src={ballStabilization} />
+        <p>MPU6050 data was recorded to test the efficacy of the PD controller. The plot on the left demonstrated that the ball experienced significant harmonic motion for 6+ seconds when perturbed slightly without feedback control. With the PD controller running, when the ball was perturbed slightly, it was able to dampen the motion within 4 seconds.</p>
         <iframe src="https://www.youtube.com/embed/Skfwr8KdXXk" title="Making MIT BB-8" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        <p>Programming text.</p>    
       </div>
-      <img src={ballStabilization} />
       
       <div className="project-content-container-section project-results">
         <h1>Results</h1>
-        <p>Results text.</p>
+        <p>After four weeks of intense work under a tight schedule, I was able to build a prototype MIT-themed BB-8 droid for my final project with the necessary control software to stabilize itself and drive on the various terrains of MIT's campus.</p>
         <iframe src="https://www.youtube.com/embed/xmnu_rDfkFk" title="MIT 6.115 Final Project: BB-8" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         <iframe src="https://www.youtube.com/embed/Olh6qdgxJgc" title="BB-8 @ MIT" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
@@ -144,9 +146,9 @@ function Ball(props) {
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
         <ul>
-          <li>Improvement</li>
-          <li>Improvement</li>
-          <li>Improvement</li>
+          <li>In addition to the control software, the stability of BB-8 relied on having a low center of mass. While building the central drive system out of aluminum gave it good structure, I might have been able to get away with 3D printing it. This would have improved the project by reducing the time spent machining and assembling aluminum components (by overnight 3D printing a design) that were prone to human fabrication error (which is a lot if it's made by me) and also reducing the weight and part count (fasteners are heavy!). A lighter drive system structure would allow the center of mass to shift farther down.</li>
+          <li>Accelerometer plots and video footage indicated that the drive motors for BB-8 were not fast enough to always stabilize the robot. As indicated by the spikes in the plot (assuming they were not caused by sensor noise) and the jerky motion in some of the perturbation tests, the higher-torque motors used in BB-8 didn't have the speed to adjust the robot's dynamics in time. More diligence in motor selection (choosing higher power motors or using higher performance BLDC motors) could have mitigated this issue.</li>
+          <li>The performance of the system was heavily contingent on battery life, so a better battery/power management system would improve the robot's performance (granted, the class did not allow the use of LiPo batteries or any batteries above 12V). Control software gains would only work in certain voltage ranges, so having a way to compensate based on measured battery voltage could have been a way to improve robustness.</li>
         </ul>
       </div>
     </div>
