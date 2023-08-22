@@ -7,6 +7,8 @@ import Chatbot from '../components/project-content/Chatbot.js'
 import David from '../components/project-content/David.js'
 import Omni from '../components/project-content/Omni.js'
 import Ball from '../components/project-content/Ball.js'
+import Yoyo from '../components/project-content/Yoyo.js'
+import Bus from '../components/project-content/Bus.js'
 
 export const PROJECT_TAGS = {
   HARDWARE: "hardware",
@@ -14,6 +16,8 @@ export const PROJECT_TAGS = {
   FEATURED: "featured",
 }
 
+
+export const HARDWARE_PROJECT_SECTIONS = ["overview", "ideation", "design", "fabrication", "results", "improvements"];
 export const MECHATRONICS_PROJECT_SECTIONS = ["overview", "ideation", "design", "fabrication", "programming", "results", "improvements"];
 export const SOFTWARE_PROJECT_SECTIONS = ["overview", "ideation", "design", "programming", "results", "improvements"];
 
@@ -39,9 +43,9 @@ const hardwareProjects = [
   new Project(29, "omni", "Omni-Directional Robot", "An STM32-based robot that uses four omni-directional wheels to move in any direction. ", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "January - April 2023", "https://github.com/michaellu2019/laptop_v2", "https://youtu.be/sVWTkhwmhlI", ["Feedback Control", "CAD", "C++", "STM32"], MECHATRONICS_PROJECT_SECTIONS, Omni),
   new Project(27, "bus", "IoT Occupancy Sensor", "An ESP32-based IOT device designed to be deployed at bus stops to monitor ambient temperature, humidity, and to count the number of people waiting at the bus stop via WiFi sniffing.", 
-              [PROJECT_TAGS.HARDWARE], "February - May 2023", "", "", ["CAD", "PCB Design", "C", "Python", "ESP32"]),
+              [PROJECT_TAGS.HARDWARE], "February - May 2023", "", "", ["CAD", "PCB Design", "C", "Python", "ESP32"], MECHATRONICS_PROJECT_SECTIONS, Bus),
   new Project(26, "yoyo", "Snow Globe Yo-Yos", "A snow-globe themed yo-yo designed for mass manufacturing, comprising of several injection-molded and thermoformed parts.", 
-              [PROJECT_TAGS.HARDWARE], "February - April 2023", "", "", ["Design for Manufacturing", "CAD", "CAM", "Injection Molding", "Thermoforming"]),
+              [PROJECT_TAGS.HARDWARE], "February - April 2023", "", "", ["Design for Manufacturing", "CAD", "CAM"], HARDWARE_PROJECT_SECTIONS, Yoyo),
   new Project(24, "laptop", "Laptop Bot", "A 6DOF robot arm that takes commands from a laptop running ROS, enabling it to move around and press keyboard keys.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "July - August 2022", "https://youtu.be/Iixz6tXIA5E", "https://github.com/michaellu2019/laptop", ["ROS", "CAD", "C++", "Arduino"], MECHATRONICS_PROJECT_SECTIONS, Laptop),
   new Project(23, "competition", "MIT Competition Robot", "An aluminum robot, featuring a belt-driven cascade lift, detachable winch, and tank chassis, designed to lift and pull heavy items in the final compoetition of 2.007, MIT's design and manufacturing class.", 
