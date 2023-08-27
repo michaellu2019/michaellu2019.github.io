@@ -9,6 +9,7 @@ import Omni from '../components/project-content/Omni.js'
 import Ball from '../components/project-content/Ball.js'
 import Yoyo from '../components/project-content/Yoyo.js'
 import Bus from '../components/project-content/Bus.js'
+import Boxing from '../components/project-content/Boxing.js'
 
 export const PROJECT_TAGS = {
   HARDWARE: "hardware",
@@ -38,14 +39,16 @@ function Project(id, name, title, description, tags, date,
 }
 
 const hardwareProjects = [
-  new Project(30, "ball", "BB-8 Robot", "A 20-inch ball robot that uses a pendulum mechanism and feedback control to stabilize itself.", 
+  new Project(31, "ball", "BB-8 Robot", "A 20-inch ball robot that uses a pendulum mechanism and feedback control to stabilize itself.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "April - May 2023", "https://github.com/michaellu2019/ball", "https://youtu.be/xmnu_rDfkFk", ["Feedback Control", "CAD", "PSoC", "C"], MECHATRONICS_PROJECT_SECTIONS, Ball),
-  new Project(29, "omni", "Omni-Directional Robot", "An STM32-based robot that uses four omni-directional wheels to move in any direction. ", 
+  new Project(30, "omni", "Omni-Directional Robot", "An STM32-based robot that uses four omni-directional wheels to move in any direction. ", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "January - April 2023", "https://github.com/michaellu2019/laptop_v2", "https://youtu.be/sVWTkhwmhlI", ["Feedback Control", "CAD", "C++", "STM32"], MECHATRONICS_PROJECT_SECTIONS, Omni),
-  new Project(27, "bus", "IoT Occupancy Sensor", "An ESP32-based IOT device designed to be deployed at bus stops to monitor ambient temperature, humidity, and to count the number of people waiting at the bus stop via WiFi sniffing.", 
+  new Project(28, "bus", "IoT Occupancy Sensor", "An ESP32-based IOT device designed to be deployed at bus stops to monitor ambient temperature, humidity, and to count the number of people waiting at the bus stop via WiFi sniffing.", 
               [PROJECT_TAGS.HARDWARE], "February - May 2023", "", "", ["CAD", "PCB Design", "C", "Python", "ESP32"], MECHATRONICS_PROJECT_SECTIONS, Bus),
-  new Project(26, "yoyo", "Snow Globe Yo-Yos", "A snow-globe themed yo-yo designed for mass manufacturing, comprising of several injection-molded and thermoformed parts.", 
+  new Project(27, "yoyo", "Snow Globe Yo-Yos", "A snow-globe themed yo-yo designed for mass manufacturing, comprising of several injection-molded and thermoformed parts.", 
               [PROJECT_TAGS.HARDWARE], "February - April 2023", "", "", ["Design for Manufacturing", "CAD", "CAM"], HARDWARE_PROJECT_SECTIONS, Yoyo),
+  new Project(25, "hydros", "Hydros", "A firehose cleaning machine that uses high-pressure water sprayers and hydro-powered scrubs to remove carcinogenic debris off of firehoses.", 
+              [PROJECT_TAGS.HARDWARE], "September 2022 - December 2022", ["CAD"]),
   new Project(24, "laptop", "Laptop Bot", "A 6DOF robot arm that takes commands from a laptop running ROS, enabling it to move around and press keyboard keys.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "July - August 2022", "https://youtu.be/Iixz6tXIA5E", "https://github.com/michaellu2019/laptop", ["ROS", "CAD", "C++", "Arduino"], MECHATRONICS_PROJECT_SECTIONS, Laptop),
   new Project(23, "competition", "MIT Competition Robot", "An aluminum robot, featuring a belt-driven cascade lift, detachable winch, and tank chassis, designed to lift and pull heavy items in the final compoetition of 2.007, MIT's design and manufacturing class.", 
@@ -55,7 +58,7 @@ const hardwareProjects = [
   new Project(17, "donkey", "Robot Donkey", "A WiFi-controlled robotic donkey that walks and moves its head using inverse kinematics.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FEATURED], "January - June 2021", "https://github.com/michaellu2019/dog", "https://youtu.be/A4OMXvGx_4I", ["Inverse Kinematics", "CAD", "Python", "Raspberry Pi"], MECHATRONICS_PROJECT_SECTIONS, Donkey),
   new Project(15, "boxing", "IoT Boxing", "An IoT boxing game that uses an ESP32 WiFI MCU and accelerometer real-time motion data over WebSockets to an online 3D boxing game.", 
-              [PROJECT_TAGS.HARDWARE], "April - May 2021", "", "", []),
+              [PROJECT_TAGS.HARDWARE], "April - May 2021", "https://github.com/michaellu2019/ragdoll-boxing", "https://youtu.be/XnNphWLp-24", ["CAD", "C", "Python", "JavaScript", "ESP32", "WebSockets"], MECHATRONICS_PROJECT_SECTIONS, Boxing),
   new Project(14, "camera", "IR Camera Module", "A Raspberry Pi-based infrared camera module that uses OpenCV to read QR codes hidden behind infrared-transparent plastic.", 
               [PROJECT_TAGS.HARDWARE], "February - May 2021", "", "", []),
   // new Project(13, "antenna", "Directional Antenna Optimizer", "Robot Antenna", 
@@ -79,7 +82,7 @@ const hardwareProjects = [
 const softwareProjects = [
   // new Project(28, "falcon", "Falcon 9 Rocket Landing", "Rocket", 
   //             [PROJECT_TAGS.SOFTWARE, PROJECT_TAGS.FEATURED], "April - May 2023", "", "", []),
-  new Project(25, "david", "AI Turtles", "A simulation of a turtle population that evolves through a genetic algorithm to swim towards a target more efficiently.", 
+  new Project(26, "david", "AI Turtles", "A simulation of a turtle population that evolves through a genetic algorithm to swim towards a target more efficiently.", 
               [PROJECT_TAGS.SOFTWARE, PROJECT_TAGS.FEATURED], "January 2023", "https://github.com/michaellu2019/life-of-david", "https://youtu.be/_sfkeGzkRUs", ["Genetic Algorithms", "C", "SDL"], SOFTWARE_PROJECT_SECTIONS, David),
   // new Project(21, "car", "Self-Driving RC Car", "6.141 Vibes", 
   //             [PROJECT_TAGS.SOFTWARE], "February - May 2022", "", "", []),
