@@ -20,6 +20,10 @@ import Ghostwriters from '../components/project-content/Ghostwriters.js'
 import Regret from '../components/project-content/Regret.js'
 import Friends from '../components/project-content/Friends.js'
 import Nutriscan from '../components/project-content/Nutriscan.js'
+import Tank from '../components/project-content/Tank.js'
+import Trash from '../components/project-content/Trash.js'
+import Capacitive from '../components/project-content/Capacitive.js'
+import Euclidean from '../components/project-content/Euclidean.js'
 
 export const PROJECT_TAGS = {
   HARDWARE: "hardware",
@@ -84,11 +88,11 @@ const hardwareProjects = [
   // new Project(5, "horse", "Animatronic Horse Head", "An animatronic horse head that mimics the movements of my mouth based on real-time data from OpenCV algorithms that would track my mouth position.", 
   //             [PROJECT_TAGS.HARDWARE], "August 2018", "", "", []),
   new Project(4, "tank", "RC Tank", "A remote-controlled Arduino toy tank built out of cardboard.", 
-              [PROJECT_TAGS.HARDWARE], "May 2018", "", "", []),
+              [PROJECT_TAGS.HARDWARE], "May 2018", "https://github.com/michaellu2019/cardboard-tank", "", ["Arduino", "C++"], LAZY_PROJECT_SECTIONS, Tank),
   new Project(3, "trash", "Trash Mobile", "An electrical trach can vehicle built out of \"trash\": scrap wood, cardboard, old cordless drills, and wheelbarrow wheels.", 
-              [PROJECT_TAGS.HARDWARE], "July - August 2017", "", "", []),
+              [PROJECT_TAGS.HARDWARE], "July - August 2017", "", "", ["Arduino", "C++"], LAZY_PROJECT_SECTIONS, Trash),
   new Project(2, "capacitive", "Capacitive Touch Controller", "An Arduino-based system that uses capacitive touch to control a computer, allowing users to draw custom controllers with paper and pencil to play various games", 
-              [PROJECT_TAGS.HARDWARE], "February 2017", "", "", []),
+              [PROJECT_TAGS.HARDWARE], "February 2017", "", "", ["Arduino", "C++"], LAZY_PROJECT_SECTIONS, Capacitive),
 ];
 
 const softwareProjects = [
@@ -115,7 +119,7 @@ const softwareProjects = [
   new Project(8, "nutriscan", "NutriScan", "A mobile web application that allows users to take pictures of their meals, then uses deep learning to classify the food and track macronutrients.", 
               [PROJECT_TAGS.SOFTWARE], "November 2019", "https://github.com/michaellu2019/NutriScan", "https://devpost.com/software/nutriscan-jli0t2", ["ReactJS", "Flask", "Firebase", "Google Vision", "Twilio", "Python"], LAZY_PROJECT_SECTIONS, Nutriscan),
   new Project(1, "euclidean", "The Euclidean Project", "A web-based geometry construction app.", 
-              [PROJECT_TAGS.SOFTWARE], "May 2016", "", "", []),
+              [PROJECT_TAGS.SOFTWARE], "May 2016", "https://github.com/LittyLing/The-Euclidean-Project", "http://littyling.github.io/The-Euclidean-Project", ["HTML", "CSS", "JavaScript"], LAZY_PROJECT_SECTIONS, Euclidean),
 ];
 
 export const projects = [...hardwareProjects, ...softwareProjects].sort((p1, p2) => p2.id - p1.id);
