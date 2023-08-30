@@ -34,21 +34,21 @@ function Template(props) {
         <img src={null} />
         <p>Hardware:</p>
         <ul>
-          <li>Clonk</li>
-          <li>Clunk</li>
+          <li>1 × Clonk</li>
+          <li>1 × Clunk</li>
         </ul>  
 
         <p>Electronics:</p>
         <ul>
-          <li>Beep</li>
-          <li>Boop</li>
+          <li>1 × Beep</li>
+          <li>1 × Boop</li>
         </ul>  
       </div>
       
       <div className="project-content-container-section project-programming">
         <h1>Programming</h1>
-        {/* <iframe src="#" title="DIY Quadruped Robot" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
-        <p>Programming text.</p>    
+        <p>Programming text.</p>   
+        <img src={null} /> 
       </div>
       
       <div className="project-content-container-section project-results">

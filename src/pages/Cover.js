@@ -26,7 +26,7 @@ function Cover(props) {
           <br /> 
           <br />
           I've worked as a software engineering intern at Amazon, electrical engineering intern at Milwaukee Tool, undergraduate researcher at MIT, and most recently, a mechatronics intern at SpaceX.
-          Zoo wee mama!
+          {/* Zoo wee mama! */}
         </div>
       </div>
     </article>

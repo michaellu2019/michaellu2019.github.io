@@ -1,0 +1,45 @@
+div#beatbot-project-content-container {
+    div.project-overview {
+        img {
+            width: 70%;
+        }
+    }
+
+    div.project-ideation {
+        img:nth-of-type(1) {
+            width: 60%;
+        }
+    }
+
+    div.project-design {
+        img:nth-of-type(1) {
+            width: 40%;
+        } 
+
+        img {
+            width: 80%;
+        }
+    }
+
+    div.project-fabrication {
+        div.image-next-to-container:nth-of-type(1) {
+            grid-template-columns: auto auto;
+
+            img {
+                height: 22vw;
+            }
+        }
+    }
+
+    div.project-programming {
+        iframe {
+            width: 70%;
+        }
+    }
+
+    div.project-results {
+        iframe {
+            width: 70%;
+        }
+    }
+}
