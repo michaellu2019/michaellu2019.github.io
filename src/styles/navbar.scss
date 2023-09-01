@@ -12,6 +12,23 @@ header.primary {
 	-o-user-select: none;
 	user-select: none;
   
+		
+  @media (max-width: $medium) {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: $medium-small) {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: calc(0.8 * $medium-small)) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: $small) {
+    font-size: 1rem;
+  }
+  
   a {
     text-decoration: none;
     color: inherit;
@@ -24,6 +41,11 @@ header.primary {
     span.heading {
       grid-area: heading;
       justify-self: start;
+
+      @media (max-width: $medium) {
+        display: block;
+        font-size: 1.5rem;
+      }
     }
 
     ul.nav-buttons {

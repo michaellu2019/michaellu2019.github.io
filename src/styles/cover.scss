@@ -1,15 +1,35 @@
 .cover-section-container {
   div.content {
-    width: 60rem;
+    width: 90%;
+    max-width: 60rem;
     margin: 0 auto;
     text-align: center;
     display: grid;
-    grid-template-columns: 18rem 1fr;
+    grid-template-columns: 20rem auto;
     grid-gap: 2rem;
     font-size: 1.5rem;
 
+    @media (max-width: $medium) {
+      // background-color: blue;
+      // font-size: 1.25rem;
+    }
+
+    @media (max-width: $medium-small) {
+      grid-template-columns: none;
+      width: 80%;
+      font-size: 1.5rem;
+      // background-color: green;
+    }
+
+    @media (max-width: $small) {
+      grid-template-columns: none;
+      width: 80%;
+      font-size: 1.25rem;
+      // background-color: purple;
+    }
+
     div.cover-image {
-      text-align: right;
+      // text-align: right;
       img {
         width: 100%;
       }

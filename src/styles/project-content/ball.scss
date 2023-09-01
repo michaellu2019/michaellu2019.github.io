@@ -38,6 +38,10 @@ div#ball-project-content-container {
 
         div.image-next-to-container:nth-of-type(1) {
             grid-template-columns: auto auto auto;
+        
+            @media (max-width: $medium-small) {
+              grid-template-columns: 1fr;
+            }
 
             img {
                 height: 20vw;

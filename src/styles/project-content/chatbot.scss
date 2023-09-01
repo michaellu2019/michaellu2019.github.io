@@ -30,6 +30,10 @@ div#chatbot-project-content-container {
 
         div.image-next-to-container {
             grid-template-columns: 3fr 2fr;
+        
+            @media (max-width: $medium-small) {
+              grid-template-columns: 1fr;
+            }
             
             div.image-container {
                 img {

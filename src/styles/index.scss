@@ -3,6 +3,18 @@
 	-webkit-tap-highlight-color: transparent;
 }
 
+html {
+  font-size: 100%;
+
+  // @media (max-width: $medium) {
+  //   font-size: 80%;
+  // }
+
+  // @media (max-width: $medium-small) {
+  //   font-size: 60%;
+  // }
+}
+
 body {
   background-color: $white;
   color: $black;

@@ -7,6 +7,10 @@ div#competition-project-content-container {
 
     div.project-ideation {
         div.image-next-to-container:nth-of-type(1) {
+            @media (max-width: $medium-small) {
+              grid-template-columns: 1fr;
+            }
+            
             div.image-container {
                 img {
                     height: 20vw;
@@ -16,11 +20,19 @@ div#competition-project-content-container {
         
         div.image-next-to-container:nth-of-type(2) {
             grid-template-columns: auto auto;
+            
+            @media (max-width: $medium-small) {
+              grid-template-columns: 1fr;
+            }
         }
     }
 
     div.project-design {
         div.image-next-to-container:nth-of-type(1) {
+            @media (max-width: $medium-small) {
+              grid-template-columns: 1fr;
+            }
+
             img {
                 // width: 100%;
                 height: 40vw;
@@ -38,6 +50,10 @@ div#competition-project-content-container {
         }
 
         div.image-next-to-container:nth-of-type(1) {
+            @media (max-width: $medium-small) {
+              grid-template-columns: 1fr;
+            }
+            
             img {
                 height: 20vw;
             }

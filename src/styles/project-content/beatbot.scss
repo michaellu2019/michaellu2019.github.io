@@ -24,6 +24,10 @@ div#beatbot-project-content-container {
     div.project-fabrication {
         div.image-next-to-container:nth-of-type(1) {
             grid-template-columns: auto auto;
+        
+            @media (max-width: $medium-small) {
+              grid-template-columns: 1fr;
+            }
 
             img {
                 height: 22vw;

@@ -13,6 +13,10 @@ div#krabs-project-content-container {
         div.image-next-to-container {
             grid-template-columns: 1fr 2fr;
             grid-gap: 2rem;
+            
+            @media (max-width: $medium-small) {
+                grid-template-columns: 1fr;
+              }
 
             div.image-container {
                 img {
@@ -25,6 +29,10 @@ div#krabs-project-content-container {
     div.project-design {
         div.image-next-to-container {
             grid-template-columns: 1fr 1fr;
+            
+            @media (max-width: $medium-small) {
+                grid-template-columns: 1fr;
+            }
             
             video:nth-of-type(1) {
                 width: 100%;
@@ -43,6 +51,10 @@ div#krabs-project-content-container {
 
     div.project-fabrication {
         div.image-next-to-container {
+            @media (max-width: $medium-small) {
+                grid-template-columns: 1fr;
+            }
+
             div.image-container {
                 img {
                     height: 100%;

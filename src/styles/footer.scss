@@ -22,14 +22,26 @@ footer.primary {
 	a.footer-icon-link {
 		margin: 0 1.5rem;
 		display: inline-block;
+        
+		@media (max-width: $medium-small) {
+			margin: 0 1rem;
+		}
 
 		svg.footer-icon {
 			fill: rgba(0, 0, 0, 0.55);
 			height: 2rem;
 			transition: 0.25s ease-in-out;
+        
+			@media (max-width: $medium-small) {
+				height: 1.5rem;
+			}
 
 			&#footer-email-icon {
 				height: 2.25rem;
+        
+				@media (max-width: $medium-small) {
+					height: 1.75rem;
+				}
 			}
 
 			&:hover {

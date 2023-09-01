@@ -7,6 +7,7 @@
         text-align: center;
         list-style: none;
         font-size: 1.5rem;
+        padding-left: 0;
 
         li {
           opacity: 0.5;
@@ -14,6 +15,10 @@
           margin: 0rem 1rem;
           transition: 0.1s ease-in-out;
           cursor: pointer;
+        
+          @media (max-width: $medium-small) {
+            display: block;
+          }
 
           &:hover, &.active {
             opacity: 1.0;
@@ -22,20 +27,30 @@
       }
 
       .project-cards-container {
-        width: 96rem;
+        max-width: 90%;
         margin: 2rem auto;
-        // text-align: center;
-        // padding: 0 10%;
         display: grid;
-        grid-template-columns: repeat(3, 30rem);
-        grid-auto-rows: 30rem;
+        grid-template-columns: repeat(3, 27%);
         grid-gap: 2rem;
+        justify-content: center;
         justify-items: center;
+        text-align: center;
+
+        @media (max-width: $medium) {
+          margin: 1rem auto;
+          grid-template-columns: repeat(2, 40%);
+        }
+        
+        @media (max-width: $medium-small) {
+          margin: 0rem auto;
+          grid-template-columns: repeat(1, 90%);
+        }
 
         .project-card {
           background-color: $light-grey;
           background-size: cover;
           color: $white;
+          aspect-ratio: 1;
           width: 100%;
           height: 100%;
           text-decoration: none;

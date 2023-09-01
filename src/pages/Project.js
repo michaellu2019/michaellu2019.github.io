@@ -9,7 +9,6 @@ function Project(props) {
 
   const locationPathname = useLocation().pathname.substring(1);
   const project = projects.filter(p => p.name === locationPathname)[0];
-  console.log(project.sections.map(section => section));
   
   const [activeSection, selectSection] = useState(project !== null && project.sections.length > 0 ? project.sections[0] : "overview");
 
@@ -27,7 +26,6 @@ function Project(props) {
       top: offsetY,
       behavior: "smooth",
     });
-    console.log(offsetY);
   }
   
   return (

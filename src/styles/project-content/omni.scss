@@ -13,6 +13,10 @@ div#omni-project-content-container {
         div.image-next-to-container {
             grid-template-columns: 5fr 4fr;
             
+            @media (max-width: $medium-small) {
+              grid-template-columns: 1fr;
+            }
+            
             div.image-container {
                 img {
                     width: 100%;

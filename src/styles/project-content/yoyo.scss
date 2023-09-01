@@ -15,6 +15,10 @@ div#yoyo-project-content-container {
         div.image-next-to-container:nth-of-type(1) {
             grid-template-columns: 1fr 2fr;
             grid-gap: 0;
+            
+            @media (max-width: $medium-small) {
+                grid-template-columns: 1fr;
+              }
 
             img {
                 height: 20vw;
@@ -28,6 +32,10 @@ div#yoyo-project-content-container {
 
     div.project-fabrication {
         div.image-next-to-container {
+            @media (max-width: $medium-small) {
+                grid-template-columns: 1fr;
+            }
+
             img {
                 height: 20vw;
             }

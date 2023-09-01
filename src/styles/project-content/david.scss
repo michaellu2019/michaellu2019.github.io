@@ -9,6 +9,11 @@ div#david-project-content-container {
         div.image-next-to-container {
             width: 40%;
             grid-gap: 4rem;
+            
+            @media (max-width: $medium-small) {
+              grid-template-columns: 1fr;
+            }
+
             img {
                 width: 100%;
             }
