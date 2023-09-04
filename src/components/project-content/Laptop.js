@@ -18,13 +18,13 @@ function Laptop(props) {
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <p>The inspiration for Laptop Bot came from the simple "useless box" and comically intricate Rube-Goldberg machines that I had seen over the years. I wanted to create a complicated robot to complete the common task of using on a computer keyboard, whether that would be typing a simple phrase or hitting the power button.</p>
-        <p>I eventually settled on building a 6DOF robot arm because of their ridiculous kinematics and so I could use a laptop running ROS MoveIt to control the machine, which would in turn control the laptop.</p>
+        <p>The inspiration for Laptop Bot came from the simple "useless box" and comically intricate Rube-Goldberg machines that I had seen over the years. I wanted to create a complicated robot to complete the common task of using a computer keyboard, whether that would be typing a simple phrase or hitting the power button.</p>
+        <p>I eventually settled on building a 6DOF robot arm because of their ridiculous kinematics and so that I could use a laptop running ROS MoveIt to control the machine, which would in turn control the laptop.</p>
       </div>
       
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
-        <p>I modeled the entirety of Laptop Bot in Solidworks, allowing me to test out the workspace of the 6DOF robot arm based on different assemblies to ensure all keyboard keys could be reached. The Solidworks model was exported to a URDF file that ROS used for inverse kinematics calculations.</p> 
+        <p>I modeled the entirety of Laptop Bot in SolidWorks, allowing me to test out the workspace of the 6DOF robot arm based on different assemblies to ensure all keyboard keys could be reached. The SolidWorks model was exported to a URDF file that ROS used for inverse kinematics calculations.</p> 
         <img src={laptopCAD} />
         <p>I also designed custom 3D-printed components to mount the arm’s servo motors and the end effector’s solenoid. Using 3D-printed brackets for certain linkages allowed me to specify the linkage length to determine the robot arm's workspace, allowing it to reach the necessary keys on the keyboard.</p>
       </div>
@@ -36,7 +36,7 @@ function Laptop(props) {
           <div className="image-container"><img src={laptopBrackets} /></div>
           <div className="image-container"><img src={laptopSolenoid} /></div>
         </div>
-        <p>The robot arm was assembled with four HobbyPark servos and two goBilda servos, which were controlled by and Arduino Mega and an Arduino Mega sensor shield. To minimize bouncing of the arm caused by the extended end effector solenoid hitting a keyboard key, I padded the end of the solenoid with foam.</p>
+        <p>The robot arm was assembled with four HobbyPark servos and two goBilda servos, which were controlled by an Arduino Mega and an Arduino Mega sensor shield. To minimize bouncing of the arm caused by the extended end effector solenoid hitting a keyboard key, I padded the end of the solenoid with foam.</p>
         <img src={laptopArm} />
         <p>Hardware:</p>
         <ul>
@@ -65,8 +65,8 @@ function Laptop(props) {
         <div className="image-next-to-container">
           <div className="image-container"><img src={laptopROSDiagram} /></div>
           <div className="text-container">
-            <p>To execute a move sequence to hit certain keys, I first created a map of keyboard key characters to end effector XYZ positions in the robot's frame. Then for each character in a desired phrase (or keyboard sequence), the <span className="code-text">moveit_controller</span> ROS node would retrieve the XYZ position from the aforementioned map and pass it into ROS MoveIt to get the joint angles for the robot arm.</p>
-            <p>The <span className="code-text">hardware_controller</span> node would receive these angles through MoveIt's <span className="code-text">joint_states</span> topic. These joint angles would be modified with the appropriate offsets for the corresponding servo motor on the robot arm before being publishing under the <span className="code-text">controller_joint_states</span> topic.</p>
+            <p>To execute a move sequence to hit certain keys, I first created a map of keyboard key characters to end effector XYZ positions in the robot's frame. Then for each character in a desired phrase (or keyboard sequence), the <span className="code-text">moveit_controller</span> ROS node would retrieve the XYZ position from the character-to-position map and pass it into ROS MoveIt to get the joint angles for the robot arm.</p>
+            <p>The <span className="code-text">hardware_controller</span> node would receive these angles through MoveIt's <span className="code-text">joint_states</span> topic. These joint angles would be modified with the appropriate offsets for the corresponding servo motor on the robot arm before being published under the <span className="code-text">controller_joint_states</span> topic.</p>
           </div>
         </div>
         <p>The joint states would then be received by the Arduino Mega over USB serial with the help of the <span className="code-text">serial_node</span> node, and the subscriber of the ROS node running on the Arduino would receive the joint angle data and write the values to the servo motors.</p>
@@ -83,9 +83,9 @@ function Laptop(props) {
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
         <ul>
-          <li>Even though the mechanical design of the robot made it easy to fabricate and assemble, it placed a lot of weight in the upper linkages of the arm. All that mass concentrated far away from the shoulder made the arm slow and difficult to manipulate. The cantilevered mass likely contributed to the harmonic-ish motion of the end effector as it traveled across the keyboard, which you can observe in the video. Moving the actuators closer to the shoulder and using belts to drive farther off joints would mitigate this. </li>
-          <li>Poor quality servos with a lot of backlash meant that the robot arm was not the most rigid. That's why when the solenoid was triggered, the servo backlash would occasionally allow the arm to get pushed away from the keyboard, rather than having all the force being directed into the key to depress it all the way.</li>
-          <li>More deliberate publishing of joint states could have made the robot arm move a lot smoother. By naively publishing all the joint angles in the path outputted by MoveIt at fixed intervals, the robot arm moved rather ungracefully, which was only exacerbated by the poor mechanical assembly.</li>
+          <li>Even though the mechanical design of the robot made it easy to fabricate and assemble, it placed a lot of weight in the upper linkages of the arm. All that mass concentrated far away from the shoulder made the arm slow and difficult to manipulate. The cantilevered mass likely contributed to the harmonic-ish motion of the end effector as it traveled across the keyboard, which you can observe in the video. Moving the actuators closer to the shoulder and using belts to drive upper arm joints would mitigate this. </li>
+          <li>Poor quality servos with a lot of backlash meant that the robot arm was not the most rigid. That's why when the solenoid was triggered, the servo backlash would occasionally allow the arm to get pushed away from the keyboard, rather than having all the force being directed into the key to push it down all the way.</li>
+          <li>More deliberate publishing of joint states could have made the robot arm move a lot smoother. By naively publishing all the joint angles in the path output by MoveIt at fixed intervals, the robot arm moved rather ungracefully, which was only exacerbated by the poor mechanical assembly.</li>
         </ul>
       </div>
     </div>

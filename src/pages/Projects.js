@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { PROJECT_TAGS, projects } from '../utils/project-list.js';
 
 function Projects(props) {
-  const [selectedCategory, selectCategory] = useState(PROJECT_TAGS.FEATURED);
+  const [selectedCategory, selectCategory] = useState(PROJECT_TAGS.FAVORITES);
 
   return (
     <article className="projects-section-container">
@@ -15,7 +15,7 @@ function Projects(props) {
       <div className="content">
         <div className="projects-container">
           <ul className="projects-container-heading">
-            <li className={selectedCategory === PROJECT_TAGS.FEATURED ? `active ${PROJECT_TAGS.FEATURED}` : PROJECT_TAGS.FEATURED} onClick={() => selectCategory(PROJECT_TAGS.FEATURED)}>Featured</li>
+            <li className={selectedCategory === PROJECT_TAGS.FAVORITES ? `active ${PROJECT_TAGS.FAVORITES}` : PROJECT_TAGS.FAVORITES} onClick={() => selectCategory(PROJECT_TAGS.FAVORITES)}>Favorites</li>
             <li className={selectedCategory === PROJECT_TAGS.HARDWARE ? `active ${PROJECT_TAGS.HARDWARE}` : PROJECT_TAGS.HARDWARE} onClick={() => selectCategory(PROJECT_TAGS.HARDWARE)}>Hardware</li>
             <li className={selectedCategory === PROJECT_TAGS.SOFTWARE ? `active ${PROJECT_TAGS.SOFTWARE}` : PROJECT_TAGS.SOFTWARE} onClick={() => selectCategory(PROJECT_TAGS.SOFTWARE)}>Software</li>
             <li className={selectedCategory === "all" ? "active all" : "all"} onClick={() => selectCategory("all")}>All</li>

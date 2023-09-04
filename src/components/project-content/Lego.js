@@ -17,21 +17,21 @@ function Lego(props) {
     <div className="project-content-container" id="lego-project-content-container">
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
-        <p>The Lego Building Bot was a ROS-controlled 6 degrees-of-freedom (DOF) UR5 robot arm that leveraged OpenCV computer vision and a compliant gripper to retrieve and assemble giant Lego® bricks for the final competition of 2.12 - Introduction to Robotics.</p>
+        <p>The Lego Building Bot was a ROS-controlled 6 degrees-of-freedom (DOF) UR5 robot arm that leveraged OpenCV computer vision and a compliant gripper to retrieve and assemble giant Lego® bricks for the final competition of MIT's class 2.12 - Introduction to Robotics.</p>
         <img src={legoCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
         <img src={legoIdea} />
-        <p>Because Lego® bricks would start off scattered on the table in many different orientations, our team wanted to design and end effector that was compliant. This meant that if the robot arm was not perfectly aligned with a Lego® brick, the grabbing end effector would be able to shift into place to align itself with the Lego® brick.</p>
+        <p>Because Lego® bricks would start scattered across the competition table in many different orientations, our team wanted to design an end effector that was compliant. This meant that if the robot arm was not perfectly aligned with a Lego® brick, the grabbing end effector would be able to shift into place to align itself with the Lego® brick.</p>
         <p>While we considered many different approaches to achieve compliance, we settled on using flexible 3D-printer filament strands due to their availability and deflection characteristics.</p>
       </div>
       
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
-        <p>We designed our gripper two have two 3D-printed fingers that would slide into the stud holes of the Lego® bricks. One finger would be stationary, and the other one would be mounted on a servo motor to spin and grip the flange of the stud.</p>
-        <p>3D modeling the gripper and Lego® brick in Solidworks helped with visualizing and determining how much room there would be in the end effector claws when grabbing the Lego® brick hole edges for different claw shapes and sizes.</p>
+        <p>We designed our gripper to have two 3D-printed fingers that would slide into the stud holes of the Lego® bricks. One finger would be stationary, and the other one would be mounted on a servo motor to spin and grip the flange of the stud.</p>
+        <p>3D modeling the gripper and Lego® brick in SolidWorks helped with visualizing and determining how much room there would be in the end effector claws when grabbing the Lego® brick hole edges for different claw shapes and sizes.</p>
         <div className="image-next-to-container">
           <div className="image-container"><img src={legoCAD} /></div>
           <div className="image-container"><img src={legoCADGripper} /></div>
@@ -87,7 +87,7 @@ function Lego(props) {
       
       <div className="project-content-container-section project-results">
         <h1>Results</h1>
-        <p>Combining the two software components, we were able to build a robot arm where a human could teleoperate the robot arm with visual assistance from the output of the comptuer vision system. The robot arm could be indexed to the desired approximate position of a Lego® brick, and the compliance in the gripper would remove the need to be perfectly aligned to grab the brick.</p>
+        <p>Combining the two software components, we were able to build a robot arm where a human could teleoperate the robot arm with visual assistance from the output of the computer vision system. The robot arm could be indexed to the desired approximate position of a Lego® brick, and the compliance in the gripper would remove the need to be perfectly aligned to grab the brick.</p>
         <iframe src="https://www.youtube.com/embed/oTqwCtPKNQM" title="MIT 2.12 Final Project: Lego-Building UR5 Robot Arm" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
 
