@@ -16,33 +16,33 @@ function Hydros(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <img src={hydrosBrochure} />
-        <p>Hydros was a firehose cleaning machine that used high-pressure water sprayers and hydro-powered scrubs to remove carcinogenic debris off of firehoses. It was my team's (go Purple!) project for MIT's MechE capstone class 2.009 - Product Engineering Processes.</p>
+        <p>Hydros was a fire hose cleaning machine that used high-pressure water sprayers and hydro-powered scrubs to remove carcinogenic debris off fire hoses. It was my team's (go Purple!) project for MIT's MechE capstone class 2.009 - Product Engineering Processes.</p>
         <img src={hydrosTeam} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
         <img src={hydrosSketch} />
-        <p>The idea for Hydros began when I observed firefighers packing up firehose in the aftermath of a structure fire. I noticed how hours would be spent walking out the hoses to drain them any residual water/air then packing them into the back of a truck.</p>
+        <p>The idea for Hydros began when I observed firefighters packing up fire hose in the aftermath of a structure fire. I noticed how hours would be spent walking out the hoses to drain them of any residual water/air then packing them into the back of a truck.</p>
         
         <div className="image-next-to-container">
           <div className="image-container"><img src={hydrosHose} /></div>
           <div>
-            <p>The initial ideation phase of our project involved carrying out a bunch of interviews with our target users. We travelled across Massachusetts, going to fire departments in the area to learn about their pain points in the process of drying, cleaning, washing, and packing used firehose. We even got a few old firehoses as a gift!</p>
+            <p>The initial ideation phase of our project involved carrying out a bunch of interviews with our target users. We traveled across Massachusetts, going to fire departments in the area to learn about their pain points in the process of drying, cleaning, washing, and packing used fire hose. We even got a few old fire hoses as a gift!</p>
           </div>
         </div>
       </div>
 
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
-        <p>Our solution to the problem was to build a machine that would semi-automate some of the steps of this process. Hydros contained a set of high-pressure water sprayers and hydro-powered brushes that would wash and scrub off debris from the used firehose. The firehose would also be spooled into a neat roll to squeeze out residual water/air and to make it easy to load onto a vehicle.</p>
+        <p>Our solution to the problem was to build a machine that would automate some of the steps of this process. Hydros contained a set of high-pressure water sprayers and hydro-powered brushes that would wash and scrub off debris from the used fire hose. The fire hose would also be spooled into a neat roll to squeeze out residual water/air and to make it easy to load onto a vehicle.</p>
         <img src={hydrosCAD} />
         <p>We designed most of our assembly in Fusion360 to ensure the spacing of all our mechanisms would fit onto one portable machine that could be deployed at the site of a fire.</p>
       </div>
 
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
-        <p>A lot of work was done to prototype and test out the device's ability to clean firehose. We contacted local fire departments and ran our hydro-powered system on 50 PSI water flowing from a fire truck (which would be the water source at fire scenes) to ensure the structural integrity of our water system as well as the device's ability to clean.</p>
+        <p>A lot of work was done to prototype and test out the device's ability to clean fire hose. We contacted local fire departments and ran our hydro-powered system on 50 PSI water flowing from a fire truck (which would be the water source at fire scenes) to ensure the structural integrity of our water system as well as the device's ability to clean.</p>
         <div className="image-next-to-container">
           <div className="image-container"><img src={hydrosTruck} /></div>
           <div className="image-container"><img src={hydrosTesting} /></div>
@@ -71,7 +71,7 @@ function Hydros(props) {
 
       <div className="project-content-container-section project-results">
         <h1>Results</h1>
-        <p>Our product was then demoed at the class's final presentation event in December.</p>
+        <p>After months of hard work, we finally demoed our product at the class's final presentation event in December.</p>
         <iframe src="https://www.youtube.com/embed/Qw2EdmquCUw" title="MIT 2.009 Purple Team Final Presentation: Hydros" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>  
       </div>
 
@@ -79,7 +79,7 @@ function Hydros(props) {
         <h1>Improvements</h1>
         <ul>
           <li>The washing system involved a lot of connectors, adapters, manifolds, and auxiliary control components. This increased the part count, assembly time, and thus the calculated product cost. It would have been good to attempt integrating some of these components or machining more manifolds to reduce the part count.</li>
-          <li>Our productyar taras very bottom heavy due to the washing box being so close to the end. Adding some counterweights, shifting the locations of other mechanisms, or adding some stability structures at the end would reduce the amount of times we almost tipped over the device.</li>
+          <li>Our product was very bottom heavy due to the washing box being so close to the end. Adding some counterweights, shifting the locations of other mechanisms, or adding some stability structures at the end would reduce the number of times we almost tipped over the device.</li>
         </ul>
       </div>
     </div>

@@ -17,14 +17,14 @@ function Bus(props) {
     <div className="project-content-container" id="bus-project-content-container">
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
-        <p>This IoT device was created to monitor bus stop occpancy and environmental conditions in real-time in Miani-Dade County, which was project challenge presented in the MIT class 6.900 - Engineering for Impact.</p>
+        <p>This IoT device was created to monitor bus stop occupancy and environmental conditions in real time in Miami-Dade County, which was the project challenge presented in the MIT capstone class 6.900 - Engineering for Impact.</p>
         <img src={busCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
         <img src={busSketch} />
-        <p>The bus-monitoring device was designed to be inconspicuous and was to be inserted into a bus pole. It would have a solar panel as a power source along with sensors to monitor the environment. Finally, it would use a cellular LTE module to post data to an online database.</p>
+        <p>The bus-monitoring device was designed to be inserted into a bus pole to be as inconspicuous as possible. It would have a solar panel as a power source along with sensors to monitor its environment. It would also use a cellular LTE module to post data to an online database.</p>
       </div>
       
       <div className="project-content-container-section project-design">
@@ -33,12 +33,12 @@ function Bus(props) {
         <div className="image-next-to-container">
           <div className="image-container"><img src={busCad} /></div>
           <div className="text-container">
-            <p>The device's case that had three components: a press-fit peg that would go into the bus pole, a main housing case, and a case cover that would have threaded holes for the solar panel to mount to. These parts were designed in Solidworks.</p>
+            <p>The device's case had three components: a press-fit peg that would go into the bus pole, a main housing case, and a case cover that would have threaded holes for the solar panel to mount to. These parts were designed in SolidWorks.</p>
             <p>The electronics would be housed inside the case. This would include a LiPo battery, custom PCB, and Boron LTE module.</p>  
-            <p>The solar panel would then be mounted to the case cover with two sheet metal brackets. It was angled to prevent the accumulation of dirt and water (and bird droppings of course, who could forget).</p>
+            <p>The solar panel would then be mounted to the case cover with two sheet metal brackets. It was angled to prevent the accumulation of dirt and water (and bird droppings of course, who could forget?).</p>
           </div>
         </div>
-        <p>A custom PCB was designed to mimize the footprint of electronics as much as possible. A prototype USB battery power board was designed in Altium then built and tested. This board would then be developed further into an integrated power board that would house the device's ESP32 MCU, I2C communication lines to the device's temperature and humidity sensors, and the solar panel and battery charge circuitry.</p>
+        <p>A custom PCB was designed to minimize the footprint of electronics as much as possible. A prototype USB battery power board was designed in Altium then built and tested. This board would then be developed further into an integrated power board that would house the device's ESP32 MCU, I2C communication lines to the device's temperature and humidity sensors, and the solar panel and battery charge circuitry.</p>
         <div className="image-next-to-container">
           <div className="image-container"><img src={busPowerSchematic} /></div>
           <div className="image-container"><img src={busPowerLayout} /></div>
@@ -75,14 +75,14 @@ function Bus(props) {
       
       <div className="project-content-container-section project-programming">
         <h1>Programming</h1>
-        <p>Firmware for the electronics was written in C to allow the MCU to communicate with the sensors over I2C and also to scan its environment for unique IP addresses of nearby devices that would be correlated with occpancy of the bus stop. This data was then sent to a Boron LTE cellular module over serial communication, which then would periodically send an HTTP request to a Flask server.</p>
+        <p>Firmware for the electronics was written in C to allow the MCU to communicate with the sensors over I2C and to scan its environment for the number of unique IP addresses of nearby devices, which would be correlated with occupancy of the bus stop. This data was then sent to a Boron LTE cellular module over serial communication, which then would periodically send an HTTP request to a Flask server.</p>
         <img src={busSystemDiagram} />
         <p>This Flask server would pull data from several tables in an SQL database and would display them on an HTML web page for authorized users to monitor bus stop occupancy, temperature, and humidity in real time.</p>
       </div>
       
       <div className="project-content-container-section project-results">
         <h1>Results</h1>
-        <p>Eventually, and end-to-end system was built that could generate data at a bus stop and post it over cellular without the need for a WiFi connection. With the use of solar power and a LiPo battery to store charge, the device was able to power itself.</p>
+        <p>Eventually, an end-to-end system was built that could generate data at a bus stop and post it over cellular without the need for a WiFi connection. With the use of solar power and a LiPo battery to store charge, the device was able to power itself.</p>
         <video controls>
           <source src={busResults} type="video/mp4" />
           Your browser does not support the video tag.
