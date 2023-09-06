@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eb2080d9.css",
-    "main.js": "/portfolio/static/js/main.4b6dc3df.js",
+    "main.js": "/portfolio/static/js/main.ed66394e.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/car-driving.mp4": "/portfolio/static/media/car-driving.93e73191e85c82dd43dd.mp4",
     "static/media/projects-competition-card.gif": "/portfolio/static/media/projects-competition-card.66deb061e30d0816557e.gif",
@@ -191,7 +191,7 @@
     "static/media/about-sqwardface.jpeg": "/portfolio/static/media/about-sqwardface.4f074e99c856f3e54a44.jpeg",
     "static/media/work-gns-logo.png": "/portfolio/static/media/work-gns-logo.69b551500b323e452102.png",
     "static/media/work-milwaukee-logo.png": "/portfolio/static/media/work-milwaukee-logo.8c593f0828c8b38c7580.png",
-    "static/media/omni-inverse-kinematics.png": "/portfolio/static/media/omni-inverse-kinematics.04a169683b706cb88a4e.png",
+    "static/media/omni-inverse-kinematics.png": "/portfolio/static/media/omni-inverse-kinematics.52b70aaeb740fedd6c82.png",
     "static/media/ball-software-diagram.png": "/portfolio/static/media/ball-software-diagram.f5afc05c26f2847fab2b.png",
     "static/media/beatbot-schematic.png": "/portfolio/static/media/beatbot-schematic.1a277e6b411eefe14fd8.png",
     "static/media/boxing-game-state-machine.png": "/portfolio/static/media/boxing-game-state-machine.6c8f7b23ecf08ad76ea6.png",
@@ -212,11 +212,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/arrow.svg": "/portfolio/static/media/arrow.848e0f18c28a360fd30017cbdde52520.svg",
     "main.eb2080d9.css.map": "/portfolio/static/css/main.eb2080d9.css.map",
-    "main.4b6dc3df.js.map": "/portfolio/static/js/main.4b6dc3df.js.map",
+    "main.ed66394e.js.map": "/portfolio/static/js/main.ed66394e.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb2080d9.css",
-    "static/js/main.4b6dc3df.js"
+    "static/js/main.ed66394e.js"
   ]
 }
