@@ -26,15 +26,15 @@ function Beatbot(props) {
       
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
-        <p>Because a new chassis was being used, I had to redesign many sensor mounts in Solidworks. For instance, the tachometer magnets used to measure wheel rotations would be housed in a new custom SLA 3D-printed wheel mount that would clip onto the car wheel spokes.</p>
+        <p>Because a new chassis was being used, I had to redesign many sensor mounts in SolidWorks. For instance, the tachometer magnets used to measure wheel rotations would be housed in a new custom SLA 3D-printed wheel mount that would clip onto the car wheel spokes.</p>
         <img src={beatbotCAD} />
-        <p>The electroincs of the car would be based around an Arduino Due (because of its higher clock speed), which would interface with the car's sensors and controllers. The line-following would be achieved by an array of six LED-photoresistor pairs. The microcontroller would also receive control inputs from a pair of multiplexers that would feed the input from the RC controller into the Arduino Due.</p>
+        <p>The electronics of the car would be based around an Arduino Due (because of its relatively high clock speed), which would interface with the car's sensors and controllers. The line following would be achieved by an array of six LED-photoresistor pairs. The microcontroller would also receive control inputs from a pair of multiplexers that would feed the input from the RC controller into the Arduino Due.</p>
         <img src={beatbotSchematic} />
       </div>
       
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
-        <p>Once the chassis was changed to the lighter version, I added two plates to mount electronics as well as mounting brackets for some PID-tuning potentiometers and the line-following array of six LED-photoresistor pairs.</p>
+        <p>Once the chassis was changed to the lighter version, I added two side plates to mount electronics as well as mounting brackets for some PID-tuning potentiometers and the line-following array of six LED-photoresistor pairs.</p>
         <div className="image-next-to-container">
           <div className="image-container"><img src={beatbotWheel} /></div>
           <div className="image-container"><img src={beatbotCar} /></div>
@@ -62,7 +62,7 @@ function Beatbot(props) {
       <div className="project-content-container-section project-programming">
         <h1>Programming</h1>
         <img src={beatbotTrack} />
-        <p>When the BeatBot was placed on a track, the array of photoresistors would be able to detect the position of the line relative to the midline of the car. This deviation would be fed into a PID loop to adjust the car's steering angle so that as it drove forward, it would steer itself into the line to recenter itself over it. A large portion of the prototype development cycle was dedicated to retuning the PID values for the new car chassis.</p>    
+        <p>When the BeatBot was placed on a track, the array of photoresistors would be able to detect the position of the line relative to the midline of the car by measuring which photoresistors had the brightest values (indicating where the white line was reflecting light). This deviation would be fed into a PID loop to adjust the car's steering angle so that as it drove forward, it would steer itself into the line to recenter itself over the line. A large portion of the prototype development cycle was dedicated to retuning the PID values for the new car chassis.</p>    
       </div>
       
       <div className="project-content-container-section project-results">
@@ -74,8 +74,8 @@ function Beatbot(props) {
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
         <ul>
-          <li>Speed-control of the drive motors was not implemented into the line-following controller. Because of the limited resolution of the servo control, coarse steering at high speeds would lead to a lot of overshoot and destabilization of the system. Considering the RC car's speed and adjusting it as part of the line-following algorithm could improve stability.</li>
-          <li>More rigor onto measuring and characterizing the response time of the system vs. its measurements and position could help with debugging the system rather than blindly tuning PID parameters.</li>
+          <li>Speed control of the drive motors was not implemented into the line-following controller. Because of the limited resolution of the servo control, coarse steering at high speeds would lead to a lot of overshoot and destabilization of the system. Considering the RC car's speed and adjusting it as part of the line-following algorithm could improve stability.</li>
+          <li>More rigor in measuring and characterizing the response time of the system vs. its measurements and position could help with debugging the system rather than blindly tuning PID parameters.</li>
         </ul>
       </div>
     </div>

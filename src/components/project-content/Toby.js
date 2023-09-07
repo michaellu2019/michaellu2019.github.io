@@ -27,13 +27,13 @@ function Toby(props) {
       
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
-        <p>The crux of Toby’s design was that computationally-heavy processes would be handled by a smartphone, which would communicate over Bluetooth with an Arduino Mega to control the movement of Toby with servo motors that controlled his arms and cordless drill motors that controlled his wheels.</p>
+        <p>The crux of Toby’s design was that computationally heavy processes would be handled by a smartphone, which would communicate over Bluetooth with an Arduino Mega to control the movement of Toby with servo motors that controlled his arms and cordless drill motors that controlled his wheels.</p>
         <img src={tobyDiagram} />
       </div>
       
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
-        <p>The drive train chassis for Toby consisted of two cordless drills bolted to a plastic lunch tray. The main electronics included an Arduino Mega and Servo Shield, L298N Motor Driver, HC-06 Bluetooth Module, SG90 Micro Servo Motors, and two Hi-Spec Cordless Drills.</p>
+        <p>The drivetrain chassis for Toby consisted of two cordless drills bolted to a plastic lunch tray. The main electronics included an Arduino Mega and Servo Shield, L298N Motor Driver, HC-06 Bluetooth Module, SG90 Micro Servo Motors, and two Hi-Spec Cordless Drills.</p>
         <img src={tobyTray} />
         <p>The smartphone was mounted inside Toby’s head and the camera was put behind Toby’s little mouth opening. This would allow Toby to observe his surroundings with the smartphone’s built-in camera and to run computer vision algorithms to respond to his environment.</p>
         <img src={tobyHead} />
@@ -78,8 +78,8 @@ function Toby(props) {
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
         <ul>
-          <li>Over the course of several months, Toby's heavy head caved into his body, and significant warpage was occurring on the main box of the robot. I probably backed myself into a tough corner building the entire structure out of cardboard, but adding diagonal cross member trusses into the assembly (even if they were made out of cardboard) would add some rigidity to the main body.</li>
-          <li>Because I decided to zip tie two drills into a lunch tray and relied on a frictional force between the drill chuck and a rubber wheel to drive a robot, the performance of the drive system was very unreliable. Obviously, pledging to build a robot out of simple materials removes the likelihood of a high quality assembly, so adding an inertial measurement unit and some software hacks could have at least helped the robot drive straight for more than two meters.</li>
+          <li>Over the course of several months, Toby's heavy head caved into his body, the main box of the robot was significantly warped. I probably backed myself into a tough corner building the entire structure out of cardboard, but adding diagonal cross member trusses into the assembly (even if they were made out of cardboard) would add some rigidity to the main body.</li>
+          <li>Because I decided to zip tie two drills into a lunch tray and relied on a frictional force between the drill chuck and a rubber wheel to drive a robot, the performance of the drive system was very unreliable. Obviously, pledging to build a robot out of simple materials removes the likelihood of a high-quality assembly, so adding an inertial measurement unit and some software hacks could have at least helped the robot drive straight for more than two meters.</li>
         </ul>
       </div>
     </div>
