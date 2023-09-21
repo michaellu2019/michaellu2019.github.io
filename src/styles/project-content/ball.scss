@@ -1,5 +1,10 @@
 div#ball-project-content-container {
     div.project-overview {
+        iframe {
+            width: 50%;
+            display: block;
+            margin-bottom: 1rem;
+        }
         img {
             width: 50%;
         }
