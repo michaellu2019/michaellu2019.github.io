@@ -25,6 +25,9 @@ import Trash from '../components/project-content/Trash.js'
 import Capacitive from '../components/project-content/Capacitive.js'
 import Euclidean from '../components/project-content/Euclidean.js'
 
+import Ninja from '../components/project-content/Ninja.js'
+import Can from '../components/project-content/Can.js'
+
 export const PROJECT_TAGS = {
   HARDWARE: "hardware",
   SOFTWARE: "software",
@@ -55,6 +58,8 @@ function Project(id, name, title, description, tags, date,
 }
 
 const hardwareProjects = [
+  new Project(33, "can", "R2-D2 Robot", "A 40-inch tall can-shaped robot that used custom H-Bridges, a buck converter, and switched-capcitor power supply to drive a variety of motors.", 
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "November - December 2023", "https://github.com/michaellu2019/trash-can", "https://youtu.be/NPbbGyOREl0", ["DC-DC Converters", "CAD", "PSoC", "C"], MECHATRONICS_PROJECT_SECTIONS, Can),
   new Project(31, "ball", "BB-8 Robot", "A 20-inch ball robot that uses a pendulum mechanism and feedback control to stabilize itself.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "April - May 2023", "https://github.com/michaellu2019/ball", "https://youtu.be/xmnu_rDfkFk", ["Feedback Control", "CAD", "PSoC", "C"], MECHATRONICS_PROJECT_SECTIONS, Ball),
   new Project(30, "omni", "Omni-Directional Robot", "An STM32-based robot that uses four omni-directional wheels to move in any direction. ", 
@@ -70,7 +75,7 @@ const hardwareProjects = [
   new Project(23, "competition", "MIT Competition Robot", "An aluminum robot, featuring a belt-driven cascade lift, detachable winch, and tank chassis, designed to lift and pull heavy items in the final compoetition of 2.007, MIT's design and manufacturing class.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "February - May 2022", "https://github.com/michaellu2019/big-daddy", "https://youtu.be/f2lEhvnP2P4", ["Feedback Control", "CAD", "Arduino", "C++"], MECHATRONICS_PROJECT_SECTIONS, Competition),
   new Project(22, "lego", "Lego Building Bot", "A ROS-controlled 6DOF UR5 robot arm that leverages OpenCV computer vision and a compliant gripper to assemble giant Lego bricks.", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "April - May 2022", "https://github.com/michaellu2019/2.12-final-project", "https://youtu.be/oTqwCtPKNQM", ["ROS", "OpenCV", "Python", "C++"], MECHATRONICS_PROJECT_SECTIONS, Lego),
+              [PROJECT_TAGS.HARDWARE], "April - May 2022", "https://github.com/michaellu2019/2.12-final-project", "https://youtu.be/oTqwCtPKNQM", ["ROS", "OpenCV", "Python", "C++"], MECHATRONICS_PROJECT_SECTIONS, Lego),
   new Project(17, "donkey", "Robot Donkey", "A WiFi-controlled robotic donkey that walks and moves its head using inverse kinematics.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "January - June 2021", "https://github.com/michaellu2019/dog", "https://youtu.be/A4OMXvGx_4I", ["Inverse Kinematics", "CAD", "Raspberry Pi", "Python"], MECHATRONICS_PROJECT_SECTIONS, Donkey),
   new Project(15, "boxing", "IoT Boxing", "An IoT boxing game that uses an ESP32 WiFI MCU and accelerometer real-time motion data over WebSockets to an online 3D boxing game.", 
@@ -95,7 +100,9 @@ const hardwareProjects = [
               [PROJECT_TAGS.HARDWARE], "February 2017", "", "", ["Arduino", "C++"], LAZY_PROJECT_SECTIONS, Capacitive),
 ];
 
-const softwareProjects = [
+const softwareProjects = [  
+  new Project(32, "ninja", "KUKA iiwa Fruit Ninja", "A simulation of a KUKA iiwa robot arm wielding a giant katana to play fruit ninja.",
+              [PROJECT_TAGS.SOFTWARE, PROJECT_TAGS.FAVORITES], "November - December 2023", "https://github.com/michaellu2019/kuka-iiwa-fruit-ninja", "https://youtu.be/ZY0-2enpThs", ["Trajectory Optimization", "Inverse Kinematics", "Drake", "Python"], SOFTWARE_PROJECT_SECTIONS, Ninja),
   // new Project(28, "falcon", "Falcon 9 Rocket Landing", "Rocket", 
   //             [PROJECT_TAGS.SOFTWARE, PROJECT_TAGS.FAVORITES], "April - May 2023", "", "", []),
   new Project(26, "david", "AI Turtles", "A simulation of a turtle population that evolves through a genetic algorithm to swim towards a target more efficiently.", 
@@ -111,7 +118,7 @@ const softwareProjects = [
   new Project(16, "ghostwriters", "Ghostwriters", "A ReactJS and Golang-based CRUD web-app that allows users to collaboratively create stories.", 
               [PROJECT_TAGS.SOFTWARE], "May 2021", "https://github.com/michaellu2019/ghostwriters", "https://ghost-writers.herokuapp.com", ["ReactJS", "Golang"], LAZY_PROJECT_SECTIONS, Ghostwriters),
   new Project(12, "chatbot", "Facebook Chatbot", "A Tensorflow-based Transformer deep learning model trained on my text messages to create an online chatbot.", 
-              [PROJECT_TAGS.SOFTWARE, PROJECT_TAGS.FAVORITES], "June 2020", "https://github.com/michaellu2019/Sadmanda-Chatbot", "https://youtu.be/KBvbvm9B2dA", ["Deep Learning", "TensorFlow", "Python"], SOFTWARE_PROJECT_SECTIONS, Chatbot),
+              [PROJECT_TAGS.SOFTWARE], "June 2020", "https://github.com/michaellu2019/Sadmanda-Chatbot", "https://youtu.be/KBvbvm9B2dA", ["Deep Learning", "TensorFlow", "Python"], SOFTWARE_PROJECT_SECTIONS, Chatbot),
   new Project(10, "regret", "Regret", "A ReactJS and Flask-based CRUD web-app that allows users to collaboratively decorate my bedroom wall.", 
               [PROJECT_TAGS.SOFTWARE], "March 2020", "https://github.com/michaellu2019/Regret", "https://big-regret.herokuapp.com", ["ReactJS", "Flask", "AWS", "Python"], LAZY_PROJECT_SECTIONS, Regret),
   new Project(9, "friends", "Friends, Where You At?", "A Google Maps-based visualizer of the hometowns of my friends, obtained through Python web-scraping public Facebook data.", 
