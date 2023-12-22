@@ -1,13 +1,31 @@
 div#ninja-project-content-container {
     div.project-overview {
         img {
-            width: 70%;
+            width: 50%;
         }
     }
 
     div.project-ideation {
         img:nth-of-type(1) {
-            width: 80%;
+            width: 60%;
+        }
+    }
+
+    div.project-design {
+        img:nth-of-type(1) {
+            width: 50%;
+        }
+        
+        img:nth-of-type(2) {
+            width: 60%;
+        }
+
+        div.image-next-to-container {
+            grid-template-columns: 50% 40%;
+
+            p.text-next-to-math {
+                margin-top: 0;
+            }
         }
         
         div.image-container {
@@ -17,26 +35,18 @@ div#ninja-project-content-container {
         }
     }
 
-    div.project-design {
-        img:nth-of-type(1) {
-            width: 100%;
-        }
-    }
-
-    div.project-fabrication {
-        img {
-            width: 70%;
-        }
-    }
-
     div.project-programming {
-        iframe {
+        img:nth-of-type(1) {
+            width: 60%;
+        }
+        
+        video {
             width: 70%;
         }
     }
 
     div.project-results {
-        iframe {
+        video {
             width: 70%;
         }
     }
