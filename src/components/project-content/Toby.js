@@ -15,28 +15,28 @@ function Toby(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <p>Toby was a homemade robot built primarily out of ordinary items: cardboard, paper, Legos, cordless drills, and a smartphone.</p>
-        <img src={tobyCover} />
+        <img alt="" src={tobyCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <img src={tobyBox} />
+        <img alt="" src={tobyBox} />
         <p>I noticed this #morethanabox illustration on one of my Amazon packages over the summer, and it inspired me to push the limits of what a simple cardboard box could become, so I decided to create a giant robot named Toby out of ordinary items. I especially explored through many post-it sketches how to make Toby seem as friendly as possible.</p>
-        <img src={tobySketches} />
+        <img alt="" src={tobySketches} />
       </div>
       
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
         <p>The crux of Toby’s design was that computationally heavy processes would be handled by a smartphone, which would communicate over Bluetooth with an Arduino Mega to control the movement of Toby with servo motors that controlled his arms and cordless drill motors that controlled his wheels.</p>
-        <img src={tobyDiagram} />
+        <img alt="" src={tobyDiagram} />
       </div>
       
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
         <p>The drivetrain chassis for Toby consisted of two cordless drills bolted to a plastic lunch tray. The main electronics included an Arduino Mega and Servo Shield, L298N Motor Driver, HC-06 Bluetooth Module, SG90 Micro Servo Motors, and two Hi-Spec Cordless Drills.</p>
-        <img src={tobyTray} />
+        <img alt="" src={tobyTray} />
         <p>The smartphone was mounted inside Toby’s head and the camera was put behind Toby’s little mouth opening. This would allow Toby to observe his surroundings with the smartphone’s built-in camera and to run computer vision algorithms to respond to his environment.</p>
-        <img src={tobyHead} />
+        <img alt="" src={tobyHead} />
         <p>Hardware:</p>
         <ul>
           <li>4 × SG90 Micro Servo Motors</li>
@@ -65,14 +65,14 @@ function Toby(props) {
       
       <div className="project-content-container-section project-programming">
         <h1>Programming</h1>
-        <img src={tobyVision} />
+        <img alt="" src={tobyVision} />
         <p>The smartphone inside Toby’s head ran a custom Android app that I wrote called “Annice Brain” so that Toby could carry out intensive computer vision (OpenCV Haar Cascade Classifiers) and speech recognition (CMU PocketSphinx) algorithms.</p>    
       </div>
       
       <div className="project-content-container-section project-results">
         <h1>Results</h1>
         <p>With all parts of the system integrated together, Toby was able to drive around, track the faces of humans, obey certain voice commands, and move his little flipper-like penguin arms. Because of the relatively simple materials used for Toby, multiple local elementary schools asked me to present my project to their students to pique their interest in robotics.</p>
-        <img src={tobyPresentation} />
+        <img alt="" src={tobyPresentation} />
       </div>
 
       <div className="project-content-container-section project-improvements">

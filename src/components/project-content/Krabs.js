@@ -14,18 +14,18 @@ function Krabs(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <p>Kombat Krabs were remote-controlled toy robot crabs that walked using Jansen's linkage (created by kinetic sculptor Theo Jansen). These Krabs were built primarily out of foam core, paper, and cardboard to meet the $20 material constraint of the class (2.00B - Toy Product Design) for which they were made.</p>
-        <img src={krabsCover} />
+        <img alt="" src={krabsCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <img src={krabsSketch} />
-        <p>The biggest challenge of this project was designing a mechanism for the Krabs to walk on eight legs with such a tight budget. I decided to use <a href="https://en.wikipedia.org/wiki/Jansen%27s_linkage" target="_blank">Jansen’s Linkage</a>, a walking mechanism that would trace out a smooth walking curve when driven by a circular rotational movement.</p>
+        <img alt="" src={krabsSketch} />
+        <p>The biggest challenge of this project was designing a mechanism for the Krabs to walk on eight legs with such a tight budget. I decided to use <a href="https://en.wikipedia.org/wiki/Jansen%27s_linkage" rel="noreferrer" target="_blank">Jansen’s Linkage</a>, a walking mechanism that would trace out a smooth walking curve when driven by a circular rotational movement.</p>
         
         <div className="image-next-to-container">
-          <div className="image-container"><img src={jansensLinkage} /></div>
+          <div className="image-container"><img alt="" src={jansensLinkage} /></div>
           <div className="text-container">
-            <p>By attaching several linkages of particular lengths together and driving the leg with a motor, the linkage would generate a smooth walking motion. Jansen's Linkage was also quite scalable because multiple sets of linkages could be attached to one rotor to create <a href="https://youtu.be/MYGJ9jrbpvg" target="_blank">bipeds, quadrupeds, octopeds, etc.</a>.</p>
+            <p>By attaching several linkages of particular lengths together and driving the leg with a motor, the linkage would generate a smooth walking motion. Jansen's Linkage was also quite scalable because multiple sets of linkages could be attached to one rotor to create <a href="https://youtu.be/MYGJ9jrbpvg" rel="noreferrer" target="_blank">bipeds, quadrupeds, octopeds, etc.</a>.</p>
           </div>
         </div>
       </div>
@@ -41,10 +41,10 @@ function Krabs(props) {
               Your browser does not support the video tag.
             </video>
           </div>
-          <div className="image-container"><img src={krabsCAD} /></div>
+          <div className="image-container"><img alt="" src={krabsCAD} /></div>
         </div>
         <p>The entire Krab was modeled in Autodesk Fusion360 to work out how I would be able to fit eight legs inside a foam core frame along with all the necessary electronics.</p>
-        <iframe src="https://mymit709.autodesk360.com/g/shares/SH56a43QTfd62c1cd968c5e3fd890a4bc8e1" frameBorder="0" allowFullScreen></iframe>
+        <iframe title="krab-cad" src="https://mymit709.autodesk360.com/g/shares/SH56a43QTfd62c1cd968c5e3fd890a4bc8e1" frameBorder="0" allowFullScreen></iframe>
       </div>
       
       <div className="project-content-container-section project-fabrication">
@@ -52,8 +52,8 @@ function Krabs(props) {
         <p>Based on the dimensions planned in CAD, I carved out parts for eight legs from the foam core sheets given to us from the class. Rigid parts of the linkage were created with foam core glued together to make solid blocks. Linkages would be joined with folded paper to create hinge-joints between components.</p>
         <p>The drive shaft and leg carriage shafts would be made from paperclip wire, and the legs would have paper bushings glued to them, which would slide onto the paper clip wire shafts.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={krabsLegs} /></div>
-          <div className="image-container"><img src={krabsElectronics} /></div>
+          <div className="image-container"><img alt="" src={krabsLegs} /></div>
+          <div className="image-container"><img alt="" src={krabsElectronics} /></div>
         </div>
         <p>The biggest challenge of prototyping was optimizing the Krab's walking curve by tweaking the dimensions of Jansen’s linkage for the Krab legs. The initial linkage lengths made the Krab's walk too unstable, so some linkage segments were shortened to reduce the size of the Krab's walking curve. This allowed the Krab to maintain its balance, especially with a high center of gravity.</p>
         <p>Hardware:</p>

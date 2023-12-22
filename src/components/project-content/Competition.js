@@ -23,20 +23,20 @@ function Competition(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <p>This robot was built for the final competition of 2.007, MIT’s design and manufacturing class. The aluminum robot featured a belt-driven cascade lift, detachable winch, and tank chassis to lift and pull heavy items on the competition field. Many of the components of the robot were designed and fabricated from aluminum and plastic stock from scratch.</p>
-        <img src={competitionCover} />
+        <img alt="" src={competitionCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <img src={competitionRequirements} />
+        <img alt="" src={competitionRequirements} />
         <p>The final competition for the class rewarded robots that could lift and pull heavy game objects over long distances in a certain period of time.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={competitionSketch} /></div>
-          <div className="image-container"><img src={competitionMechanismSketch} /></div>
+          <div className="image-container"><img alt="" src={competitionSketch} /></div>
+          <div className="image-container"><img alt="" src={competitionMechanismSketch} /></div>
         </div>
          <p>Based on these requirements, I identified the key mechanisms for my robot were going to be a grippy tank chassis for climbing up the game board hill, a powerful cascade lift to lift the 17N weight and pull down the 20N pendulum, and a high torque winch that could pull the 12N weight on the pulley.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={competitionHandCalcs} /></div>
+          <div className="image-container"><img alt="" src={competitionHandCalcs} /></div>
           <div className="text-container">
             <p>A lot of analysis was done early on to see what torques, speeds, and power outputs were needed to achieve these game objectives. This was especially crucial since robots were only allowed a certain number and type of actuators and batteries from the specified kit of materials.</p>
           </div>
@@ -47,16 +47,16 @@ function Competition(props) {
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
         <p>I used SolidWorks to model the entire competition robot, ensuring that it would be within the 12”×12”×16” competition size limit and 10lbs weight limit. Assembling the entire robot in CAD also helped me figure out the internal spacing of mechanisms to ensure that they would not interfere with each other.</p>
-        <img src={competitionCAD} />
+        <img alt="" src={competitionCAD} />
         <div className="image-next-to-container">
-          <div className="image-container"><img src={competitionLiftCAD} /></div>
-          <div className="image-container"><img src={competitionWinchCAD} /></div>
+          <div className="image-container"><img alt="" src={competitionLiftCAD} /></div>
+          <div className="image-container"><img alt="" src={competitionWinchCAD} /></div>
         </div>
         <p>The lifting mechanism (pictured on the left) I designed was a belt-driven cascading elevator lift with three 14" stages. Because three separate belts were coupled together, each stage would rise and lower simultaneously, allowing for up to 31" of lift in less than 4 seconds with no load. In addition, because a belt was used instead of a cable, the mechanism was able to both lift up and pull down, so it could be reused for different game objectives.</p>
         <p>The winch mechanism was a detachable machine that would be deployed by the main robot to pull the pulley weight. This allowed for the completion of the game objective while the main robot could drive off and complete other tasks, saving time. The winch consisted of two high-torque DC motors coupled together, driving a giant rotating hook that would grab the weight handle and wind up the pulley rope.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={competitionChassisCAD} /></div>
-          <div className="image-container"><img src={competitionFEA} /></div>
+          <div className="image-container"><img alt="" src={competitionChassisCAD} /></div>
+          <div className="image-container"><img alt="" src={competitionFEA} /></div>
         </div>
         <p>The robot chassis was modeled to be a tank chassis with 6mm timing belt treads to give it the most traction as it would climb up and down the competition field hill. Using SolidWorks also allowed me to perform FEA analysis on load-bearing components of the robot’s chassis as well as analysis of the robot’s mass properties to determine its center of gravity. These simulation tools were useful in anticipating any potential performance issues with the robot assembly.</p>
       </div>
@@ -69,15 +69,15 @@ function Competition(props) {
           Your browser does not support the video tag.
         </video>
         <p>The cascade lift was assembled from three 6063 aluminum box extrusion pieces. I milled channels into each extrusion to insert Delrin sliders and added a series of pulleys, brackets, and 6mm timing belt loops so that one goBilda 25-2 torque servo motor with a 2:1 gearbox could move all three stages simultaneously. </p>
-        <img src={competitionLift} />
+        <img alt="" src={competitionLift} />
         <p>Since the cascade lift also had to pull down a pendulum weight, a passively retractable hook was attached to the top. When the robot was pushed into the weight it needed to lift, the hook would be pushed in to lie flush with the weight. However, when pulling down, the hook was pulled out by an elastic band and would hit a hard stop to prevent it from rotating as the weight handle was pulled. This simple design removed the need to add an additional actuator.</p>
         <p>Since the 6mm timing belts would loosen over time, I added spring-loaded idler to keep the belt teeth engaged to the pulley. A spring-loaded idler was necessary since the idler needed to apply more tension as the lift was higher up (as the bracket fastened the driving belt to the next stage was farther away, so the belt became floppier near the drive pulley).</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={competitionHook} /></div>
-          <div className="image-container"><img src={competitionSpring} /></div>
+          <div className="image-container"><img alt="" src={competitionHook} /></div>
+          <div className="image-container"><img alt="" src={competitionSpring} /></div>
         </div>
         <p>The winch was made from pieces of aluminum stock fastened together and two LDO 217:1 DC motors that spun a laser-cut acrylic winch and hook. The winch would be carried along by the robot, resting on two Delrin rails. When it was to be deployed, the winch hook would spin backwards to push itself off the robot, and the folded legs would come down. These legs spaced the winch from the wall and the pulley weight handle so the hook could spin and grab it consistently.</p>
-        <img src={competitionWinch} />
+        <img alt="" src={competitionWinch} />
         <p>Hardware:</p>
         <ul>
           <li>2 × goBilda 25-3 Speed Servo Motors</li>
@@ -105,7 +105,7 @@ function Competition(props) {
       
       <div className="project-content-container-section project-programming">
         <h1>Programming</h1>
-        <img src={competitionHill} />
+        <img alt="" src={competitionHill} />
         <p>To mitigate any imperfections in the robot’s tank chassis assembly (of which there were a couple lol), I used an Arduino Nano and programmed C++ firmware to process MPU6050 accelerometer data so that a PID controller would adjust the PWM signal to the robot’s left and right drive motors, helping the robot drive straight and make precise turns.</p>   
         <p>In addition, the robot had two reflectance sensors that were used for line following to navigate the game field during the autonomous portion of the competition.</p>
       </div>

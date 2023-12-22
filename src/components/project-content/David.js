@@ -13,15 +13,15 @@ function David(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <p>This project involved using a genetic algorithm to teach a simulated population of sea turtles to navigate through obstacles towards a hidden jellyfish.</p>
-        <img src={davidCover} />
+        <img alt="" src={davidCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
         <p>Genetic algorithms take inspiration from nature, which has designed countless species of organisms to adapt to their environment through years of genetic variation and natural evolution. Organisms are born with variations that may help or hinder their survival, so those with advantageous characteristics are more likely to survive and pass on their desirable traits to their offspring, thus evolving the design of the population as a whole.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={davidTurtle} /></div>
-          <div className="image-container"><img src={davidJellyfish} /></div>
+          <div className="image-container"><img alt="" src={davidTurtle} /></div>
+          <div className="image-container"><img alt="" src={davidJellyfish} /></div>
         </div>
         <p>Genetic algorithms aim to mimic this phenomenon by producing variations of approaches to a task and selecting and duplicating successful approaches. In my case, I wanted to see if a genetic algorithm could optimize a turtle's movement towards a goal location. Because I designed the environment to be difficult to move around in (low friction and no side movement), a genetic algorithm would be well suited for this task.</p>
       </div>
@@ -29,7 +29,7 @@ function David(props) {
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
         <p>At the start of the simulation, many turtles would be spawned into an ocean environment. Turtles would be able to swim to either accelerate forwards, accelerate backwards, turn clockwise, or turn counterclockwise, or they could choose to not move at all. The only catch was that there would be minimal friction, which would decrease their agility. If they ran into an obstacle or the edges of the simulation, they would die.</p>
-        <img src={davidDiagram} />
+        <img alt="" src={davidDiagram} />
         <p>The genetic algorithm was broken into four main steps to run per generation:</p>
         <ol>
           <li>Many turtles would first be spawned into the simulation at the same location, and their goal would be to get to a jellyfish in a certain location.</li>  
@@ -43,11 +43,11 @@ function David(props) {
       <div className="project-content-container-section project-programming">
         <h1>Programming</h1>
         <p>The genetic algorithm and simulation were programmed in C using the SDL game engine library. The structure of the software leveraged a lot of object-oriented practices, but because it was programmed in C, it ended up involving a gazillion pointers being passed between structs.</p>  
-        <img src={davidProgramming} />  
+        <img alt="" src={davidProgramming} />  
         <p>The main loop of the program controlled the overall flow of the simulation and interfaced with a <span className="code-text">population</span> "class" that controlled a population of turtles, updating each one and computing its score when it died before running the genetic algorithm to produce a new generation of mutated turtles.</p>
         <p>The turtles themselves were implemented in their own turtle "class" (called the <span className="code-text">david</span> "class" in the program). Each turtle ran their own move set and took care of their own dynamics, but they would transmit their status to the overarching <span className="code-text">population</span> class.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={davidEquation} /></div>
+          <div className="image-container"><img alt="" src={davidEquation} /></div>
           <div className="text-container">
             <p>The score for each turtle was calculated by the equation on the left. Turtles that got closer to the jellyfish faster got a higher score. The scoring equation took into account a turtle's horizontal distance from the jellyfish, denoted by the absolute value of <i>x</i>, and their vertical distance from the jellyfish, denoted by <i>y<sup>2</sup></i>. </p>
           </div>

@@ -12,16 +12,16 @@ function Donkey(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <p>The robot donkey was a WiFi-controlled quadruped that walked using inverse kinematics. It had four legs, each with 3-degrees-of-freedom (DOF), a 2-DOF neck/head, and two mini speakers for audio output. The robot was built as a personal project to emulate quadruped locomotion.</p>
-        <img src={donkeyCover} />
+        <img alt="" src={donkeyCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <img src={donkeySketch} />
+        <img alt="" src={donkeySketch} />
         <p>To build a 12-DOF quadruped and manipulate its orientation and position, I had to figure out how to pass in a 3D position and turn it into a set of angles for the servos to rotate to. Inverse kinematics would provide an easy way to calculate these values.</p>
         <p>Each robot leg had a "shoulder" joint that connected it to the body and allowed the leg to swing to side, an "upper leg joint" that allowed the entire leg to swing forward and backward, and an "elbow joint" that connected the upper and lower leg.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={donkeyKinematics} /></div>
+          <div className="image-container"><img alt="" src={donkeyKinematics} /></div>
           <div className="text-container">
             <p>I tackled the problem by isolating one leg and modeling it as a two-linkage system attached to the body with a pivot joint. I then viewed this system as an isosceles triangle and used the law of cosines and triangle geometric properties to solve for the two unique angle values that would give a particular distance between the shoulder joint and ground.</p>
             <p>This process was repeated for all the legs and different joints on the robot. A lot of trigonometry occurred... Like... a lot...</p>
@@ -33,13 +33,13 @@ function Donkey(props) {
         <h1>Design</h1>
         <p>The robot donkey was designed for ease-of-assembly, so parts were selected to minimize the need for fabrication (especially during the COVID-19 pandemic, when most maker spaces and machine shops were closed). This was why high-torque HobbyPark servos that came with aluminum mounting brackets were chosen, as it made it easy to assemble four 3-DOF legs around a main wooden body with servo parts "straight out of the box."</p>
         <p>For the robot’s feet, I used Autodesk Inventor to design four 3D-printed ball-point hooves that could be fastened to the servo brackets and were covered with rubber tips for better traction with the ground.</p>
-        <img src={donkeyCAD} />
+        <img alt="" src={donkeyCAD} />
       </div>
       
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
         <p>Because the robot donkey was designed to be easily assembled, most of the fabrication and assembly process involved fastening together different off-the-shelf components or 3D-printed parts.</p>
-        <img src={donkeyTopView} />
+        <img alt="" src={donkeyTopView} />
         <p>Hardware:</p>
         <ul>
           <li>12 × Hobbypark HDR315M 15kg Digital High Torque Servos with Aluminum Mounting Brackets</li>  
@@ -65,7 +65,7 @@ function Donkey(props) {
         <h1>Programming</h1>
         <p>The robot was controlled by a Raspberry Pi Python script that rotated the leg joints based on inverse kinematics to move the robot to precise positions and orientations. Once the Raspberry Pi connected to the Internet after powering up, I could SSH into the board and control the robot from the command line on my laptop over WiFi.</p>
         <iframe src="https://www.youtube.com/embed/aikBnfc7GT0" title="DIY Quadruped Robot" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        <p>The <a href="https://github.com/michaellu2019/dog" target="_blank">software</a> was split into several modules. One module defined all robot constants, another module was used for all vector-mathematics, one module was used to calculate inverse kinematics and write values to the servo motors, and the final module took in keyboard commands to control the robot.</p>
+        <p>The <a href="https://github.com/michaellu2019/dog" rel="noreferrer" target="_blank">software</a> was split into several modules. One module defined all robot constants, another module was used for all vector-mathematics, one module was used to calculate inverse kinematics and write values to the servo motors, and the final module took in keyboard commands to control the robot.</p>
         <p>To make the robot walk, I defined several key coordinates of the donkey's foot, which were different points in the foot's during the robot's gait. While walking, the robot would move its feet to each of these points repeatedly.</p>
       </div>
       

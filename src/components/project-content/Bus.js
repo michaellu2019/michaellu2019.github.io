@@ -18,12 +18,12 @@ function Bus(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <p>This IoT device was created to monitor bus stop occupancy and environmental conditions in real time in Miami-Dade County, which was the project challenge presented in the MIT capstone class 6.900 - Engineering for Impact.</p>
-        <img src={busCover} />
+        <img alt="" src={busCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <img src={busSketch} />
+        <img alt="" src={busSketch} />
         <p>The bus-monitoring device was designed to be inserted into a bus pole to be as inconspicuous as possible. It would have a solar panel as a power source along with sensors to monitor its environment. It would also use a cellular LTE module to post data to an online database.</p>
       </div>
       
@@ -31,7 +31,7 @@ function Bus(props) {
         <h1>Design</h1>
         <p>The IoT device had to keep its electrical components safe from environmental dangers such as weather, animals, and people.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={busCad} /></div>
+          <div className="image-container"><img alt="" src={busCad} /></div>
           <div className="text-container">
             <p>The device's case had three components: a press-fit peg that would go into the bus pole, a main housing case, and a case cover that would have threaded holes for the solar panel to mount to. These parts were designed in SolidWorks.</p>
             <p>The electronics would be housed inside the case. This would include a LiPo battery, custom PCB, and Boron LTE module.</p>  
@@ -40,19 +40,19 @@ function Bus(props) {
         </div>
         <p>A custom PCB was designed to minimize the footprint of electronics as much as possible. A prototype USB battery power board was designed in Altium then built and tested. This board would then be developed further into an integrated power board that would house the device's ESP32 MCU, I2C communication lines to the device's temperature and humidity sensors, and the solar panel and battery charge circuitry.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={busPowerSchematic} /></div>
-          <div className="image-container"><img src={busPowerLayout} /></div>
+          <div className="image-container"><img alt="" src={busPowerSchematic} /></div>
+          <div className="image-container"><img alt="" src={busPowerLayout} /></div>
         </div>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={busPowerCAD} /></div>
-          <div className="image-container"><img src={busPowerPCB} /></div>
+          <div className="image-container"><img alt="" src={busPowerCAD} /></div>
+          <div className="image-container"><img alt="" src={busPowerPCB} /></div>
         </div>
       </div>
       
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
         <p>The parts of the case were 3D printed. Surface mount components were soldered to the PCB with the help of plenty of leaded solder paste and a rework station.</p>
-        <img src={busFabrication} />
+        <img alt="" src={busFabrication} />
         <video controls>
           <source src={busInstallation} type="video/mp4" />
           Your browser does not support the video tag.
@@ -76,7 +76,7 @@ function Bus(props) {
       <div className="project-content-container-section project-programming">
         <h1>Programming</h1>
         <p>Firmware for the electronics was written in C to allow the MCU to communicate with the sensors over I2C and to scan its environment for the number of unique IP addresses of nearby devices, which would be correlated with occupancy of the bus stop. This data was then sent to a Boron LTE cellular module over serial communication, which then would periodically send an HTTP request to a Flask server.</p>
-        <img src={busSystemDiagram} />
+        <img alt="" src={busSystemDiagram} />
         <p>This Flask server would pull data from several tables in an SQL database and would display them on an HTML web page for authorized users to monitor bus stop occupancy, temperature, and humidity in real time.</p>
       </div>
       

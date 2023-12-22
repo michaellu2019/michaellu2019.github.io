@@ -18,12 +18,12 @@ function Lego(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <p>The Lego Building Bot was a ROS-controlled 6 degrees-of-freedom (DOF) UR5 robot arm that leveraged OpenCV computer vision and a compliant gripper to retrieve and assemble giant Lego® bricks for the final competition of MIT's class 2.12 - Introduction to Robotics.</p>
-        <img src={legoCover} />
+        <img alt="" src={legoCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <img src={legoIdea} />
+        <img alt="" src={legoIdea} />
         <p>Because Lego® bricks would start scattered across the competition table in many different orientations, our team wanted to design an end effector that was compliant. This meant that if the robot arm was not perfectly aligned with a Lego® brick, the grabbing end effector would be able to shift into place to align itself with the Lego® brick.</p>
         <p>While we considered many different approaches to achieve compliance, we settled on using flexible 3D-printer filament strands due to their availability and deflection characteristics.</p>
       </div>
@@ -33,21 +33,21 @@ function Lego(props) {
         <p>We designed our gripper to have two 3D-printed fingers that would slide into the stud holes of the Lego® bricks. One finger would be stationary, and the other one would be mounted on a servo motor to spin and grip the flange of the stud.</p>
         <p>3D modeling the gripper and Lego® brick in SolidWorks helped with visualizing and determining how much room there would be in the end effector claws when grabbing the Lego® brick hole edges for different claw shapes and sizes.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={legoCAD} /></div>
-          <div className="image-container"><img src={legoCADGripper} /></div>
+          <div className="image-container"><img alt="" src={legoCAD} /></div>
+          <div className="image-container"><img alt="" src={legoCADGripper} /></div>
         </div>
-        <img src={null} />
+        <img alt="" src={null} />
       </div>
       
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={legoFingers} /></div>
-          <div className="image-container"><img src={legoCompliance} /></div>
+          <div className="image-container"><img alt="" src={legoFingers} /></div>
+          <div className="image-container"><img alt="" src={legoCompliance} /></div>
         </div>
         <p>The end effector frame was built out of two aluminum 5052 bent sheet metal brackets and two plates of machined aluminum 6061. The gripper and UR5 robot arm parts of the end effector were connected with six 1.75mm PETG 3D-printer filament strands, which were attached to the machined plates via 3D-printed brackets. The servo fingers were 3D-printed, and one of them was attached to a goBilda servo motor.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={legoUR5} /></div>
+          <div className="image-container"><img alt="" src={legoUR5} /></div>
           <div className="text-container">
             <p>The end effector was fastened to a UR5 mounting plate that attached to the final link of a UR5 robot.</p>
             <p>Hardware:</p>
@@ -70,8 +70,8 @@ function Lego(props) {
       <div className="project-content-container-section project-programming">
         <h1>Programming</h1>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={legoColorVisionImage} /></div>
-          <div className="image-container"><img src={legoBlackAndWhiteVisionImage} /></div>
+          <div className="image-container"><img alt="" src={legoColorVisionImage} /></div>
+          <div className="image-container"><img alt="" src={legoBlackAndWhiteVisionImage} /></div>
         </div>
         <p>OpenCV algorithms were run on the UR5 camera feed to detect Lego® bricks. Hue segmentation was used to isolate bricks of certain colors, followed by brick layer filtering based on Intel RealSense depth camera data, and finally contour detection with Hough transforms to draw bounding boxes around bricks. Erosion and dilation were used in between steps to remove noise from the image, improving brick detection performance. For a selected brick, we then drew a bounding box rectangle around it and calculated the centroid of the rectangle to be the "location" of the brick.</p>
         <video controls>

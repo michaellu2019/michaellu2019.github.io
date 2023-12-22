@@ -5,7 +5,6 @@ import hydrosTeam from '../../assets/images/project-assets/hydros/hydros-team.jp
 import hydrosSketch from '../../assets/images/project-assets/hydros/hydros-sketch.png'
 import hydrosHose from '../../assets/images/project-assets/hydros/hydros-hose.JPG'
 import hydrosCAD from '../../assets/images/project-assets/hydros/hydros-cad.png'
-import hydrosBrush from '../../assets/images/project-assets/hydros/hydros-brush.JPG'
 import hydrosPrototype from '../../assets/images/project-assets/hydros/hydros-prototype.jpg'
 import hydrosTesting from '../../assets/images/project-assets/hydros/hydros-testing.png'
 import hydrosTruck from '../../assets/images/project-assets/hydros/hydros-truck.jpg'
@@ -15,18 +14,18 @@ function Hydros(props) {
     <div className="project-content-container" id="hydros-project-content-container">
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
-        <img src={hydrosBrochure} />
+        <img alt="" src={hydrosBrochure} />
         <p>Hydros was a fire hose cleaning machine that used high-pressure water sprayers and hydro-powered scrubs to remove carcinogenic debris off fire hoses. It was my team's (go Purple!) project for MIT's MechE capstone class 2.009 - Product Engineering Processes.</p>
-        <img src={hydrosTeam} />
+        <img alt="" src={hydrosTeam} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <img src={hydrosSketch} />
+        <img alt="" src={hydrosSketch} />
         <p>The idea for Hydros began when I observed firefighters packing up fire hose in the aftermath of a structure fire. I noticed how hours would be spent walking out the hoses to drain them of any residual water/air then packing them into the back of a truck.</p>
         
         <div className="image-next-to-container">
-          <div className="image-container"><img src={hydrosHose} /></div>
+          <div className="image-container"><img alt="" src={hydrosHose} /></div>
           <div>
             <p>The initial ideation phase of our project involved carrying out a bunch of interviews with our target users. We traveled across Massachusetts, going to fire departments in the area to learn about their pain points in the process of drying, cleaning, washing, and packing used fire hose. We even got a few old fire hoses as a gift!</p>
           </div>
@@ -36,7 +35,7 @@ function Hydros(props) {
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
         <p>Our solution to the problem was to build a machine that would automate some of the steps of this process. Hydros contained a set of high-pressure water sprayers and hydro-powered brushes that would wash and scrub off debris from the used fire hose. The fire hose would also be spooled into a neat roll to squeeze out residual water/air and to make it easy to load onto a vehicle.</p>
-        <img src={hydrosCAD} />
+        <img alt="" src={hydrosCAD} />
         <p>We designed most of our assembly in Fusion360 to ensure the spacing of all our mechanisms would fit onto one portable machine that could be deployed at the site of a fire.</p>
       </div>
 
@@ -44,12 +43,12 @@ function Hydros(props) {
         <h1>Fabrication</h1>
         <p>A lot of work was done to prototype and test out the device's ability to clean fire hose. We contacted local fire departments and ran our hydro-powered system on 50 PSI water flowing from a fire truck (which would be the water source at fire scenes) to ensure the structural integrity of our water system as well as the device's ability to clean.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={hydrosTruck} /></div>
-          <div className="image-container"><img src={hydrosTesting} /></div>
+          <div className="image-container"><img alt="" src={hydrosTruck} /></div>
+          <div className="image-container"><img alt="" src={hydrosTesting} /></div>
         </div>
 
         <p>All mechanisms were then integrated onto a steel hand truck that would contain the spooling mechanism and washing box. More end-to-end testing was conducted with users before adding final touches to the product.</p>
-        <img src={hydrosPrototype} />
+        <img alt="" src={hydrosPrototype} />
 
         <p>Hardware:</p>
         <ul>

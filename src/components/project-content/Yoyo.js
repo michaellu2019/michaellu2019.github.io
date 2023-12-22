@@ -23,12 +23,12 @@ function Yoyo(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <p>These snow globe-themed yo-yos were designed for mass production in 2.008, MIT's second design and manufacturing class. The yo-yo featured a mix of injection molded and thermoformed parts.</p>
-        <img src={yoyoCover} />
+        <img alt="" src={yoyoCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <img src={yoyoSketch} />
+        <img alt="" src={yoyoSketch} />
         <p>The idea behind the yo-yo was based on winter-themed snow globes from the holidays. It would feature an evergreen tree and a cozy house overlooking a frozen lake in a wintery landscape underneath a little dome. We planned for these to be separate parts, with the landscape part having close-fit holes to sit on top the house and tree.</p>
       </div>
       
@@ -36,13 +36,13 @@ function Yoyo(props) {
         <h1>Design</h1>
         <p>These parts were then modeled in Fusion360 with more fidelity. Each yo-yo half would consist of several parts: a brown injection molded base, thermoformed house and tree part, injection molded landscape that would press fit into the base, transparent snow globe dome, and golden injection molded ring that would press fit into the base to keep all the parts together. The yo-yo halves would be connected with a 10-24 set screw that would screw into hex nuts embedded into the yo-yo base plastic.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={yoyoCADSection} /></div>
-          <div className="image-container"><img src={yoyoCAD} /></div>
+          <div className="image-container"><img alt="" src={yoyoCADSection} /></div>
+          <div className="image-container"><img alt="" src={yoyoCAD} /></div>
         </div>
         <p>The injection molded parts were designed in CAD, then the part files were tweaked for injection molding with draft angles and part scaling to account for shrinkage before being used to create a core and cavity mold. The landscape cover had a "cavity" mold that was a flat faced down block (to remove the chance of a parting line showing up on the part) and a "core" mold that had the negative of the part with ejector pin holes added in.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={yoyoLandscapeCoverCAD} /></div>
-          <div className="image-container"><img src={yoyoLandscapeCoverMoldCAD} /></div>
+          <div className="image-container"><img alt="" src={yoyoLandscapeCoverCAD} /></div>
+          <div className="image-container"><img alt="" src={yoyoLandscapeCoverMoldCAD} /></div>
         </div>
         <p>Fusion360's CAM software was then used to generate the G-code for a HASS CNC mill to machine aluminum molds. CAM settings were chosen to minimize the machining time, probability of tool breakage, and chance of fabrication error.</p>
         <video controls>
@@ -55,22 +55,22 @@ function Yoyo(props) {
         <h1>Fabrication</h1>
         <p>Using G-code from Fusion360, a HASS CNC mill would machine the core and cavity for all injection molded parts. STL files were exported from CAD to 3D print thermoformed molds with an SLA printer. These molds were then placed in an injection molding machine and thermoforming machine to mass produce yo-yo parts. Machine settings were tuned to produce the best part quality with minimal fabrication defects/artifacts (e.g. ejector pin marks, warping regions, flash etc.). </p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={yoyoInjectionMoldingSettings} /></div>
-          <div className="image-container"><img src={yoyoThermoformingSettings} /></div>
+          <div className="image-container"><img alt="" src={yoyoInjectionMoldingSettings} /></div>
+          <div className="image-container"><img alt="" src={yoyoThermoformingSettings} /></div>
         </div>
         <iframe src="https://www.youtube.com/embed/ApmKvSr3p4U" title="MIT 2.008 Final Project: Yo-Yo Manufacturing" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         <p>Once the settings were optimized and the process was refined enough to be repeatable, yo-yo parts were able to be mass produced with enough consistency over the span of a few weeks. Over 100 of each yo-yo part was made from the injection molding machine and thermoforming machine.</p>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={yoyoAllDomes} /></div>
-          <div className="image-container"><img src={yoyoAllLandscapes} /></div>
+          <div className="image-container"><img alt="" src={yoyoAllDomes} /></div>
+          <div className="image-container"><img alt="" src={yoyoAllLandscapes} /></div>
         </div>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={yoyoAllLandscapeCovers} /></div>
-          <div className="image-container"><img src={yoyoAllBases} /></div>
+          <div className="image-container"><img alt="" src={yoyoAllLandscapeCovers} /></div>
+          <div className="image-container"><img alt="" src={yoyoAllBases} /></div>
         </div>
         <div className="image-next-to-container">
-          <div className="image-container"><img src={yoyoAllPainted} /></div>
-          <div className="image-container"><img src={yoyoAssembly} /></div>
+          <div className="image-container"><img alt="" src={yoyoAllPainted} /></div>
+          <div className="image-container"><img alt="" src={yoyoAssembly} /></div>
         </div>
         <p>Once all the parts were made, thermoformed parts were finished with spray paint, decorative elements (such as fake snow and glitter) were added, and all yo-yo parts were assembled into full yo-yos.</p>
         
@@ -91,7 +91,7 @@ function Yoyo(props) {
       <div className="project-content-container-section project-results">
         <h1>Results</h1>
         <p>Eventually, 50 full yo-yos were able to be assembled without any adhesives for assembly and could survive a drop of 6 feet above ground.</p>
-        <div className="image-container"><img src={yoyoAllAssemblies} /></div>
+        <div className="image-container"><img alt="" src={yoyoAllAssemblies} /></div>
       </div>
 
       <div className="project-content-container-section project-improvements">

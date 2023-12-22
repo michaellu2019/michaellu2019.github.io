@@ -8,7 +8,7 @@ function About() {
       </header>
 
       <div className="content">
-        <img src={sqwardface} />
+        <img alt="" src={sqwardface} />
         <p>I don't mean to brag, but I excel at being average. I put the "me" in "mediocre." I'm also a big fan of—wait, do people even read these bios?</p>
       </div>
     </article>

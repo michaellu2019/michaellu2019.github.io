@@ -6,16 +6,16 @@ function Can(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <p>Overview Text</p>
-        <img src={null} />
+        <img alt="" src={null} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <img src={null} />
+        <img alt="" src={null} />
         <p>Ideation text</p>
         
         <div className="image-next-to-container">
-          <div className="image-container"><img src={null} /></div>
+          <div className="image-container"><img alt="" src={null} /></div>
           <div>
             <p>text</p>
           </div>
@@ -25,13 +25,13 @@ function Can(props) {
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
         <p>Design text</p>
-        <img src={null} />
+        <img alt="" src={null} />
       </div>
       
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
         <p>Fabrication text.</p>
-        <img src={null} />
+        <img alt="" src={null} />
         <p>Hardware:</p>
         <ul>
           <li>1 × Clonk</li>
@@ -48,7 +48,7 @@ function Can(props) {
       <div className="project-content-container-section project-programming">
         <h1>Programming</h1>
         <p>Programming text.</p>   
-        <img src={null} /> 
+        <img alt="" src={null} /> 
       </div>
       
       <div className="project-content-container-section project-results">

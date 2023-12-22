@@ -44,8 +44,8 @@ function Project(props) {
         <h1 className="heading">{project.title}</h1>
         <h2 className="subheading">{project.date}</h2>
         <h2 className="subheading">Skills: {project.skills.join(", ")}</h2>
-        {project.codeLink.length > 0 ? <h2 className="subheading">Code: <a href={project.codeLink} target="_blank">{project.codeLink}</a></h2> : ""}
-        {project.demoLink.length > 0 ? <h2 className="subheading">Demo: <a href={project.demoLink} target="_blank">{project.demoLink}</a></h2> : ""}
+        {project.codeLink.length > 0 ? <h2 className="subheading">Code: <a href={project.codeLink} rel="noreferrer" target="_blank">{project.codeLink}</a></h2> : ""}
+        {project.demoLink.length > 0 ? <h2 className="subheading">Demo: <a href={project.demoLink} rel="noreferrer" target="_blank">{project.demoLink}</a></h2> : ""}
       </header>
 
       <div className="content">
