@@ -59,7 +59,7 @@ function Project(id, name, title, description, tags, date,
 
 const hardwareProjects = [
   new Project(33, "can", "R2-D2 Robot", "A 40-inch tall can-shaped robot that used custom H-Bridges, a buck converter, and switched-capcitor power supply to drive a variety of motors.", 
-              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "November - December 2023", "https://github.com/michaellu2019/trash-can", "https://youtu.be/NPbbGyOREl0", ["DC-DC Converters", "CAD", "PSoC", "C"], MECHATRONICS_PROJECT_SECTIONS, Can),
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "November - December 2023", "https://github.com/michaellu2019/trash-can", "https://youtu.be/NPbbGyOREl0", ["DC-DC Converters", "LTSpice", "CAD", "PSoC", "C"], MECHATRONICS_PROJECT_SECTIONS, Can),
   new Project(31, "ball", "BB-8 Robot", "A 20-inch ball robot that uses a pendulum mechanism and feedback control to stabilize itself.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "April - May 2023", "https://github.com/michaellu2019/ball", "https://youtu.be/xmnu_rDfkFk", ["Feedback Control", "CAD", "PSoC", "C"], MECHATRONICS_PROJECT_SECTIONS, Ball),
   new Project(30, "omni", "Omni-Directional Robot", "An STM32-based robot that uses four omni-directional wheels to move in any direction. ", 

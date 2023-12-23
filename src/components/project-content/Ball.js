@@ -95,7 +95,7 @@ function Ball(props) {
           <li>A Decent Amount of 6063-T6 Aluminum 1/16" Box Extrusion and 6061-T6 Angle Extrusion and 6061-T6 Rods</li>
           <li>Lots of 3D-Printed Components</li>
           <li>Plenty of Laser-Cut Acrylic Pieces</li>
-          <li>Too Many Fasteners (the Majority of Which Are Probably #8 and M3 Screws)</li>
+          <li>Too Many Fasteners (the Majority of Which Were Probably #8 and M3 Screws)</li>
         </ul>  
 
         <p>Electronics:</p>
