@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { PROJECT_TAGS, projects } from '../utils/project-list.js';
+import { PROJECT_TAGS, projects, FAVORITE_PROJECT_RANKINGS } from '../utils/project-list.js';
 
 function Projects(props) {
   const [selectedCategory, selectCategory] = useState(PROJECT_TAGS.FAVORITES);
@@ -10,22 +10,18 @@ function Projects(props) {
   const ALL = "all";
 
   function sortProjects(category, p1, p2) {
+    // sort projects p1 and p2 so that most recent/favorite ones are at the top
     const FIRST = 42069;
 
     if (category === PROJECT_TAGS.FAVORITES) {
       let projectSet = [p1, p2];
-      let projectIds = [p1.id, p2.id]
+      let projectIds = [p1.id, p2.id];
+
       for (let i = 0; i < projectSet.length; i++) {
-        projectIds[i] = projectSet[i].name === "ball" ? projectIds[i] = FIRST :
-                        projectSet[i].name === "omni" ? projectIds[i] = FIRST - 1 : // second
-                        projectSet[i].name === "ninja" ? projectIds[i] = FIRST - 2 : // third
-                        projectSet[i].name === "can" ? projectIds[i] = FIRST - 3 : // fourth
-                        projectSet[i].name === "david" ? projectIds[i] = FIRST - 4 : // you get the point...
-                        projectSet[i].name === "laptop" ? projectIds[i] = FIRST - 5 :
-                        projectSet[i].name === "competition" ? projectIds[i] = FIRST - 6 :
-                        projectSet[i].name === "donkey" ? projectIds[i] = FIRST - 7 :
-                        projectSet[i].name === "krabs" ? projectIds[i] = FIRST - 8 :
-                                                        projectIds[i];
+        // check if project is favorited. If so, bump up its id ranking.
+        if (FAVORITE_PROJECT_RANKINGS.indexOf(projectSet[i].name) > -1) {
+          projectIds[i] =  FIRST - FAVORITE_PROJECT_RANKINGS.indexOf(projectSet[i].name);
+        }
       }
 
       return projectIds[1] - projectIds[0];

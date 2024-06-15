@@ -33,14 +33,14 @@ div#can-project-content-container {
 
     div.project-fabrication {
         div.image-next-to-container:nth-of-type(1) {
-            // grid-template-columns: auto auto;
+            grid-template-columns: auto auto;
         
-            // @media (max-width: $medium-small) {
-            //   grid-template-columns: 1fr;
-            // }
+            @media (max-width: $medium-small) {
+              grid-template-columns: 1fr;
+            }
 
             video, img {
-                height: 35vw;
+                height: 30vw;
             }
 
             div.image-container img {

@@ -73,7 +73,7 @@
             }
 
             div {
-              font-size: 1.5rem;
+              font-size: 1.43rem;
             }
           }
 
@@ -85,6 +85,11 @@
             }
           }
 
+          &#toolbot { background-image: url("../assets/images/project-cards/projects-toolbot-card.gif"); }
+          &#lathe { background-image: url("../assets/images/project-cards/projects-lathe-card.gif"); }
+          &#light { background-image: url("../assets/images/project-cards/projects-light-card.jpg"); }
+          &#can { background-image: url("../assets/images/project-cards/projects-can-card.gif"); }
+          &#ninja { background-image: url("../assets/images/project-cards/projects-ninja-card.gif"); }
           &#ball { background-image: url("../assets/images/project-cards/projects-ball-card.gif"); }
           &#omni { background-image: url("../assets/images/project-cards/projects-omni-card.gif"); }
           &#bus { background-image: url("../assets/images/project-cards/projects-bus-card.png"); }
@@ -112,9 +117,6 @@
           &#trash { background-image: url("../assets/images/project-cards/projects-trash-card.gif"); }
           &#capacitive { background-image: url("../assets/images/project-cards/projects-capacitive-card.gif"); }
           &#euclidean { background-image: url("../assets/images/project-cards/projects-euclidean-card.png"); }
-
-          &#ninja { background-image: url("../assets/images/project-cards/projects-ninja-card.gif"); }
-          &#can { background-image: url("../assets/images/project-cards/projects-can-card.gif"); }
         }
       }
     }

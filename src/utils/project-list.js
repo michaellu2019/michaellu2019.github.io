@@ -1,3 +1,7 @@
+import Lathe from '../components/project-content/Lathe.js'
+import Light from '../components/project-content/Light.js'
+import Toolbot from '../components/project-content/Toolbot.js'
+
 import Ball from '../components/project-content/Ball.js'
 import Omni from '../components/project-content/Omni.js'
 import Bus from '../components/project-content/Bus.js'
@@ -37,10 +41,23 @@ export const PROJECT_TAGS = {
 export const LAZY_PROJECT_SECTIONS = ["overview"];
 export const LAZY_HARDWARE_PROJECT_SECTIONS = ["overview", "fabrication", "results"];
 export const HARDWARE_PROJECT_SECTIONS = ["overview", "ideation", "design", "fabrication", "results", "improvements"];
-export const MECHATRONICS_PROJECT_SECTIONS = ["overview", "ideation", "design", "fabrication", "programming", "results", "improvements"];
 export const LAZY_SOFTWARE_PROJECT_SECTIONS = ["overview", "programming", "results"];
 export const SOFTWARE_PROJECT_SECTIONS = ["overview", "ideation", "design", "programming", "results", "improvements"];
+export const MECHATRONICS_PROJECT_SECTIONS = ["overview", "ideation", "design", "fabrication", "programming", "results", "improvements"];
 
+export const FAVORITE_PROJECT_RANKINGS = [
+  "ball", // flagship, mechatronics, solid project overall, good project management
+  "toolbot", // rigorous engineering, good mechanical design
+  "lathe", // rigorous engineering, precision machine design
+  "can", // mechatronics, machine design, electrical engineering
+  "ninja", // robotics, optimization
+  "omni", // robotics, linear controls
+  "david", // AI
+  "laptop", // robotics, ROS
+  "competition", // mechanical design
+  "donkey", // cool
+  "krabs" // super cool design
+];
 
 function Project(id, name, title, description, tags, date, 
                  codeLink="", demoLink="", skills=[], sections=[], component=(() => "Project info coming soon!")) {
@@ -58,6 +75,12 @@ function Project(id, name, title, description, tags, date,
 }
 
 const hardwareProjects = [
+  new Project(36, "toolbot", "Agricultural Robot", "A 0.5m×0.9m aluminum robot with a 2DOF motion platform and torsion bar suspension tank chassis designed to carry farming tools.",
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "December 2023 - May 2024", "https://github.com/michaellu2019/Toolbot", "https://youtu.be/mJ3B9_n0ato", ["CAD", "FEA", "MATLAB"], HARDWARE_PROJECT_SECTIONS, Toolbot),
+  new Project(35, "lathe", "Desktop Lathe", "A small tabletop lathe designed to cut plastic, aluminum, and steel with 50 microns of precision.",
+              [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "February - May 2024", "https://github.com/michaellu2019/2.72-Elements-of-Mechanical-Design", "https://youtu.be/e4STLcCak6A", ["Precision Machine Design", "CAD", "FEA"], HARDWARE_PROJECT_SECTIONS, Lathe),
+  new Project(34, "light", "Surgical Lighting Power Board", "An electrical power module made for surgical lighting that could switch between battery, wall, and solar power in less than one second.",
+              [PROJECT_TAGS.HARDWARE], "February - May 2024", "https://github.com/Surgical-Lighting-MIT-2-75-2024", "https://youtu.be/6yVy80NyFwI", ["DC-DC Converters", "PCB Design"], HARDWARE_PROJECT_SECTIONS, Light),
   new Project(33, "can", "R2-D2 Robot", "A 40-inch tall can-shaped robot that used custom H-Bridges, a buck converter, and switched-capcitor power supply to drive a variety of motors.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "November - December 2023", "https://github.com/michaellu2019/trash-can", "https://youtu.be/NPbbGyOREl0", ["DC-DC Converters", "LTSpice", "CAD", "PSoC", "C"], MECHATRONICS_PROJECT_SECTIONS, Can),
   new Project(31, "ball", "BB-8 Robot", "A 20-inch ball robot that uses a pendulum mechanism and feedback control to stabilize itself.", 
@@ -72,7 +95,7 @@ const hardwareProjects = [
               [PROJECT_TAGS.HARDWARE], "September 2022 - December 2022", "", "https://youtu.be/Qw2EdmquCUw", ["CAD", "Amateur Plumbing Skills"], HARDWARE_PROJECT_SECTIONS, Hydros),
   new Project(24, "laptop", "Laptop Bot", "A 6DOF robot arm that takes commands from a laptop running ROS, enabling it to move around and press keyboard keys.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "July - August 2022", "https://youtu.be/Iixz6tXIA5E", "https://github.com/michaellu2019/laptop", ["ROS", "CAD", "Arduino", "C++"], MECHATRONICS_PROJECT_SECTIONS, Laptop),
-  new Project(23, "competition", "MIT Competition Robot", "An aluminum robot, featuring a belt-driven cascade lift, detachable winch, and tank chassis, designed to lift and pull heavy items in the final compoetition of 2.007, MIT's design and manufacturing class.", 
+  new Project(23, "competition", "MIT Competition Robot", "An aluminum robot, with a belt-driven cascade lift, detachable winch, and tank chassis, designed to lift and pull heavy items in the final competition of 2.007, MIT's design and manufacturing class.", 
               [PROJECT_TAGS.HARDWARE, PROJECT_TAGS.FAVORITES], "February - May 2022", "https://github.com/michaellu2019/big-daddy", "https://youtu.be/f2lEhvnP2P4", ["Feedback Control", "CAD", "Arduino", "C++"], MECHATRONICS_PROJECT_SECTIONS, Competition),
   new Project(22, "lego", "Lego Building Bot", "A ROS-controlled 6DOF UR5 robot arm that leverages OpenCV computer vision and a compliant gripper to assemble giant Lego bricks.", 
               [PROJECT_TAGS.HARDWARE], "April - May 2022", "https://github.com/michaellu2019/2.12-final-project", "https://youtu.be/oTqwCtPKNQM", ["ROS", "OpenCV", "Python", "C++"], MECHATRONICS_PROJECT_SECTIONS, Lego),

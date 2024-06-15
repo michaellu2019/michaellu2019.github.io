@@ -6,7 +6,7 @@ import canKinematics from '../../assets/images/project-assets/can/can-kinematics
 import canCAD from '../../assets/images/project-assets/can/can-cad.png';
 import canBlockDiagram from '../../assets/images/project-assets/can/can-block-diagram.png';
 import canLeg from '../../assets/images/project-assets/can/can-leg.mp4';
-import canMechanism from '../../assets/images/project-assets/can/can-mechanism.png';
+import canFabrication from '../../assets/images/project-assets/can/can-fabrication.png';
 import canSwitchCapSim from '../../assets/images/project-assets/can/can-switch-cap-sim.png';
 import canSwitchCap from '../../assets/images/project-assets/can/can-switch-cap.png';
 import canHBridgeSim from '../../assets/images/project-assets/can/can-hbridge-sim.png';
@@ -51,7 +51,7 @@ function Can(props) {
               Your browser does not support the video tag.
             </video>  
           </div>
-          <div className="image-container"><img alt="" src={canMechanism} /></div>
+          <div className="image-container"><img alt="" src={canFabrication} /></div>
         </div>
         <p>To get a logic-level power line for some of the control circuitry to power the chips for the H-bridges and buck converter, a switched capacitor converter was used to step 12V down to 9V. This voltage would then be fed into a 7805 linear regulator, which required at least 7V to operate properly (which is why a 3/4 switched capacitor converter was used, to give buffer voltage above the minimum input voltage level). The circuit was first simulated in LTSpice then validated with oscilloscope captures.</p>
         <img alt="" src={canSwitchCapSim} />

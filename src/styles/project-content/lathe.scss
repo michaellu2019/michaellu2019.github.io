@@ -1,0 +1,40 @@
+div#lathe-project-content-container {
+    div.project-overview {
+        img {
+            width: 70%;
+        }
+    }
+
+    div.project-ideation {
+        div.image-next-to-container:nth-of-type(1) {
+            img:nth-of-type(1) {
+                width: 80%;
+                border: 2px solid #000;
+            }
+            
+            div.image-container {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    div.project-design {
+        img:nth-of-type(1) {
+            width: 100%;
+        }
+    }
+
+    div.project-fabrication {
+        img {
+            width: 70%;
+        }
+    }
+
+    div.project-results {
+        iframe {
+            width: 70%;
+        }
+    }
+}
