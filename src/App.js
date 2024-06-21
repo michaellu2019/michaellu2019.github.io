@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react';
+import { React } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import './styles/styles.scss';
@@ -9,7 +9,6 @@ import Cover from './pages/Cover.js';
 import Projects from './pages/Projects.js';
 import Project from './pages/Project.js';
 import Work from './pages/Work.js';
-import About from './pages/About.js';
 
 function App() {
   function scrollTo(section) {
@@ -29,7 +28,6 @@ function App() {
             <Cover scrollTo={scrollTo} />
             <Projects />
             <Work />
-            {/* <About /> */}
           </div>} />
           <Route path="/:id" Component={() => <div>
             <Project />

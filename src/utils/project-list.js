@@ -1,7 +1,8 @@
+import Toolbot from '../components/project-content/Toolbot.js'
 import Lathe from '../components/project-content/Lathe.js'
 import Light from '../components/project-content/Light.js'
-import Toolbot from '../components/project-content/Toolbot.js'
-
+import Can from '../components/project-content/Can.js'
+import Ninja from '../components/project-content/Ninja.js'
 import Ball from '../components/project-content/Ball.js'
 import Omni from '../components/project-content/Omni.js'
 import Bus from '../components/project-content/Bus.js'
@@ -29,8 +30,6 @@ import Trash from '../components/project-content/Trash.js'
 import Capacitive from '../components/project-content/Capacitive.js'
 import Euclidean from '../components/project-content/Euclidean.js'
 
-import Ninja from '../components/project-content/Ninja.js'
-import Can from '../components/project-content/Can.js'
 
 export const PROJECT_TAGS = {
   HARDWARE: "hardware",
@@ -56,7 +55,7 @@ export const FAVORITE_PROJECT_RANKINGS = [
   "laptop", // robotics, ROS
   "competition", // mechanical design
   "donkey", // cool
-  "krabs" // super cool design
+  "krabs" // cool design
 ];
 
 function Project(id, name, title, description, tags, date, 

@@ -1,3 +1,3 @@
-## Creative Tech Portfolio
+## Portfolio
 
-This repository stores a collection of creative technology projects that I have been working on since 2017: https://michaellu2019.github.io
+This repository stores a collection of projects that I have been working on since 2017: https://michaellu2019.github.io

@@ -7,7 +7,7 @@ div#light-project-content-container {
 
     div.project-ideation {
         img:nth-of-type(1) {
-            width: 80%;
+            width: 50%;
         }
         
         div.image-container {
@@ -21,17 +21,35 @@ div#light-project-content-container {
         img:nth-of-type(1) {
             width: 100%;
         }
+
+        div.image-next-to-container:nth-of-type(1) {
+            grid-template-columns: 3fr 2fr;
+        }
     }
 
     div.project-fabrication {
-        img {
+        div.image-next-to-container:nth-of-type(1) {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        & > img:nth-of-type(1) {
             width: 70%;
         }
     }
 
     div.project-results {
+        img:nth-of-type(1) {
+            width: 50%;
+        }
+
         iframe {
             width: 70%;
+        }
+    }
+
+    div.project-improvements {
+        img:nth-of-type(1) {
+            width: 50%;
         }
     }
 }
