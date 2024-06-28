@@ -107,6 +107,13 @@ function Toolbot(props) {
         <ul>
           <li>1 × Clonk</li>
           <li>1 × Clunk</li>
+          <li>1 × Clunk</li>
+          <li>1 × Clunk</li>
+          <li>1 × Clunk</li>
+          <li>1 × Clunk</li>
+          <li>1 × Clunk</li>
+          <li>1 × Clunk</li>
+          <li>1 × 1"×1" Stainless Steel U-Joint</li>
         </ul>  
 
         <p>Electronics:</p>
@@ -125,7 +132,6 @@ function Toolbot(props) {
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
         <ul>
-          <li>Improvement</li>
           <li>Improvement</li>
           <li>Improvement</li>
         </ul>
