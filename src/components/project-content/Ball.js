@@ -30,7 +30,7 @@ function Ball(props) {
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
         <p>Based on the famous <a href="https://youtu.be/_RWWKFqv7EM" rel="noreferrer" target="_blank">BB-8 droid</a> from Star Wars, this robot was a remote-controlled 20"-diameter ball with a magnetically attached head. A combination of machined, 3D-printed, and laser-cut components controlled by a PSoC with firmware written in C, this project was completed over the course of 4 weeks as a final project for the infamous MIT class 6.115 - Microcomputer Project Laboratory.</p>
-        <iframe src="https://www.youtube.com/embed/xmnu_rDfkFk" title="MIT 6.115 Final Project: BB-8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <iframe src="https://www.youtube.com/embed/xmnu_rDfkFk" title="MIT 6.115 Final Project: BB-8" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         <img alt="" src={ballCover} />
       </div>
 
@@ -82,8 +82,8 @@ function Ball(props) {
           <li>1 × KastLite 20" Acrylic Lamp Post Globe</li>
           <li>1 × 11.5"×6" inJuvale White Half Sphere Foam Ball</li>
           <li>3 × WMYCONGCONG 37mm Diameter DC Geared Motor Mounting Bracket</li>
-          <li>3 × Caster Wheels</li>
-          <li>4 × 0.25"-Diameter 0.75"-Tall Neodymium Cylinder Magnets</li>
+          <li>3 × Caster Wheel</li>
+          <li>4 × 0.25"-Diameter 0.75"-Tall Neodymium Cylinder Magnet</li>
           <li>1 × 2lb Bag of Metal Magery Lead Shot Balls</li>
           <li>3 × Pololu 6mm Shaft Mounting Hub</li>
           <li>1 × goBilda goBilda 25-3 Speed Servo Motor</li>

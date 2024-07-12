@@ -6,10 +6,18 @@ div#toolbot-project-content-container {
     }
 
     div.project-ideation {
-        img:nth-of-type(1) {
-            width: 80%;
+        & > img:nth-of-type(1) {
+            width: 100%;
         }
-        
+
+        div.image-next-to-container:nth-of-type(1) {
+            grid-template-columns: 2fr 3fr;
+        }
+
+        div.image-next-to-container:nth-of-type(3) {
+            grid-template-columns: 7fr 3fr;
+        }
+
         div.image-container {
             img {
                 width: 100%;
@@ -24,8 +32,18 @@ div#toolbot-project-content-container {
     }
 
     div.project-fabrication {
-        img {
+        & > img:nth-of-type(1) {
             width: 70%;
+        }
+        
+        & > img:nth-of-type(2) {
+            width: 60%;
+        }
+
+        div.image-next-to-container {
+            img {
+                width: 100%;
+            }
         }
     }
 

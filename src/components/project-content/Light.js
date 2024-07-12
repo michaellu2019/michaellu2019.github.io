@@ -64,8 +64,8 @@ function Light(props) {
         <img alt="" src={lightBoost} />
         <p>Hardware:</p>
         <ul>
-          <li>4 × M3 Screws</li>
-          <li>4 × M3 Standoffs</li>
+          <li>4 × M3 Screw</li>
+          <li>4 × M3 Standoff</li>
         </ul>
 
         <p>Electronics:</p>

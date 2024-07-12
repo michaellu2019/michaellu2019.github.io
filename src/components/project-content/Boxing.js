@@ -27,7 +27,7 @@ function Boxing(props) {
       
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
-        <p>In order to give the wearable game accessories a polished look, the electronics had to blend in with the boxing gloves and sports vest, so custom mounts for the MPU6050 and ESP32 were designed in Autodesk Fusion360 to be 3D printed.</p>
+        <p>In order to give the wearable game accessories a polished look, the electronics had to blend in with the boxing gloves and sports vest, so custom mounts for the MPU6050 and ESP32 were designed in Autodesk Fusion360 to be .</p>
         <img alt="" src={boxingCAD} />
       </div>
       

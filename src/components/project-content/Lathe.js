@@ -76,7 +76,7 @@ function Lathe(props) {
         <p>Hardware:</p>
         <ul>
           <li>1 × Tian Pai K01-50 Three-Jaw Chuck</li>
-          <li>2 × Timken LM11949-LM11910 Tapered Roller Bearings</li>
+          <li>2 × Timken LM11949-LM11910 Tapered Roller Bearing</li>
           <li>1 × 3/4"-16 Medium-Strength Steel Thin Hex Nut</li>
           <li>1 × 3/4" O-Ring</li>
           <li>1 × 1" Shaft Diameter Spring-Loaded Rotary Shaft Seal with Wiper Lip</li>
@@ -98,9 +98,9 @@ function Lathe(props) {
           <li>1 × #10-24 Alloy Steel 1/4" Shoulder Screw</li>
           <li>1 × VEX Robotics 217-2000 12V CIM Motor</li>
           <li>1 × Tian Pai K01-50 Three-Jaw Chuck</li>
-          <li>2 × 0.25" to 0.25" Flex Coupling</li>
-          <li>2 × Nema 23 Stepper Motor</li>
-          <li>1 × Nema 23 Steel Mounting Bracket</li>
+          <li>2 × 0.25" to 0.25" Flexible Shaft Coupling</li>
+          <li>2 × NEMA 23 Stepper Motor</li>
+          <li>1 × NEMA 23 Steel Mounting Bracket</li>
           <li>1 × 24"×24"×1/2" Plywood Sheet</li>
           <li>A Bunch of 6061 Aluminum and 12L14 Steel Parts Made on the waterjet, Lathe, and Mill.</li>
           <li>Lots of 3D-Printed Components</li>
@@ -120,7 +120,7 @@ function Lathe(props) {
       
       <div className="project-content-container-section project-results">
         <h1>Results</h1>
-        <p>By the end of the class, the key functional requirements defined in the beginning of the class were met. The desktop lathe was able to cut plastic, aluminum, and steel with 0.007" of accuracy and 0.002" (~50 microns) of precision using about 80 W of power.</p>
+        <p>By the end of the class, the key functional requirements defined in the beginning of the class were met. The desktop lathe was able to cut plastic, aluminum, and steel with 0.007" of accuracy and 0.002" (~50 microns) of precision using about 80W of power.</p>
         <p>The lathe also proved to be very robust, maintaining functionality after several "death tests" carried out by Prof. Culpepper: three "sledgehammer" hits, a drop test, and a human-loading test.</p>
         <iframe src="https://www.youtube.com/embed/e4STLcCak6A" title="MIT 2.72 Final Project: Desktop Lathe" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>  
       </div>

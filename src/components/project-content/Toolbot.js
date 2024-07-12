@@ -1,12 +1,11 @@
 import { React } from 'react';
 
 import toolbotCover from '../../assets/images/project-assets/toolbot/toolbot-cover.jpg';
-import toolbotTorsionMath from '../../assets/images/project-assets/toolbot/toolbot-torsion-math.png';
+import toolbotMath from '../../assets/images/project-assets/toolbot/toolbot-math.png';
 import toolbotSimulink from '../../assets/images/project-assets/toolbot/toolbot-simulink.png';
 import toolbotSimulinkGraphs from '../../assets/images/project-assets/toolbot/toolbot-simulink-graphs.png';
 import toolbotSimulinkVideo from '../../assets/images/project-assets/toolbot/toolbot-simulink-video.mp4';
-import toolbotBendingMath from '../../assets/images/project-assets/toolbot/toolbot-bending-math.png';
-import toolbotShearMoment from '../../assets/images/project-assets/toolbot/toolbot-shear-moment.png';
+import toolbotBendingMaths from '../../assets/images/project-assets/toolbot/toolbot-bending-maths.png';
 import toolbotClamp from '../../assets/images/project-assets/toolbot/toolbot-clamp.png';
 import toolbotTorsionBar from '../../assets/images/project-assets/toolbot/toolbot-torsion-bar.mp4';
 import toolbotChassisCAD from '../../assets/images/project-assets/toolbot/toolbot-chassis-cad.png';
@@ -23,25 +22,26 @@ function Toolbot(props) {
     <div className="project-content-container" id="toolbot-project-content-container">
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
-        <p>Overview Text</p>
+        <p>Designed to carry farming tools across muddy, uneven farmland terrain, this robot was built as a project for MIT's <a href="https://bioinstrumentation.mit.edu/" rel="noreferrer" target="_blank">BioInstrumentation Laboratory</a>. It was engineered to carry payloads on the order of 100 lbs and used a torsion-bar based suspension with tank treads as well as a 2 degrees-of-freedom (DOF) motion platform with a rotating tool carousel.</p>
         <img alt="" src={toolbotCover} />
       </div>
 
       <div className="project-content-container-section project-ideation">
         <h1>Ideation</h1>
-        <p>Ideation text</p>
+        <p>The robot was intended to support other farming robots that MIT's BioInstrumentation Lab was building by carry compatible robotic agricultural equipment from soil moisture probes to thermal cameras to spectroscopy tools. I expected that the robot would operate on farmland with soft soil and uneven terrain, which meant that:</p>
+        <ol>
+          <li>The carousel on the robot that held the farming tools would need to be able to level itself, since the other farming robots didn't have the necessary degrees of freedom in their arms to pick up the tools.</li>
+          <li>The robot's chassis would have to be somewhat compliant with the roughness of the terrain through its suspension system and also prevent sinkage into soft soil while carrying payloads.</li>
+        </ol>
+
+        <p>The robot's tool carrying mechanism would comprise of a rotating carousel that could be tilted in both pitch and yaw if the robot was on ground that was not level. This would allow other agricultural robots in the fleet to easily pick up tools from the carousel.</p>
+
+        <img alt="" src={toolbotMath} />
+
+        <p>To aid with traction and sinkage, the robot would use treads to drive itself around its environment. At the core of the robot's chassis suspension were eight steel torsion bars that would add the necessary springiness to the idler wheels in contact with the sections of the treads touching the ground. I sized these torsion bars to allow a certain amount of twisting and thus compliance in the swing arm assembly for the given load per wheel.</p>
         
-        <div className="image-next-to-container">
-          <div className="image-container"><img alt="" src={toolbotTorsionMath} /></div>
-          <div>
-            <p>text</p>
-          </div>
-        </div>
-        
-        <div className="image-next-to-container">
-          <div className="image-container"><img alt="" src={toolbotSimulink} /></div>
-          <div className="image-container"><img alt="" src={toolbotSimulinkGraphs} /></div>
-        </div>
+        <img alt="" src={toolbotSimulink} />
+        <p>I then plugged these vehicle parameters into a Simulink model to simulate vehicle dynamics in response to irregularities in terrain. The model comprised of several spring-mass-damper wheels (to model the vehicle's torsion bars) attached to a rigid body that would be hit by a bump on the road. Vertical and angular displacement of the vehicle were plotted and simulated (with the vehicle response exaggerated for visualization purposes).</p>
 
         <div className="image-next-to-container">
           <div className="video-container">
@@ -50,20 +50,17 @@ function Toolbot(props) {
               Your browser does not support the video tag.
             </video>  
           </div>
-          <p>text</p>
+          <div className="image-container"><img alt="" src={toolbotSimulinkGraphs} /></div>
         </div>
-        
-        <div className="image-next-to-container">
-          <div className="image-container"><img alt="" src={toolbotBendingMath} /></div>
-          <div className="image-container"><img alt="" src={toolbotShearMoment} /></div>
-        </div>
-        
-        <p>Ideation text</p>
+
+        <p>MATLAB was used to solve for the stresses and strains endured by the torsion bars to ensure they would not yield under the predicted loads. The stress, strain, deflection, and angle of the torsion bar was plotted along the length of the bar to see which areas would be undergoing the most load. In addition, I checked these values against steel's endurance limit to make sure the torsion bars would not fail due to fatigue.</p>
+
+        <img alt="" src={toolbotBendingMaths} />
       </div>
       
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
-        <p>Design text</p>
+        <p>To de-risk the feasibility of the torsion bars, I built a simple prototype torsion bar system out of laser cut and machined aluminum. The torsion bar would be a square extrusion of 1/4"×1/4"×12" A2 tool steel, which had the strength to endure the predicted loads and the stiffness to achieve the desired compliance. The square profile could be easily clamped between two machined aluminum blocks fastened together by two M4 screws. On the opposite end, two circular bushings with square holes were slid onto the torsion bar, then the bushings were pressed into two flanged bearings, allowing the torsion bar to twist in place with minimal friction. I put the swing arm under different loads to measure the approximate spring constant and to see if the clamping mechanism would keep the torsion bar in place.</p>
 
         <div className="image-next-to-container">
           <div className="image-container"><img alt="" src={toolbotClamp} /></div>
@@ -75,29 +72,32 @@ function Toolbot(props) {
           </div>
         </div>
 
-        <div className="image-next-to-container">
-          <div className="image-container"><img alt="" src={toolbotChassisCAD} /></div>
-          <div className="image-container"><img alt="" src={toolbotCarouselCAD} /></div>
-        </div>
+        <p>This design was extended to the entire chassis when I modeled it in SolidWorks. The chassis would consist of a skeleton assembly of five T-slotted aluminum extrusions fastened to a central alumimun bar that ran down the length of the assembly. This piece would have four 1/4" machined slots into which the torsion bars would be pressed. This skeleton assembly would be fastened to the two wheel assemblies, which had the swing arms, drive wheel, and idler wheel sandwiched between two laser cut alumimun plates. The drive wheel was coupled to a 30-tooth sprocket, which was driven by a 3250W brushless DC motor with a 12-tooth sprocket. The idler wheel assembly could slide in place to properly tension the treads on the robot.</p>
+
+        <img alt="" src={toolbotChassisCAD} />
+
+        <p>SolidWorks was also used to design the tool carousel, which contained a stepper-motor-driven pinion gear turning an internal spur gear plate. These were resting on a 1" universal joint under the center of the plate and two ball-joint linkages connected to stepper motors with a non-backdrivable worm gearbox so that the platform would not move if power was ever cut to the motors. These actuators and transmission elements would allow for pitch, roll, and yaw control of items on the carousel.</p>
+
+        <img alt="" src={toolbotCarouselCAD} />
       </div>
       
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
-        <p>Fabrication text.</p>
+        <p>Most parts of the agricultural robot were made of aluminum as it was light and had sufficient strength. I machined the aluminum block that ran down the center of the chassis to have gaps for the tranverse T-slotted aluminum extrusions and 1/4" slots for the A2 tool steel torsion bars to sit in. The side plates of the chassis and swing arm plates were laser cut to accomodate for complex geometries and features that would be difficult or costly to machine manually (though some features, like the square holes for the square torsion bars in the swing arm plates were machined). Non-structural components like spacers (especially if they needed a square hole to get mounted to the square torsion bars) were 3D-printed overnight to offload the fabrication work.</p>
         <img alt="" src={toolbotChassis} />
 
-        <p>Fabrication text.</p>
+        <p>Where possible, I used off-the-shelf components to save on time on fabrication. The treads assembly comprised of a total of twelve 20-tooth plastic pulleys and several sections of steel-reinforced urethane timing belt laminated with an outer layer of blue nitrile roughtop tread. To join two ends of belts together, I cut off the blue nitrile tread on one end, exposing the steel wire reinforcement and urethane timing belt layer, and cut the urethane timing belt off the other end to expose the underside of the nitrile tread. I then joined these two exposed ends with super glue and sewed them together with kevlar thread to add more tensile strength.</p>
         
         <div className="image-next-to-container">
           <div className="image-container"><img alt="" src={toolbotWheels} /></div>
           <div className="image-container"><img alt="" src={toolbotTreads} /></div>
         </div>
 
-        <p>Fabrication text.</p>
+        <p>The electronics for the chassis included two 12Ah drill batteries powering two FOC motor controllers connected to the 3250W brushless DC motors and the robot's radio receiver. Fuses and safety switches were added in between the battery and the rest of the electronics as well.</p>
         
-        <div className="image-container"><img alt="" src={toolbotElectronics} /></div>
+        <img alt="" src={toolbotElectronics} />
 
-        <p>Fabrication text.</p>
+        <p>The tool carousel was made primarily out of laser-cut aluminum pieces. Some non-structural parts were 3D-printed or laser cut to reduce time spent machining. The center of the carousel plate was fastened to a 1" U-joint while the ends were attached to aluminum ball-joint linkages, which were coupled to NEMA 23 stepper motors with worm gearboxes. I controlled these motors were driven with stepper motor drivers powered by 24V and a Teensy microcontroller.</p>
 
         <div className="image-next-to-container">
           <div className="image-container"><img alt="" src={toolbotGear} /></div>
@@ -105,35 +105,60 @@ function Toolbot(props) {
         </div>
         <p>Hardware:</p>
         <ul>
-          <li>1 × Clonk</li>
-          <li>1 × Clunk</li>
-          <li>1 × Clunk</li>
-          <li>1 × Clunk</li>
-          <li>1 × Clunk</li>
-          <li>1 × Clunk</li>
-          <li>1 × Clunk</li>
-          <li>1 × Clunk</li>
-          <li>1 × 1"×1" Stainless Steel U-Joint</li>
+          <li>5 × 40mm×20mm×300mm Aluminum T-Slotted Extrusion</li>
+          <li>1 × 1"×1" Stainless Steel Universal Joint</li>
+          <li>8 × 1/4"×1/4"×12" A2 Tool Steel Bar</li>
+          <li>2 × NEMA 23 20:1 Worm Gearbox NMRV30 Stepper Motor</li>
+          <li>1 × Demotor Performance 1" Stainless Steel U-Joint</li>
+          <li>1 × NEMA 17 17HS24-2104-ME1K Stepper Motor</li>
+          <li>2 × Flipsky 6374 190KV 3250W BLDC Motor</li>
+          <li>2 × 14mm Diameter 1045 Carbon Steel Keyed Rotary Shaft</li>
+          <li>1 × 10mm to 5mm <i style={{color: "#ffd700"}}>Golden</i> Flexible Shaft Coupling</li>
+          <li>2 × 14mm Shaft Diameter Shaft Collar</li>
+          <li>1 × 10mm Shaft Diameter Flanged Ball Bearing</li>
+          <li>1 × 10mm Shaft Diameter Oil-Embedded Bronze Thrust Bearing</li>
+          <li>20 × 3/8" Shaft Diameter Oil-Embedded Bronze Thrust Bearing</li>
+          <li>16 × 12mm Shaft Diameter Flanged Ball Bearing</li>
+          <li>4 × 3/8" Shaft Diameter Sealed Flanged Ball Bearing</li>
+          <li>4 × M6 Ball-Joint Rod Ends with Right-Hand Threads</li>
+          <li>2 × #25 Chain 30T Sprocket</li>
+          <li>2 × #25 Chain 12T Sprocket</li>
+          <li>12 × AndyMark 20T Track Plastic Drive Pulley with 3/8" Shaft Diameter Shielded Bearings</li>
+          <li>Some 0.038" Diameter Kevlar Thread</li>
+          <li>A Bunch of AndyMark 2" Wide Blue Roughtop Nitrile Track Timing Belt Spliced Together</li>
+          <li>Rolls of #25 Roller Chain</li>
+          <li>An Expensive Amount of 20mm×20mm Aluminum T-Slotted Extrusion Corner Brackets</li>
+          <li>An Assortment of Aluminum and Steel Shafts and Blocks of Various Sizes</li>
+          <li>Lots of 3D-Printed Components</li>
+          <li>Plenty of Laser-Cut Acrylic Pieces</li>
+          <li>Some M5 Polyethylene Spacers Here and There</li>
+          <li>Too Many Fasteners (the Majority of Which Were Probably M5 Screws)</li>
         </ul>  
 
         <p>Electronics:</p>
         <ul>
-          <li>1 × Beep</li>
-          <li>1 × Boop</li>
+          <li>1 × Teensy 4.1</li>
+          <li>2 × DeWalt 20V/60V 12Ah FlexVolt Battery</li>
+          <li>2 × DeWalt 20V Battery Adapter with 30A Fuse</li>
+          <li>1 × 30A Flip Switch</li>
+          <li>2 × Taiss Quadrature Two-Phase 600P/R Rotary Encoder</li>
+          <li>3 × DM542T StepperOnline CNC Stepper Motor Driver</li>
+          <li>1 × Flipsky 50A Mini FESC4.20</li>
+          <li>1 × Radiolink T8S Receiver and Remote</li>
         </ul>  
       </div>
       
       <div className="project-content-container-section project-results">
         <h1>Results</h1>
-        <p>Results text.</p>
+        <p>After a few months, I had the chassis and carousel fully assembled and tested. The tool carousel was able to tilt in both the pitch and roll axis and also spin around. The chassis's torsion-bar suspension was able to support a ~150lb human load and also absorb shocks from terrain irregularities while driving at high speeds.</p>
         <iframe src="https://www.youtube.com/embed/mJ3B9_n0ato" title="Torsion Bar Suspension Tank Chassis" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
 
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
         <ul>
-          <li>Improvement</li>
-          <li>Improvement</li>
+          <li>During testing, there was some noticeable backlash in the pitch and roll axis of the tool carousel. This was because some of the 3D-printed components had been made out of tolerance leaving or had some features deform under load. Printing with higher infill or switching to a stronger material could have reduced the slop in the system.</li>
+          <li>I noticed after a lot of chassis drive tests that cracks were forming in the drive wheel by the bolts of the triangular aluminum hub. Immense stresses were developing in these areas when the torque from the drive motor was transmitting into the wheel through these bolts. A way to mitigate this would of course be to machine this drive pulley out of metal, or increase the number of bolts used to share the load across more bolt holes.</li>
         </ul>
       </div>
     </div>

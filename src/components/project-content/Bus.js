@@ -51,7 +51,7 @@ function Bus(props) {
       
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
-        <p>The parts of the case were 3D printed. Surface mount components were soldered to the PCB with the help of plenty of leaded solder paste and a rework station.</p>
+        <p>The parts of the case were 3D-printed. Surface mount components were soldered to the PCB with the help of plenty of leaded solder paste and a rework station.</p>
         <img alt="" src={busFabrication} />
         <video controls>
           <source src={busInstallation} type="video/mp4" />

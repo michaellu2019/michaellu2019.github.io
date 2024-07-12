@@ -92,11 +92,11 @@ function Can(props) {
           <li>1 × T80-52 Toroidal Core</li>
           <li>2 × LM7805 Linear Regulator</li>
           <li>4 × SPDT Relay Board</li>
-          <li>2 × LM555 Timer Chips</li>
-          <li>2 × 74LS08 Chips</li>
-          <li>7 × 74HC14 Chips</li>
-          <li>10 × IR2125 Chips</li>
-          <li>10 × IRF540A N-Channel MOSFETs</li>
+          <li>2 × LM555 Timer Chip</li>
+          <li>2 × 74LS08 Chip</li>
+          <li>7 × 74HC14 Chip</li>
+          <li>10 × IR2125 Chip</li>
+          <li>10 × IRF540A N-Channel MOSFET</li>
           <li>3 × 2N2222 NPN BJT</li>
           <li>1 × 2N2907 PNP BJT</li>
           <li>6 × 1N5818 Schottky Diodes</li>

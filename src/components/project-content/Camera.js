@@ -13,7 +13,7 @@ function Camera(props) {
     <div className="project-content-container" id="camera-project-content-container">
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
-        <p>The IR camera module was a 3D printed phone case with a Raspberry Pi Zero W infrared camera module that could read QR codes hidden behind infrared-transparent plastic.</p>
+        <p>The IR camera module was a 3D-printed phone case with a Raspberry Pi Zero W infrared camera module that could read QR codes hidden behind infrared-transparent plastic.</p>
         <img alt="" src={cameraCover} />
       </div>
 
@@ -37,7 +37,7 @@ function Camera(props) {
         <h1>Fabrication</h1>
         <p>The IR camera module was printed with PLA to give it sufficient rigidity. To achieve a tight fit inside the module, I replaced the TNTOR Ultra-Thin Power Bank charging cable with a compact Micro USB and switch assembly. The NoIR camera would fit into the square hole of the camera cap above the Raspberry Pi Zero W.</p>
         <img alt="" src={cameraElectronics} />
-        <p>The IR camera module was able to easily slide into the custom phone case, which was 3D printed with TPU so that it was flexible enough to fit around the phone and camera module.</p>
+        <p>The IR camera module was able to easily slide into the custom phone case, which was 3D-printed with TPU so that it was flexible enough to fit around the phone and camera module.</p>
         <img alt="" src={cameraCase} />
         <p>Hardware:</p> 
         <ul>
