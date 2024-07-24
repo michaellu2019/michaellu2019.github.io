@@ -48,7 +48,7 @@ function Boxing(props) {
 
         <p>Electronics:</p>
         <ul>
-          <li>2 × MPU6050 Inertial Measurement Unit</li>
+          <li>2 × MPU6050 Inertial Measurement Units</li>
           <li>1 × ESP32 Dev Board</li>
           <li>1 × TNTOR Portable Charger Ultra Slim Power Bank</li>
         </ul>  

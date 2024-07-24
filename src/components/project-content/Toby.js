@@ -40,7 +40,7 @@ function Toby(props) {
         <p>Hardware:</p>
         <ul>
           <li>4 × SG90 Micro Servo Motors</li>
-          <li>2 × RDS3218 20KG Dual Shaft U-Mount RC Digital Servo</li>
+          <li>2 × RDS3218 20KG Dual Shaft U-Mount RC Digital Servos</li>
           <li>2 × Hi-Spec Cordless Drills</li>
           <li>1 × Lunch Tray</li>
           <li>Plenty of Cardboard and Tape...</li>

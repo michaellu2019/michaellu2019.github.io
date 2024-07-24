@@ -52,8 +52,8 @@ function Hydros(props) {
 
         <p>Hardware:</p>
         <ul>
-          <li>8 × High-Pressure Flat Spray Nozzle with 1/4" NPT Male Thread</li>
-          <li>8 × High-Pressure Braided Chemical Hose with Fittings</li>
+          <li>8 × High-Pressure Flat Spray Nozzles with 1/4" NPT Male Thread</li>
+          <li>8 × High-Pressure Braided Chemical Hoses with Fittings</li>
           <li>1 × Gradual On/Off Valve with 316 Stainless Steel Body and Gate</li>
           <li>1 × 75 PSI Pressure-Relief Valve</li>
           <li>1 × Rocker-Lug Fire-Fighting Hose Fitting NPT to NHT Adapter</li>

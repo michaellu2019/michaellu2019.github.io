@@ -12,6 +12,10 @@ div#lathe-project-content-container {
 
     div.project-ideation {
         div.image-next-to-container:nth-of-type(1) {
+            @media (max-width: $medium) {
+                grid-template-columns: 1fr;
+            }
+            
             img:nth-of-type(1) {
                 width: 80%;
                 border: 2px solid #000;
@@ -23,21 +27,43 @@ div#lathe-project-content-container {
                 }
             }
         }
+
+        div.image-next-to-container:nth-of-type(2) {
+            @media (max-width: $medium) {
+                grid-template-columns: 1fr;
+            }
+        }
     }
 
-    div.project-design {
-        div.image-next-to-container:nth-of-type(1) img {
-            width: 100%;
+    div.project-design {    
+        div.image-next-to-container:nth-of-type(1) {
+            @media (max-width: $medium-small) {
+                grid-template-columns: 1fr;
+            }
+            
+            img {
+                width: 100%;
+            }
         }
 
         img:nth-of-type(1), img:nth-of-type(2), img:nth-of-type(3) {
             width: 90%;
+        }
+        
+        div.image-next-to-container:nth-of-type(2) {
+            @media (max-width: $medium-small) {
+                grid-template-columns: 1fr;
+            }
         }
     }
 
     div.project-fabrication {
         img {
             width: 70%;
+            
+            @media (max-width: $medium-small) {
+                width: 90%;
+            }
         }
     }
 

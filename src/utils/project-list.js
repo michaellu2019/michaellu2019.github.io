@@ -50,8 +50,8 @@ export const FAVORITE_PROJECT_RANKINGS = [
   "lathe", // rigorous engineering, precision machine design
   "can", // mechatronics, machine design, electrical engineering
   "ninja", // robotics, optimization
-  "omni", // robotics, linear controls, *saad hates this*
-  "david", // AI, *saad also hates this*
+  "omni", // robotics, linear controls
+  "david", // AI
   "laptop", // robotics, ROS
   "competition", // mechanical design
   "donkey", // cool

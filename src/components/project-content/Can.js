@@ -36,7 +36,7 @@ function Can(props) {
         <img alt="" src={canKinematics} />
         <p>The design for the leg hub would be a cam with a slot cut out for the secondary linkage shaft (represented by the pin joint in the diagram shown in red). As the linear actuator (shown in yellow) extended, it would cause the cam and thus the entire leg (shown in blue) to rotate with it, causing the side leg to tilt back.</p>
         <img alt="" src={canCAD} />
-        <p>R2-D2 was modeled in SolidWorks, allowing me to test out the kinematic model that I had developed. Overall, the system would require six motors. A high-torque servo motor would control the rotation of the head. A DC motor would rotate a lead screw to raise and lower the center leg. Two DC linear actuators would push cams to rotate the side legs. Finally, two DC motors controlled the drive wheels at the feet.</p>
+        <p>R2-D2 was modeled in SolidWorks, allowing me to test out the kinematic model that I had developed. Overall, the system would require six motors. A high-torque servo motor would control the rotation of the head. A DC motor would rotate a leadscrew to raise and lower the center leg. Two DC linear actuators would push cams to rotate the side legs. Finally, two DC motors controlled the drive wheels at the feet.</p>
         <p>As the class was a power electronics class, most of the electronics would be built from scratch. The system would comprise of two H-bridges to control the drive DC motors at the feet, a pair of SPDT relays for the center leg DC motor, a pair of SPDT relays for the two side leg linear actuators, a buck converter to power the servo motor and PSoC microcontroller, and a 3/4 switched capacitor converter to power additional logic circuitry for motor control.</p>
         <img alt="" src={canBlockDiagram} />
       </div>
@@ -63,17 +63,17 @@ function Can(props) {
         <img alt="" src={canHBridge} />
         <p>Hardware:</p>
         <ul>
-          <li>2 × BaneBots 3.875" Rubber Wheel</li>
-          <li>4 × DJCRAWLER 58mm Omni-Directional Wheel</li>
-          <li>2 × 6mm to 6mm Flexible Shaft Coupling</li>
+          <li>2 × BaneBots 3.875" Rubber Wheels</li>
+          <li>4 × DJCRAWLER 58mm Omni-Directional Wheels</li>
+          <li>2 × 6mm to 6mm Flexible Shaft Couplings</li>
           <li>1 × 6mm to 10mm Flexible Shaft Coupling</li>
-          <li>2 × 20mm×20mm Aluminum T-Slotted Extrusion V-Wheel Plate</li>
-          <li>1 × 300mm T10×8 Lead Screw and Nut Assembly</li>
-          <li>2 × WMYCONGCONG 37mm Diameter DC Geared Motor Mounting Bracket</li>
+          <li>2 × 20mm×20mm Aluminum T-Slotted Extrusion V-Wheel Plates</li>
+          <li>1 × 300mm T10×8 Leadscrew and Nut Assembly</li>
+          <li>2 × WMYCONGCONG 37mm Diameter DC Geared Motor Mounting Brackets</li>
           <li>1 × goBilda goBilda 25-2 Torque Servo Motor</li>
-          <li>2 × JQDML 2" Stroke 12V Linear Actuator</li>
+          <li>2 × JQDML 2" Stroke 12V Linear Actuators</li>
           <li>1 × Pololu 50:1 37D 12V Gearmotor</li>
-          <li>2 × Pololu 19:1 37D 12V Gearmotor</li>
+          <li>2 × Pololu 19:1 37D 12V Gearmotors</li>
           <li>Many M3×45mm Aluminum Standoffs</li>
           <li>An Expensive Amount of 20mm×20mm Aluminum T-Slotted Extrusion</li>
           <li>An Expensive Amount of 20mm×20mm Aluminum T-Slotted Extrusion Corner Brackets</li>
@@ -90,14 +90,14 @@ function Can(props) {
           <li>1 × PSoC CY8CKIT-059 Prototyping Kit</li>
           <li>1 × Radiolink T8S Receiver and Remote</li>
           <li>1 × T80-52 Toroidal Core</li>
-          <li>2 × LM7805 Linear Regulator</li>
-          <li>4 × SPDT Relay Board</li>
-          <li>2 × LM555 Timer Chip</li>
-          <li>2 × 74LS08 Chip</li>
-          <li>7 × 74HC14 Chip</li>
-          <li>10 × IR2125 Chip</li>
-          <li>10 × IRF540A N-Channel MOSFET</li>
-          <li>3 × 2N2222 NPN BJT</li>
+          <li>2 × LM7805 Linear Regulators</li>
+          <li>1 × SPDT Relay Board</li>
+          <li>2 × LM555 Timer Chips</li>
+          <li>2 × 74LS08 Chips</li>
+          <li>7 × 74HC14 Chips</li>
+          <li>10 × IR2125 Chips</li>
+          <li>10 × IRF540A N-Channel MOSFETs</li>
+          <li>3 × 2N2222 NPN BJTs</li>
           <li>1 × 2N2907 PNP BJT</li>
           <li>6 × 1N5818 Schottky Diodes</li>
           <li>Many 1N4148 Diodes</li>
@@ -113,7 +113,7 @@ function Can(props) {
           <div className="image-container"><img alt="" src={canPsocBlocks} /></div>
           <div className="image-container"><img alt="" src={canPsocConfig} /></div>
         </div>
-        <p>This allowed me to control the robot's drive motors to move around as well as the head servo and the lead screw assembly and linear actuators, which were used to switch from the two-legged mode to the three-legged mode and back.</p>
+        <p>This allowed me to control the robot's drive motors to move around as well as the head servo and the leadscrew assembly and linear actuators, which were used to switch from the two-legged mode to the three-legged mode and back.</p>
         <video controls>
           <source src={canTransition} type="video/mp4" />
           Your browser does not support the video tag.

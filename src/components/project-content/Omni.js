@@ -64,18 +64,18 @@ function Omni(props) {
         </div>
         <p>Hardware:</p>
         <ul>
-          <li>5 × 1"×1" T-Slotted Framing, 1.5' Long</li>
-          <li>4 × 1"×1" T-Slotted Framing, 3' Long</li>
-          <li>3 × T-Slotted Framing Inline Pivot</li>
-          <li>3 × T-Slotted Framing Perpendicular Pivot</li>
-          <li>10 × Silver Gusset Bracket, 1" Long</li>
-          <li>4 × Silver Tee Surface Bracket</li>
-          <li>1 × 4"×48" Multipurpose 6061 Aluminum Sheet, 1/8" Thick</li>
-          <li>4 × IG42 24VDC 340 RPM Gear Motor with Encoder</li>
-          <li>4 × 6" Omni-Directional Wheel</li>
-          <li>4 × 1/4” ID Aluminum VersaHub</li>
-          <li>4 × Anndason Nema 17 Stepper Motor Mounting Bracket</li>
-          <li>2 × 12×24” Clear Acrylic Sheet Plexiglass, 1/8” Thick</li>
+          <li>5 × 1"×1"×1.5' T-Slotted Extrusions</li>
+          <li>4 × 1"×1"×3' T-Slotted Extrusions</li>
+          <li>3 × T-Slotted Framing Inline Pivots</li>
+          <li>3 × T-Slotted Framing Perpendicular Pivots</li>
+          <li>10 × 1" Long Silver Gusset Brackets</li>
+          <li>4 × Silver Tee Surface Brackets</li>
+          <li>1 × 4"×48" Multipurpose 6061 Aluminum Sheets, 1/8" Thick</li>
+          <li>4 × IG42 24VDC 340 RPM Gear Motors with Encoders</li>
+          <li>4 × 6" Omni-Directional Wheels</li>
+          <li>4 × 1/4” ID Aluminum VersaHubs</li>
+          <li>4 × Anndason Nema 17 Stepper Motor Mounting Brackets</li>
+          <li>2 × 12×24” Clear Acrylic Sheets of Plexiglass, 1/8” Thick</li>
           <li>Lots of T-Slotted Framing Button-Head Bolts and End-Feed Nuts</li>
           <li>Lots of 1/4-20, M3, and M5 Bolts and Nylon Lock Nuts</li>
         </ul>  

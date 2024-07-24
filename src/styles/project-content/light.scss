@@ -24,12 +24,20 @@ div#light-project-content-container {
 
         div.image-next-to-container:nth-of-type(1) {
             grid-template-columns: 3fr 2fr;
+            
+            @media (max-width: $medium-small) {
+                grid-template-columns: 1fr;
+            }
         }
     }
 
     div.project-fabrication {
         div.image-next-to-container:nth-of-type(1) {
             grid-template-columns: 1fr 1fr;
+            
+            @media (max-width: $medium-small) {
+                grid-template-columns: 1fr;
+            }
         }
         
         & > img:nth-of-type(1) {

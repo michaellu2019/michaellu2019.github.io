@@ -81,11 +81,11 @@ function Ball(props) {
         <ul>
           <li>1 × KastLite 20" Acrylic Lamp Post Globe</li>
           <li>1 × 11.5"×6" inJuvale White Half Sphere Foam Ball</li>
-          <li>3 × WMYCONGCONG 37mm Diameter DC Geared Motor Mounting Bracket</li>
-          <li>3 × Caster Wheel</li>
-          <li>4 × 0.25"-Diameter 0.75"-Tall Neodymium Cylinder Magnet</li>
+          <li>3 × WMYCONGCONG 37mm Diameter DC Geared Motor Mounting Brackets</li>
+          <li>3 × Caster Wheels</li>
+          <li>4 × 0.25"-Diameter 0.75"-Tall Neodymium Cylinder Magnets</li>
           <li>1 × 2lb Bag of Metal Magery Lead Shot Balls</li>
-          <li>3 × Pololu 6mm Shaft Mounting Hub</li>
+          <li>3 × Pololu 6mm Shaft Mounting Hubs</li>
           <li>1 × goBilda goBilda 25-3 Speed Servo Motor</li>
           <li>1 × Pololu 131:1 37D 12V Gearmotor</li>
           <li>1 × Pololu 50:1 37D 12V Gearmotor</li>
@@ -101,7 +101,7 @@ function Ball(props) {
         <p>Electronics:</p>
         <ul>
           <li>1 × PSoC CY8CKIT-059 Prototyping Kit</li>
-          <li>2 × DBH-12 Motor Driver</li>
+          <li>2 × DBH-12 Motor Drivers</li>
           <li>1 × HiLetgo GY-521 MPU6050</li>
           <li>1 × Flysky RC Receiver and Remote</li>
           <li>1 × LM7805 Linear Regulator</li>
