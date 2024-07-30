@@ -30,7 +30,6 @@ import Trash from '../components/project-content/Trash.js'
 import Capacitive from '../components/project-content/Capacitive.js'
 import Euclidean from '../components/project-content/Euclidean.js'
 
-
 export const PROJECT_TAGS = {
   HARDWARE: "hardware",
   SOFTWARE: "software",
@@ -45,16 +44,14 @@ export const SOFTWARE_PROJECT_SECTIONS = ["overview", "ideation", "design", "pro
 export const MECHATRONICS_PROJECT_SECTIONS = ["overview", "ideation", "design", "fabrication", "programming", "results", "improvements"];
 
 export const FAVORITE_PROJECT_RANKINGS = [
-  "ball", // flagship, mechatronics, solid project overall, good project management
-  "toolbot", // rigorous engineering, good mechanical design
-  "lathe", // rigorous engineering, precision machine design
-  "can", // mechatronics, machine design, electrical engineering
+  "ball", // flagship, machine design, linear controls
+  "can", // machine design, electrical engineering
+  "toolbot", // rigorous engineering, machine design
   "ninja", // robotics, optimization
-  "omni", // robotics, linear controls
-  "david", // AI
-  "laptop", // robotics, ROS
-  "competition", // mechanical design
   "donkey", // cool
+  "laptop", // robotics, ROS
+  "lathe", // rigorous engineering, precision machine design
+  "omni", // robotics, linear controls
   "krabs" // cool design
 ];
 

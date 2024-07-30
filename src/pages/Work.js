@@ -24,8 +24,8 @@ function Work() {
           <div className="work-card">
             <img alt="" id="mit" src={mitLogo} />
             <div className="work-description">
-              <h2>Sep. 2022 - May 2023: Undergraduate Researcher in Biomimetic Robotics Lab</h2>
-              <h2>Feb. - May. 2021: Undergraduate Researcher in CSAIL HCIE Lab</h2>
+              <h2>Sep. 2022 - May 2023: Robotics Undergraduate Researcher</h2>
+              <h2>Feb. - May. 2021: HCI Undergraduate Researcher</h2>
             </div>
           </div>
           <div className="work-card">

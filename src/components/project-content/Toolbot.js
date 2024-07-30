@@ -23,7 +23,7 @@ function Toolbot(props) {
     <div className="project-content-container" id="toolbot-project-content-container">
       <div className="project-content-container-section project-overview">
         <h1>Overview</h1>
-        <p>Designed to carry farming tools across muddy, uneven farmland terrain, this robot was built as a project for MIT's <a href="https://bioinstrumentation.mit.edu/" rel="noreferrer" target="_blank">BioInstrumentation Laboratory</a>. It was engineered to carry payloads on the order of 100 lbs and used a torsion-bar based suspension with tank treads as well as a 2 degrees-of-freedom (DOF) motion platform with a rotating tool carousel.</p>
+        <p>Designed to carry farming tools across muddy, uneven farmland terrain, this robot was built as a project for MIT's <a href="https://bioinstrumentation.mit.edu/" rel="noreferrer" target="_blank">BioInstrumentation Laboratory</a>. It was engineered to carry payloads of about 100lbs and used a torsion-bar based suspension with tank treads as well as a 2 degrees-of-freedom (DOF) motion platform with a rotating tool carousel.</p>
         <img alt="" src={toolbotCover} />
       </div>
 
@@ -43,7 +43,7 @@ function Toolbot(props) {
         </div>
         
 
-        <p>To aid with traction and sinkage, the robot would use treads to drive itself around its environment, distributing its weight over a wider area on the ground. At the core of the robot's chassis suspension were eight steel torsion bars that would add the necessary springiness to the idler wheel assemblies in contact with the ground. I sized these torsion bars based on the calculated load per wheel to allow for a certain amount of twisting and thus compliance in the swing arm assembly.</p>
+        <p>To aid with traction and sinkage, the robot would use treads to drive itself around its environment, distributing its weight over a wider area on the ground. At the core of the robot's chassis suspension would be eight steel torsion bars that would add the necessary springiness to the idler wheel assemblies in contact with the ground. I sized these torsion bars based on the calculated load per wheel to allow for a certain amount of twisting and thus compliance in the swing arm assembly.</p>
         
         <img alt="" src={toolbotSimulink} />
         <p>I then plugged these vehicle parameters into a Simulink model to simulate vehicle dynamics in response to irregularities in terrain. The model consisted of several spring-mass-damper wheels (to model the vehicle's torsion bars) attached to a rigid body that would be hit by a bump on the road. Vertical and angular displacement of the vehicle were plotted and simulated (with the animated vehicle angular/displacement response exaggerated for visualization purposes).</p>
@@ -58,7 +58,7 @@ function Toolbot(props) {
           <div className="image-container"><img alt="" src={toolbotSimulinkGraphs} /></div>
         </div>
 
-        <p>MATLAB was used to solve for the stresses and strains endured by the torsion bars to ensure they would not yield under the predicted loads. The stress, strain, deflection, and angle of the torsion bar was plotted along the length of the bar to see which areas would be undergoing the most load. In addition, I checked the predicted cyclic stresses against steel's endurance limit to make sure the torsion bars would not fail due to fatigue.</p>
+        <p>MATLAB was used to solve for the stresses and strains endured by the torsion bars to ensure they would not yield under the predicted loads. The stress, strain, deflection, and angle of the torsion bar were plotted along the length of the bar to see which areas would be undergoing the most load. In addition, I checked the predicted cyclic stresses against steel's endurance limit to make sure the torsion bars would not fail due to fatigue.</p>
 
         <img alt="" src={toolbotBendingMaths} />
       </div>
@@ -163,7 +163,7 @@ function Toolbot(props) {
         <h1>Improvements</h1>
         <ul>
           <li>During testing, there was some noticeable backlash in the pitch and roll axis of the tool carousel. This was because some of the 3D-printed components had been made out of tolerance or had some features deform under load. Printing with higher infill or switching to a stronger material could have reduced the slop in the system.</li>
-          <li>I noticed after a lot of chassis drive tests that cracks were forming in the drive pulley by the bolts of the triangular aluminum hub. Immense stresses were developing in these areas when the torque from the drive motor was transmitting into the wheel through these bolts. A way to mitigate this would of course be to machine this drive pulley out of metal or to increase the number of bolts used to share the stresses across more bolt holes.</li>
+          <li>I noticed after a lot of chassis drive tests that cracks were forming in the drive pulley by the bolts of the triangular aluminum hub. High stresses were developing in these areas when the drive motor was transmitting torque through these bolts to spin the wheel. A way to mitigate this would be to machine the drive pulley out of metal or to increase the number of bolts used to share the load across more bolt holes.</li>
         </ul>
       </div>
     </div>

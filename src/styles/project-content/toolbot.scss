@@ -25,6 +25,10 @@ div#toolbot-project-content-container {
 
         div.image-next-to-container:nth-of-type(2) {
             grid-template-columns: 2fr 3fr;
+
+            @media (max-width: $medium) {
+                grid-template-columns: 1fr;
+            }
         }
 
         div.image-container {
@@ -37,6 +41,12 @@ div#toolbot-project-content-container {
     div.project-design {
         img:nth-of-type(1) {
             width: 100%;
+        }
+        
+        div.image-next-to-container:nth-of-type(1) {
+            @media (max-width: $medium-small) {
+                grid-template-columns: 1fr;
+            }
         }
     }
 
@@ -52,6 +62,10 @@ div#toolbot-project-content-container {
         div.image-next-to-container {
             img {
                 width: 100%;
+            }
+
+            @media (max-width: $medium) {
+                grid-template-columns: 1fr;
             }
         }
     }

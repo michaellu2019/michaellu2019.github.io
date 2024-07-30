@@ -31,11 +31,11 @@ function Lathe(props) {
         <div className="image-next-to-container">
           <div className="image-container"><img alt="" src={latheFRs} /></div>
           <div>
-            <p>As a result, the lathe's functional requirements were tailored to those of small pen-making lathes. Because of this, the cost of the lathe (without CNC components) was a strict $200, the footprint was kept relatively small, and many of the accuracy, power, and material removal rate requirements were relaxed.</p>
+            <p>As a result, the lathe's functional requirements were tailored to those of small pen-making lathes. Because of this, the cost of the lathe (without CNC components) was a strict $200, the footprint was kept relatively small, and many of the accuracy, power, and material removal rate requirements were adjusted.</p>
           </div>
         </div>
 
-        <p>These lathe functional requirements were translated into subsystem requirements (for the spindle, dovetail, z-axis drive, etc.) so that they could be designed appropriately. One important consideration for reaching the 50-micron repeatability specification was designing components of the machine to have sufficient stiffness so that they wouldn't deflect too much under the loads of cutting. This was accomplished by solving for the stiffness of component elements, then combining those elements as springs in series and parallel to get an overall stiffness for the component.</p>
+        <p>The lathe's functional requirements were translated into subsystem requirements (for the spindle, dovetail, z-axis drive, etc.) so that they could be designed appropriately. One important consideration for reaching the 50-micron repeatability specification was designing components of the machine to have sufficient stiffness so that they wouldn't deflect too much under the loads of cutting. This was accomplished by solving for the stiffness of component elements, then combining those elements as springs in series and parallel to get an overall stiffness for the component.</p>
 
         <div className="image-next-to-container">
           <div className="image-container"><img alt="" src={latheStiffness} /></div>
@@ -46,16 +46,16 @@ function Lathe(props) {
       <div className="project-content-container-section project-design">
         <h1>Design</h1>
 
-        <p>The lathe would be composed of three main subsystems: the spindle, dovetail/x-axis drive, z-axis drive. I modeled these components  extensively in SolidWorks to ensure that parts would fit together without colliding and that assemblies were within size and mass specifications.</p>
+        <p>The lathe would be composed of three main subsystems: the spindle, dovetail/x-axis drive, and z-axis drive. I modeled these components  extensively in SolidWorks to ensure that parts would fit together without colliding and that assemblies were within size and mass specifications.</p>
         <div className="image-next-to-container">
           <div className="image-container"><img alt="" src={latheCAD} /></div>
           <div className="image-container"><img alt="" src={latheCADSection} /></div>
         </div>
 
-        <p>The spindle would be responsible for holding the lathe's spinning shaft and chuck, which would grip the workpiece being cut. The spindle would be designed to handle high loads from cutting forces, which is why the shaft would be made from 12L14 steel and turned to be a hefty 3/4" thick. The spindle shaft would be placed in an aluminum housing and constrained by two Timken tapered roller bearings, which would be preloaded by a set of Belleville washers (though these were eventually swapped out for an O-Ring) and a 3/4-16 nut secured with Loctite.</p>
+        <p>The spindle would be responsible for holding the lathe's spinning shaft and chuck, which would grip the workpiece being cut. The spindle would be designed to handle high loads from cutting forces, which is why the shaft would be made from 12L14 steel and turned to be a hefty 3/4" thick. The spindle shaft would be placed in an aluminum housing and constrained by two Timken tapered roller bearings, which would be preloaded by a set of Belleville washers (though these were eventually swapped out for an O-Ring) and a 3/4"-16 nut secured with Loctite.</p>
         <img alt="" src={latheSpindle} />
 
-        <p>The dovetail/x-axis drive would hold the cutting tool, which would be driven into the workpiece for turning down its radius. The steel dovetail would be immensely stiff to handle the immense cutting forces during operation. To mitigate any issues from misalignment, a brass gib would be fabricated to fit between the two parts of the dovetail and tensioned to provide the right amount of stiffness. One end of the x-axis drive leadscrew would also be coupled to a CNC motor for CNC capability.</p>
+        <p>The dovetail/x-axis drive would hold the cutting tool, which would be driven into the workpiece for turning down its radius. The steel dovetail would be immensely stiff to handle the high cutting forces during operation. To mitigate any issues from misalignment, a brass gib would be fabricated to fit between the two parts of the dovetail and tensioned to provide the right amount of stiffness. One end of the x-axis drive leadscrew would also be coupled to a CNC motor for CNC capability.</p>
         <img alt="" src={latheDovetail} />
 
         <p>The z-axis drive would feature a steady rest to support long workpieces, the headstock to hold the spindle, two 3/4" steel rails to support the vertical cutting forces during operation, and a z-axis leadscrew assembly to move the mounted dovetail assembly with the cutting tool. The dovetail assembly would be mounted to the z-axis drive through bushings in a carriage skirt as well as a dancing-queen flexure and rail flexure, as to not over constrain the dovetail assembly.</p>
@@ -70,8 +70,8 @@ function Lathe(props) {
       
       <div className="project-content-container-section project-fabrication">
         <h1>Fabrication</h1>
-        <p>Most parts of the lathe were either 3D-printed, waterjet aluminum, or machined from aluminum or steel stock based on the required strength and precision. Flexures were waterjet out of 1" aluminum stock before being finished on the manual mill to remove any waterjet defects and to add bolt holes. All machined parts had accompanying engineering drawings and process plans to minimize the chances of errors in the machine shop.</p>
-        <p>To mitigate any misalignment issues that would occur during assembly, alignment pins, adjustment screws, and potting with J-B Weld (particularly for the z-slide bushings and leadscrew nut) were used when assembling parts.</p>
+        <p>Most parts of the lathe were either 3D-printed with ABS, waterjet from aluminum, or machined from aluminum or steel stock based on the required strength and precision. Flexures were waterjet out of 1" aluminum stock before being finished on the manual mill to remove any waterjet defects and to add bolt holes. All machined parts had accompanying engineering drawings and process plans to minimize the chances of errors in the machine shop.</p>
+        <p>To mitigate any misalignment issues that would occur during assembly, alignment pins, adjustment screws, and potting with J-B Weld (particularly for the z-slide bushings and leadscrew nut) were used in design and assembly.</p>
         <img alt="" src={latheFabrication} />
         <p>Hardware:</p>
         <ul>
@@ -128,9 +128,9 @@ function Lathe(props) {
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
         <ul>
-          <li>One of the major issues that the lathe had was the runout of the purchased chuck. The aluminum soft jaws created were waterjetted to match the profile of the chuck jaws, which introduced some taper into the part profile. Bying a better chuck to mitigate the issue or fabricating a better set of aluminum soft jaws by machining to guarantee more precision could have improved the runout of the workpiece during operation.</li>
-          <li>There was some power loss in the spindle assembly from the high preload on the spindle's tapered roller bearings. Increasing the thread pitch on the spindle shaft and preload nut or switching to an even more compliant O-Ring could have given finer control of the bearing preload without sacrificing stiffness.</li>
-          <li>The provided DC motor, in addition to being very old, was inefficient and could only run at 12V, which meant that it would draw higher current for the same amount of power. Switching to a brushless DC motor (albeit for a higher price) would make the machine much more efficient.</li>
+          <li>One of the major issues that the lathe had was the runout of the purchased chuck. The aluminum soft jaws created were waterjetted to match the profile of the chuck jaws, which introduced some taper into the part profile. Buying a better chuck to mitigate the issue or machining a better set of aluminum soft jaws to improve part accuracy could have improved the runout of the workpiece during operation.</li>
+          <li>There was some power loss in the spindle assembly from the high preload on the spindle's tapered roller bearings. Increasing the thread pitch on the spindle shaft and preload nut or switching to aa softer O-Ring/spring washer could have given finer control of the bearing preload without sacrificing stiffness.</li>
+          <li>The provided DC motor, in addition to being very old, was inefficient and only rated for 12V, which meant that it would draw higher current for the same amount of power. Switching to a brushless DC motor (albeit for a higher price) would make the machine much more efficient.</li>
         </ul>
       </div>
     </div>
