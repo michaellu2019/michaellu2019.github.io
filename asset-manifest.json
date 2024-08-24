@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5d5200b0.css",
-    "main.js": "/static/js/main.521c95ab.js",
+    "main.js": "/static/js/main.1ba2153d.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/car-driving.mp4": "/static/media/car-driving.93e73191e85c82dd43dd.mp4",
     "static/media/can-fabrication.png": "/static/media/can-fabrication.1da94bc7f4ac66ecb8f2.png",
@@ -275,11 +275,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.848e0f18c28a360fd30017cbdde52520.svg",
     "main.5d5200b0.css.map": "/static/css/main.5d5200b0.css.map",
-    "main.521c95ab.js.map": "/static/js/main.521c95ab.js.map",
+    "main.1ba2153d.js.map": "/static/js/main.1ba2153d.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d5200b0.css",
-    "static/js/main.521c95ab.js"
+    "static/js/main.1ba2153d.js"
   ]
 }
