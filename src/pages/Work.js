@@ -1,6 +1,7 @@
-import amazonLogo from '../assets/images/work-logos/work-amazon-logo.PNG'
+import jplLogo from '../assets/images/work-logos/work-jpl-logo.png'
 import spaceXLogo from '../assets/images/work-logos/work-spacex-logo.PNG'
 import milwaukeeLogo from '../assets/images/work-logos/work-milwaukee-logo.png'
+import amazonLogo from '../assets/images/work-logos/work-amazon-logo.PNG'
 import mitLogo from '../assets/images/work-logos/work-mit-logo.PNG'
 import abbLogo from '../assets/images/work-logos/work-abb-logo.PNG'
 import ibmLogo from '../assets/images/work-logos/work-ibm-logo.PNG'
@@ -15,19 +16,25 @@ function Work() {
       <div className="content">
         <div className="work-container">
           <div className="work-card">
-            <img alt="" id="spaceX2" src={spaceXLogo} />
+            <img alt="" id="jpl" src={jplLogo} />
+            <div className="work-description">
+              <h2>Jun. - Dec. 2024: Robotics Intern</h2>
+            </div>
+          </div>
+          <div className="work-card">
+            <img alt="" id="spaceX" src={spaceXLogo} />
             <div className="work-description">
               <h2>Jun. - Aug. 2023: Mechatronics Intern</h2>
               <h2>Jun. - Aug. 2021: Software Engineering Intern</h2>
             </div>
           </div>
-          <div className="work-card">
+          {/* <div className="work-card">
             <img alt="" id="mit" src={mitLogo} />
             <div className="work-description">
               <h2>Sep. 2022 - May 2023: Robotics Undergraduate Researcher</h2>
               <h2>Feb. - May. 2021: HCI Undergraduate Researcher</h2>
             </div>
-          </div>
+          </div> */}
           <div className="work-card">
             <img alt="" id="amazon" src={milwaukeeLogo} />
             <div className="work-description">

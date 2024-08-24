@@ -142,7 +142,7 @@ function Ball(props) {
         <p>After four weeks of intense work under a tight schedule, I was able to build a prototype of the MIT-themed BB-8 droid for my final project with the necessary control software to stabilize itself and drive on the various terrains of MIT's campus.</p>
         <iframe src="https://www.youtube.com/embed/Olh6qdgxJgc" title="BB-8 @ MIT" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
-
+      
       <div className="project-content-container-section project-improvements">
         <h1>Improvements</h1>
         <ul>
