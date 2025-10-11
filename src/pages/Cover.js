@@ -16,7 +16,7 @@ function Cover(props) {
           <br /> 
           <br />
           I've worked as a software engineering intern at Amazon, electrical engineering intern at Milwaukee Tool, mechatronics intern at SpaceX, and am currently working on robots for the moon at NASA JPL. */}
-          Every since I was born, I knew that I wanted to be that one dude that other dudes would look up to and say to other dudes, "Dude, I want to be that dude."
+          Ever since I was born, I knew that I wanted to be that one dude that other dudes would look up to and say to other dudes, "Dude, I want to be that dude."
           <br />
           <br />
           Today, I have become an exceptionally mediocre engineer and experienced amateur programmer after trudging through the MechE and EECS curriculum at MIT for a few years.
