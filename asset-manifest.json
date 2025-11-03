@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d5200b0.css",
-    "main.js": "/static/js/main.4163ced0.js",
+    "main.css": "/static/css/main.0a453543.css",
+    "main.js": "/static/js/main.646809ff.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/car-driving.mp4": "/static/media/car-driving.93e73191e85c82dd43dd.mp4",
     "static/media/can-fabrication.png": "/static/media/can-fabrication.1da94bc7f4ac66ecb8f2.png",
@@ -149,6 +149,7 @@
     "static/media/competition-winch.png": "/static/media/competition-winch.76f24cab788359ac36c2.png",
     "static/media/donkey-cad.png": "/static/media/donkey-cad.4325811ae502211e6dfb.png",
     "static/media/can-psoc-blocks.png": "/static/media/can-psoc-blocks.17cd4d6ddb5635e29059.png",
+    "static/media/work-krusty-krab-logo.png": "/static/media/work-krusty-krab-logo.814e6d2a256b88dd27b8.png",
     "static/media/krabs-legs.jpg": "/static/media/krabs-legs.2071831d1558b6c2fe47.jpg",
     "static/media/laptop-solenoid.png": "/static/media/laptop-solenoid.1e1fb7a703ee19e997d2.png",
     "static/media/lego-black-and-white-vision-image.png": "/static/media/lego-black-and-white-vision-image.62a21f2e6100e7d33237.png",
@@ -222,6 +223,7 @@
     "static/media/ball-physics.png": "/static/media/ball-physics.3f8899683c17bd729e84.png",
     "static/media/bus-power-schematic.png": "/static/media/bus-power-schematic.fb2ea3f7a9199caa077b.png",
     "static/media/can-psoc-config.png": "/static/media/can-psoc-config.e07de718c1d634d9642f.png",
+    "static/media/work-chum-bucket-logo.png": "/static/media/work-chum-bucket-logo.4adaf36d7cf11796ded9.png",
     "static/media/ninja-kto.png": "/static/media/ninja-kto.a4cdc01bf75395e16a58.png",
     "static/media/projects-euclidean-card.png": "/static/media/projects-euclidean-card.bac39813ceccb115f0c3.png",
     "static/media/NunitoSans-Regular.ttf": "/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
@@ -274,12 +276,12 @@
     "static/media/ball-pid.png": "/static/media/ball-pid.96b11c33a1126730ad97.png",
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.848e0f18c28a360fd30017cbdde52520.svg",
-    "main.5d5200b0.css.map": "/static/css/main.5d5200b0.css.map",
-    "main.4163ced0.js.map": "/static/js/main.4163ced0.js.map",
+    "main.0a453543.css.map": "/static/css/main.0a453543.css.map",
+    "main.646809ff.js.map": "/static/js/main.646809ff.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d5200b0.css",
-    "static/js/main.4163ced0.js"
+    "static/css/main.0a453543.css",
+    "static/js/main.646809ff.js"
   ]
 }
